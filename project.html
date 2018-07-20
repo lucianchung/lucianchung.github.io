@@ -4,19 +4,22 @@
     <title>Lucian Chung | SafSav</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700,900" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     </head>
 
     <container>
 <!-- Navbar -->
       <nav class="navbar">
-      <a href="index.html"><img class="logo" src="/images/Logo-Full-red-small.png" alt="Lucian Chung Logo"></img></a>
-      <ul>
-        <li><a href="#design-section">design</a></li>
-        <li><a href="#illustration-section">illustration</a></li>
-        <li>about</li>
-      </ul>
-    </nav>
+        <div class="navbar-contents">
+          <a href="index.html"><img class="logo" src="/images/Logo-Mark-red-100px.png" alt="Lucian Chung Logo"></img></a>
+          <div class="navbar-links">
+            <a href="">about</a>
+            <a href="#illustration-section">illustration</a>
+            <a href="#design-section">design</a>
+          </div>
+        </div>
+      </nav>
 
 <!-- Header / Hero Portion -->
       <header>
@@ -26,7 +29,7 @@
       <a href="https://invis.io/G8LRTMODTVF" target="_blank">
         <button type="button">Invision Prototype</button>
       </a>
-      <figure>
+      <figure class="hero-screen">
         <img class="full-width" src="images/safsav/Hero-Screens-Home-1440.jpg"></img>
       </figure>
 
@@ -64,18 +67,26 @@
 
 <!-- Problem and Solution -->
         <section class="phase">
-        <div class="problem unit background">
-          <h2 class="title">Problem</h2>
-          <p>I was requested by a client to target an unreached portion of the cloud storage market by designing a product that includes the features of saving web content, organizing content, creating content, and uploading files. I was also asked to consider including collaborative features like sharing single items, sharing groups of items, and connecting with other users for real-time collaboration in documents.</p>
+        <div class="problem unit">
+          <div class="title-box">
+            <h2 class="title">Problem</h2>
+          </div class>
+          <section class="background">
+            <div class="contents">
+              <p>I was requested by a client to target an unreached portion of the cloud storage market by designing a product that includes the features of saving web content, organizing content, creating content, and uploading files. I was also asked to consider including collaborative features like sharing single items, sharing groups of items, and connecting with other users for real-time collaboration in documents.</p>
+            </div>
+          </section>
         </div>
 
         <div class="solution">
-        <h2 class="title">Solution</h2>
-          <p>SafSav is a cloud storage app with security and privacy. User research found that tech professionals desire a product that will allow them to encrypt data that they upload and keep it private from the host company. SafSav does exactly that while also performing the expected functions of a cloud storage app including uploading files, organizing files, sharing files, and more. SafSav’s design became more polished, clear, and user-friendly as it went through multiple iterations based on two rounds of Usability Testing, Preference Testing, and feedback from senior designers. </p>
+          <div class="title-box">
+            <h2 class="title">Solution</h2>
+          </div>
+          <p class="padding-top">SafSav is a cloud storage app with security and privacy. User research found that tech professionals desire a product that will allow them to encrypt data that they upload and keep it private from the host company. SafSav does exactly that while also performing the expected functions of a cloud storage app including uploading files, organizing files, sharing files, and more. SafSav’s design became more polished, clear, and user-friendly as it went through multiple iterations based on two rounds of Usability Testing, Preference Testing, and feedback from senior designers. </p>
         </div>
 
         <figure>
-          <img class="full-width" src="images/safsav/Hero-Screens-All-1440.jpg"></img>
+          <img class="full-width image-border" src="images/safsav/Hero-Screens-All-1440.jpg"></img>
         </figure>
         <a href="https://invis.io/G8LRTMODTVF" target="_blank">
           <button type="button">Invision Prototype</button>
@@ -84,8 +95,9 @@
 
 <!-- Discovery and Research -->
         <section class="phase">
-        <h2 class="title">Discovery and Research</h2>
-
+          <div class="title-box">
+            <h2 class="title">Discovery and Research</h2>
+          </div>
         <section class="unit">
           <section class="text">
             <h3 class="subtitle">Competitive Analysis</h3>
@@ -106,30 +118,32 @@
         </section>
 
         <section class="unit background">
-          <section class="text">
-            <h3 class="subtitle">User Research</h3>
-            <h4>What the user wants, the user gets</h4>
-            <p>Next I sent out a User Survey to determine what cloud storage features users want in a product. Among other questions, I asked users to rate the desirability of features the client proposed at the start of the project. It turns out users didn’t necessarily want all of these features. With creating a manageable MVP as a goal, I decided to focus on the main features desired by users.</p>
+          <div class="contents">
+            <section class="text">
+              <h3 class="subtitle">User Research</h3>
+              <h4>What the user wants, the user gets</h4>
+              <p>Next I sent out a User Survey to determine what cloud storage features users want in a product. Among other questions, I asked users to rate the desirability of features the client proposed at the start of the project. It turns out users didn’t necessarily want all of these features. With creating a manageable MVP as a goal, I decided to focus on the main features desired by users.</p>
 
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfycFzlR7G7wt6S1Pv_2COq9WYEvMtfuQp4tXM6rGdEuH4R2Q/viewanalytics" target="_blank">
-              <button type="button">User Survey</button>
-            </a>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfycFzlR7G7wt6S1Pv_2COq9WYEvMtfuQp4tXM6rGdEuH4R2Q/viewanalytics" target="_blank">
+                <button type="button">User Survey</button>
+              </a>
 
-            <p>Interestingly enough, 60% of survey respondents came from a tech background (IT, Web Development, Network Administration, Security Specialist…), and when asked about what additional features they wanted in cloud app storage, several responded with comments about data encryption, privacy, and other security concerns.</p>
-            <p>With this product having no target audience at this point in time, it seemed like a great opportunity to focus on tech professionals who very clearly stated their desire for a cloud storage service with security and privacy. With this research, I now had a clearer direction and vision for the product. The full User Survey results can be seen here.</p>
-          </section>
+              <p>Interestingly enough, 60% of survey respondents came from a tech background (IT, Web Development, Network Administration, Security Specialist…), and when asked about what additional features they wanted in cloud app storage, several responded with comments about data encryption, privacy, and other security concerns.</p>
+              <p>With this product having no target audience at this point in time, it seemed like a great opportunity to focus on tech professionals who very clearly stated their desire for a cloud storage service with security and privacy. With this research, I now had a clearer direction and vision for the product. The full User Survey results can be seen here.</p>
+            </section>
 
-          <aside class="percentages">
-            <h3>Desired Cloud Storage Features</h3>
-            <h2>52%</h2>
-            <p>want to organize content into groups</p>
-            <h2>72%</h2>
-            <p>want to upload files</p>
-            <h2>80%</h2>
-            <p>want to share single files</p>
-            <h2>70%</h2>
-            <p>want to share multiple files</p>
-          </aside>
+            <aside class="percentages">
+              <h3>Desired Cloud Storage Features</h3>
+              <h2>52%</h2>
+              <p>want to organize content into groups</p>
+              <h2>72%</h2>
+              <p>want to upload files</p>
+              <h2>80%</h2>
+              <p>want to share single files</p>
+              <h2>70%</h2>
+              <p>want to share multiple files</p>
+            </aside>
+          </div>
         </section>
 
         <section class="unit">
@@ -141,10 +155,10 @@
 
           <div class="user-personas">
             <figure>
-              <img class="persona" src="images/safsav/UserPersona-Bryce.jpg"></img>
+              <img class="persona bryce" src="images/safsav/UserPersona-Bryce.jpg"></img>
             </figure>
             <figure>
-              <img class="persona" src="images/safsav/UserPersona-Simon.jpg"></img>
+              <img class="persona simon" src="images/safsav/UserPersona-Simon.jpg"></img>
             </figure>
           </div>
         </section>
@@ -152,7 +166,9 @@
 
 <!-- Information Architecture -->
         <section class="phase">
-        <h2 class="title">Information Architecture</h2>
+          <div class="title-box">
+            <h2 class="title">Information Architecture</h2>
+          </div>
 
         <section class="unit">
           <section class="text">
@@ -168,40 +184,41 @@
           <aside class="I-want">
             <h3>I want:</h3>
 
-
             <ul>
-              <li>cross-platform functionality</li>
-              <li>data encryption</li>
-              <li>to delete a single file</li>
-              <li>to download multiple files from the app</li>
-              <li>to download single files from the app</li>
-              <li>to organize files into folders</li>
-              <li>to share multiple files with others</li>
-              <li>to share single files with others</li>
-              <li>to upload documents from a computer</li>
-              <li>to upload photos from a computer</li>
-              <li>to upload photos from a mobile device</li>
+              <li>+ cross-platform functionality</li>
+              <li>+ data encryption</li>
+              <li>+ to delete a single file</li>
+              <li>+ to download multiple files from the app</li>
+              <li>+ to download single files from the app</li>
+              <li>+ to organize files into folders</li>
+              <li>+ to share multiple files with others</li>
+              <li>+ to share single files with others</li>
+              <li>+ to upload documents from a computer</li>
+              <li>+ to upload photos from a computer</li>
+              <li>+ to upload photos from a mobile device</li>
             </ul>
           </aside>
         </section>
 
         <section class="unit background">
-          <section class="text">
-            <h3 class="subtitle">User Flows</h3>
-            <h4>How shall I accomplish tasks?</h4>
-            <p>With my User Stories, I now had specific lists of potential tasks to include in the cloud storage app. With an MVP in mind, I focused on high priority tasks first. I used pen and paper to sketch rough versions of User Flows. I also referenced User Flows I created from the Competitive Analysis to see how competitors mapped out tasks similar to those I wanted. The process for onboarding, uploading files, moving files, and sharing files isn’t that different from product to product. An important distinction we had was including extra security measures and steps.</p>
-            <p>Based off of the rough sketches, I was able to create more refined User Flows using Draw.io. For onboarding, I did not include the option to sign up using social media sites like Facebook or Twitter. Because security is a major selling point of this product, I didn’t want to risk users’ data being in danger from potential security risks from social media accounts. I wanted to create a contained environment in which we and only we would determine the safety, security, and privacy for our users.</p>
-            <p>All User Flows can be viewed at the link below.</p>
+          <div class="contents">
+            <section class="text">
+              <h3 class="subtitle">User Flows</h3>
+              <h4>How shall I accomplish tasks?</h4>
+              <p>With my User Stories, I now had specific lists of potential tasks to include in the cloud storage app. With an MVP in mind, I focused on high priority tasks first. I used pen and paper to sketch rough versions of User Flows. I also referenced User Flows I created from the Competitive Analysis to see how competitors mapped out tasks similar to those I wanted. The process for onboarding, uploading files, moving files, and sharing files isn’t that different from product to product. An important distinction we had was including extra security measures and steps.</p>
+              <p>Based off of the rough sketches, I was able to create more refined User Flows using Draw.io. For onboarding, I did not include the option to sign up using social media sites like Facebook or Twitter. Because security is a major selling point of this product, I didn’t want to risk users’ data being in danger from potential security risks from social media accounts. I wanted to create a contained environment in which we and only we would determine the safety, security, and privacy for our users.</p>
+              <p>All User Flows can be viewed at the link below.</p>
 
-            <a href="https://drive.google.com/open?id=1ROYBJaDwPh3C_GD1d6v9AWKpYtfa7c2Z" target="_blank">
-              <button type="button">User Flows</button>
-            </a>
-          </section>
+              <a href="https://drive.google.com/open?id=1ROYBJaDwPh3C_GD1d6v9AWKpYtfa7c2Z" target="_blank">
+                <button type="button">User Flows</button>
+              </a>
+            </section>
 
-          <div>
-            <figure>
-              <img class="half-width" src="images/safsav/UserFlows.jpg"></img>
-            </figure>
+            <div>
+              <figure>
+                <img class="half-width" src="images/safsav/UserFlows.jpg"></img>
+              </figure>
+            </div>
           </div>
         </section>
 
@@ -225,20 +242,22 @@
         </section>
 
         <section class="unit background">
-          <section class="text">
-            <h3 class="subtitle">Prototype 1</h3>
-            <h4>It's alive!</h4>
-            <p>I used InVision to create the first clickable Prototype using the digital Wireframes. This first Prototype had more functionality and screens than necessary for the MVP. However, designing these screens helped me to establish a layout that was consistent across the website. It wasn’t necessary to reiterate all of these screens in the later stages. The Prototype can be viewed here.</p>
+          <div class="contents">
+            <section class="text">
+              <h3 class="subtitle">Prototype 1</h3>
+              <h4>It's alive!</h4>
+              <p>I used InVision to create the first clickable Prototype using the digital Wireframes. This first Prototype had more functionality and screens than necessary for the MVP. However, designing these screens helped me to establish a layout that was consistent across the website. It wasn’t necessary to reiterate all of these screens in the later stages. The Prototype can be viewed here.</p>
 
-            <a href="https://invis.io/3RKORPUJ2MF" target="_blank">
-              <button type="button">InVision Prototype</button>
-            </a>
-          </section>
+              <a href="https://invis.io/3RKORPUJ2MF" target="_blank">
+                <button type="button">InVision Prototype</button>
+              </a>
+            </section>
 
-          <div>
-            <figure>
-              <img class="half-width" src="images/safsav/Prototype1.jpg"></img>
-            </figure>
+            <div>
+              <figure>
+                <img class="half-width" src="images/safsav/Prototype1.jpg"></img>
+              </figure>
+            </div>
           </div>
         </section>
 
@@ -273,18 +292,18 @@
         </section>
 
         <section class="unit">
+          <section class="text">
+            <h5 class="usability-change">Change 2
+              <br>Give color or visual cues to “Upload” button</h5>
+              <p>One user hesitated to click the “Upload” button, explaining that it appeared greyed out.</p>
+          </section>
+
           <div>
             <figure>
               <img class="half-width" src="images/safsav/UsabilityTest1-C2.jpg"></img>
               <figcaption>“Upload” button appears greyed out and inactive.</figcaption>
             </figure>
           </div>
-
-          <section class="text">
-            <h5 class="usability-change">Change 2
-              <br>Give color or visual cues to “Upload” button</h5>
-              <p>One user hesitated to click the “Upload” button, explaining that it appeared greyed out.</p>
-          </section>
         </section>
 
         <section class="unit">
@@ -306,8 +325,8 @@
           <section class="text">
             <h5 class="usability-change">Other changes made for the next iteration include:</h5>
             <ul class="usability-list">
-              <li>Add “X” to modal windows giving users a clear way to close them</li>
-              <li>Allow users to manually add new email addresses from “Share” modal window</li>
+              <li>+ Add “X” to modal windows giving users a clear way to close them</li>
+              <li>+ Allow users to manually add new email addresses from “Share” modal window</li>
             </ul>
           </section>
         </section>
@@ -315,7 +334,9 @@
 
 <!-- Visual Design -->
         <section class="phase">
-        <h2 class="title">Visual Design</h2>
+          <div class="title-box">
+            <h2 class="title">Visual Design</h2>
+          </div>
 
         <section class="unit">
           <section class="text">
@@ -331,49 +352,54 @@
           </div>
         </section>
 
-        <section class="unit background">
-          <section class="text">
-            <h3 class="subtitle">Logo</h3>
-            <p>Through ideation and sketching, I decided on the product name of SafSav. The cloud storage app will provide a safe way to save one’s data to the cloud. I worked on designing a logo representing both security and the function of saving data to the cloud. The name SafSav is balanced with a pair of three letter words both starting with “Sa-”. The “s” shape also has curves that would work well with the image of a cloud.</p>
+        <section class="background">
+          <div class="contents">
+            <section class="unit ">
 
-            <div>
-              <figure>
-                <img class="half-width" src="images/safsav/Logo-Sketches.jpg"></img>
-              </figure>
-            </div>
+              <section class="text">
+                <h3 class="subtitle">Logo</h3>
+                <p>Through ideation and sketching, I decided on the product name of SafSav. The cloud storage app will provide a safe way to save one’s data to the cloud. I worked on designing a logo representing both security and the function of saving data to the cloud. The name SafSav is balanced with a pair of three letter words both starting with “Sa-”. The “s” shape also has curves that would work well with the image of a cloud.</p>
 
-            <div>
-              <figure    class="logo-digital">
-                <img class="half-width" src="images/safsav/Logo-DigitalSketches.jpg"></img>
-                <figcaption>I decided on a logo mark combining a lock to indicate security and a cloud to indicate the product’s function.</figcaption>
-              </figure>
-            </div>
-          </section>
-        </section>
+                <div>
+                  <figure>
+                    <img class="half-width" src="images/safsav/Logo-Sketches.jpg"></img>
+                  </figure>
+                </div>
 
-        <section class="unit background">
-          <section class="text">
-            <p>This first logo was based off of Lato Black, a typeface with a thick stroke to convey strength and security. I therefore chose Lato Black as the main brand typeface and used all caps to further communicate strength. As I was also considering Montserrat ExtraBold, a senior designer noted that Montserrat was a stronger looking typeface. I therefore made a second logo based off of Montserrat ExtraBold. I had to redo the brand mark as well to match the stroke width of the new logo type.</p>
-          </section>
+                <div>
+                  <figure    class="logo-digital">
+                    <img class="half-width" src="images/safsav/Logo-DigitalSketches.jpg"></img>
+                    <figcaption>The logo mark represents security and a cloud to indicate the product’s function.</figcaption>
+                  </figure>
+                </div>
+              </section>
+            </section>
 
-          <div>
-            <figure>
-              <img class="half-width" src="images/safsav/Logo-Lato.jpg"></img>
-            </figure>
-            <figure>
-              <img class="half-width" src="images/safsav/Logo-Montserrat.jpg"></img>
-            </figure>
-          </div>
-        </section>
+            <section class="unit">
+              <section class="text">
+                <p>This first logo was based off of Lato Black, a typeface with a thick stroke to convey strength and security. I therefore chose Lato Black as the main brand typeface and used all caps to further communicate strength. As I was also considering Montserrat ExtraBold, a senior designer noted that Montserrat was a stronger looking typeface. I therefore made a second logo based off of Montserrat ExtraBold. I had to redo the brand mark as well to match the stroke width of the new logo type.</p>
+              </section>
 
-        <section class="unit background">
+              <div>
+                <figure>
+                  <img class="half-width" src="images/safsav/Logo-Lato.jpg"></img>
+                </figure>
+                <figure>
+                  <img class="half-width" src="images/safsav/Logo-Montserrat.jpg"></img>
+                </figure>
+              </div>
+            </section>
+
+            <section class="unit">
           <section class="text">
             <p>Raleway was originally chosen as the secondary typeface to complement Lato Black. The same senior designer who recommended Montserrat also suggested that I use a serifed font to provide more contrast with whichever san-serif I chose for the main typeface. I therefore went with my backup option of Merriweather.</p>
           </section>
 
           <div class="fonts">
-            <h3>Raleway</h3>
-            <h3>Merriweather</h3>
+            <h3 class="rale">Raleway</h3>
+            <h3 class="merri">Merriweather</h3>
+          </div>
+        </section>
           </div>
         </section>
 
@@ -395,24 +421,26 @@
         </section>
 
         <section class="unit background">
-          <section class="text center">
-            <h3 class="subtitle">Hi Fidelity Mockups 1</h3>
-            <h4>Starting to look like an actual website</h4>
-            <p>Using Figma, I was now able to apply the Style Guide to the user tested Wireframes.</p>
-          </section>
+          <div class="contents">
+            <section class="text center">
+              <h3 class="subtitle">Hi Fidelity Mockups 1</h3>
+              <h4>Starting to look like an actual website</h4>
+              <p>Using Figma, I was now able to apply the Style Guide to the user tested Wireframes.</p>
+            </section>
+          </div>
 
-          <div>
-            <h5 class="usability-change">Desktop Screens Version 1</h5>
-            <figure>
-              <img class="full-width" src="images/safsav/HifiMockup1-Desktop.png"></img>
-            </figure>
-          </div>
-          <div>
-            <h5 class="usability-change">Mobile Screens Version 1</h5>
-            <figure>
-              <img class="full-width" src="images/safsav/HifiMockup1-Mobile.png"></img>
-            </figure>
-          </div>
+            <div>
+              <h5 class="usability-change">Desktop Screens Version 1</h5>
+              <figure>
+                <img class="full-width" src="images/safsav/HifiMockup1-Desktop.png"></img>
+              </figure>
+            </div>
+            <div>
+              <h5 class="usability-change">Mobile Screens Version 1</h5>
+              <figure>
+                <img class="full-width" src="images/safsav/HifiMockup1-Mobile.png"></img>
+              </figure>
+            </div>
         </section>
 
         <section class="unit">
@@ -435,7 +463,9 @@
 
 <!-- Prototype / Testing -->
         <section class="phase">
-        <h2 class="title">Prototype / Testing</h2>
+          <div class="title-box">
+            <h2 class="title">Prototype / Testing</h2>
+          </div>
 
         <section class="unit">
               <section class="text center">
@@ -459,86 +489,88 @@
             </section>
 
         <section class="unit background">
-          <section class="text center">
-            <h3 class="subtitle">Usability Test 2</h3>
-            <p>Using the updated Mockup, I created a second Prototype in InVision. Once again, a Usability Test was conducted with three users. Though I expected this second round of testing to result in minor tweaks, some significant changes were made thanks to insightful feedback from test-takers and my lead designer. The full test report can be viewed here.</p>
+          <div class="contents">
+            <section class="text center">
+              <h3 class="subtitle">Usability Test 2</h3>
+              <p>Using the updated Mockup, I created a second Prototype in InVision. Once again, a Usability Test was conducted with three users. Though I expected this second round of testing to result in minor tweaks, some significant changes were made thanks to insightful feedback from test-takers and my lead designer. The full test report can be viewed here.</p>
 
-            <a href="https://docs.google.com/document/d/16pwh3taUtO5kfISoGYSQ7A-dhhmm9CrYXRg6CrmMkPs/edit?usp=sharing" target="_blank">
-              <button type="button">Usability Report</button>
-            </a>
-          </section>
-        </section>
+              <a href="https://docs.google.com/document/d/16pwh3taUtO5kfISoGYSQ7A-dhhmm9CrYXRg6CrmMkPs/edit?usp=sharing" target="_blank">
+                <button type="button">Usability Report</button>
+              </a>
+            </section>
 
-        <section class="unit background">
-          <section class="text">
-            <h5 class="usability-change">Change 1
-              <br>Simplify the Sign Up Process</h5>
-            <p>All three test-takers commented on the multiple steps of the onboarding process. I followed a user’s suggestion to make a user’s email address serve as their username. This helped me to eliminate a step in the sign up process. More guidance was add for users via instructions. Back arrows were added and “Submit” was changed to “Next” to increase user-friendliness. All modal windows were moved to the “New Account” screen to make the process more unified.</p>
-          </section>
 
-          <div>
-            <figure>
-              <img class="half-width" src="images/safsav/UsabilityTest2-C1a.jpg"></img>
-              <figcaption>The sign up process used to start on the homepage.</figcaption>
-            </figure>
-            <figure>
-              <img class="half-width" src="images/safsav/UsabilityTest2-C1b.jpg"></img>
-              <figcaption>I moved the entire sign up process to the “New Account” page.</figcaption>
-            </figure>
+            <section class="unit">
+              <section class="text">
+                <h5 class="usability-change">Change 1
+                  <br>Simplify the Sign Up Process</h5>
+                <p>All three test-takers commented on the multiple steps of the onboarding process. I followed a user’s suggestion to make a user’s email address serve as their username. This helped me to eliminate a step in the sign up process. More guidance was add for users via instructions. Back arrows were added and “Submit” was changed to “Next” to increase user-friendliness. All modal windows were moved to the “New Account” screen to make the process more unified.</p>
+              </section>
+
+              <div>
+                <figure>
+                  <img class="half-width" src="images/safsav/UsabilityTest2-C1a.jpg"></img>
+                  <figcaption>The sign up process used to start on the homepage.</figcaption>
+                </figure>
+                <figure>
+                  <img class="half-width" src="images/safsav/UsabilityTest2-C1b.jpg"></img>
+                  <figcaption>I moved the entire sign up process to the “New Account” page.</figcaption>
+                </figure>
+              </div>
+            </section>
+
+            <section class="unit">
+              <section class="text">
+                <h5 class="usability-change">Change 2
+                  <br>Redo the “Select Recipients” Modal</h5>
+                <p>A couple of users experienced confusion with the modal window for selecting recipients with whom to share files. Though I addressed this problem after the first user tests, it seems my first solution needed work. The new modal has only one input field making it clear to users where to click.</p>
+              </section>
+
+              <div>
+                <figure>
+                  <img class="half-width" src="images/safsav/UsabilityTest2-C2a.jpg"></img>
+                  <figcaption>Old Modal Window</figcaption>
+                </figure>
+                <figure>
+                  <img class="half-width" src="images/safsav/UsabilityTest2-C2b.jpg"></img>
+                  <figcaption>New Modal Window</figcaption>
+                </figure>
+              </div>
+            </section>
+
+            <section class="unit">
+              <section class="text">
+                <h5 class="usability-change">Change 3
+                  <br>Change Navbar Links</h5>
+                <p>Text color was changed on the navbar and a horizontal line was added to let users know what screen is currently active.</p>
+              </section>
+
+              <div>
+                <figure>
+                  <img class="half-width" src="images/safsav/UsabilityTest2-C3a.jpg"></img>
+                  <figcaption>Old Navbar</figcaption>
+                </figure>
+                <figure>
+                  <img class="half-width" src="images/safsav/UsabilityTest2-C3b.jpg"></img>
+                  <figcaption>New Navbar</figcaption>
+                </figure>
+              </div>
+            </section>
+
+            <section class="unit">
+              <section class="text">
+                <h5 class="usability-change">Change 4
+                  <br>Add Overlays Behind Modals</h5>
+                <p>White transparent overlays were added behind all modal windows, clarifying to users where they can click</p>
+              </section>
+              <div>
+                <figure>
+                  <img class="half-width" src="images/safsav/UsabilityTest2-C4.jpg"></img>
+                  <figcaption>White overlays behind modal windows</figcaption>
+                </figure>
+              </div>
+            </section>
           </div>
-        </section>
-
-        <section class="unit background">
-          <div>
-            <figure>
-              <img class="half-width" src="images/safsav/UsabilityTest2-C2a.jpg"></img>
-              <figcaption>Old Modal Window</figcaption>
-            </figure>
-            <figure>
-              <img class="half-width" src="images/safsav/UsabilityTest2-C2b.jpg"></img>
-              <figcaption>New Modal Window</figcaption>
-            </figure>
-          </div>
-
-          <section class="text">
-            <h5 class="usability-change">Change 2
-              <br>Redo the “Select Recipients” Modal</h5>
-            <p>A couple of users experienced confusion with the modal window for selecting recipients with whom to share files. Though I addressed this problem after the first user tests, it seems my first solution needed work. The new modal has only one input field making it clear to users where to click.</p>
-          </section>
-        </section>
-
-        <section class="unit background">
-          <section class="text">
-            <h5 class="usability-change">Change 3
-              <br>Change Navbar Links</h5>
-            <p>Text color was changed on the navbar and a horizontal line was added to let users know what screen is currently active.</p>
-          </section>
-
-          <div>
-            <figure>
-              <img class="half-width" src="images/safsav/UsabilityTest2-C3a.jpg"></img>
-              <figcaption>Old Navbar</figcaption>
-            </figure>
-            <figure>
-              <img class="half-width" src="images/safsav/UsabilityTest2-C3b.jpg"></img>
-              <figcaption>New Navbar</figcaption>
-            </figure>
-          </div>
-        </section>
-
-        <section class="unit background">
-          <div>
-            <figure>
-              <img class="half-width" src="images/safsav/UsabilityTest2-C4.jpg"></img>
-              <figcaption>White overlays behind modal windows</figcaption>
-            </figure>
-          </div>
-
-          <section class="text">
-            <h5 class="usability-change">Change 4
-              <br>Add Overlays Behind Modals</h5>
-            <p>White transparent overlays were added behind all modal windows, clarifying to users where they can click</p>
-          </section>
         </section>
 
         <section class="unit">
@@ -562,7 +594,9 @@
 
 <!-- Conclusion -->
         <section class="phase">
-        <h2 class="title">Conclusion</h2>
+          <div class="title-box">
+            <h2 class="title">Conclusion</h2>
+          </div>
 
         <section class="unit">
           <section class="text center">
@@ -590,6 +624,13 @@
             </section>
         </section>
 
+        <div>
+          <figure>
+            <img class="full-width" src="images/safsav/ScreenEvolution.jpg"></img>
+            <figcaption class="final-caption">The evolution of three different screens</figcaption>
+          </figure>
+        </div>
+
         <section class="unit">
           <section class="text">
             <h5>Mobile App?</h5>
@@ -601,13 +642,6 @@
             <p>The initial project brief was a bit overwhelming in that it was an open-ended project with no clear target market. Starting with the first User Surveys, user input helped to narrow the scope of the project and point me toward data security. The rounds of Usability Testing revealed tasks, instructions, or processes that were not clear to users. This helped me to see and realize things I could not surmise on my own. The Preference Test helped me to make design decisions that were challenging to make based solely on my opinion. In a couple of Preference Tests, users made choices different than what I would make, but there was such a statistical consensus that it made it clear that I should use the user-prefered choice.</p>
           </section>
         </section>
-
-        <div>
-          <figure>
-            <img class="full-width" src="images/safsav/FinalPrototype.jpg"></img>
-            <figcaption>The evolution of three different screens</figcaption>
-          </figure>
-        </div>
 
         <section class="unit">
           <section class="text center">
@@ -641,13 +675,13 @@
 
 <!-- Footer -->
       <footer>
-      <ul
-        <li><a href="mailto:lucianchung@gmail.com"><i class="fas fa-envelope"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/lucianchung/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-        <li><a href="https://dribbble.com/lucianchung" target="_blank"><i class="fab fa-dribbble"></i></a></li>
-        <li><a href="https://www.instagram.com/lucianchungart/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-        <li><a href="https://github.com/lucianchung" target="_blank"><i class="fab fa-github"></i></a></li>
-      </ul>
-    </footer>
+        <div class="footer-contents">
+          <a href="mailto:lucianchung@gmail.com"><img class="icon" src="images/icon-mail.png"></a>
+          <a href="https://www.linkedin.com/in/lucianchung/" target="_blank"><img class="icon" src="images/icon-LinkedIn.png"></a>
+          <a href="https://dribbble.com/lucianchung" target="_blank"><img class="icon" src="images/icon-dribbble.png"></a>
+          <a href="https://www.instagram.com/lucianchungart/" target="_blank"><img class="icon" src="images/icon-instagram.png"></a>
+          <a href="https://github.com/lucianchung" target="_blank"><img class="icon" src="images/icon-github.png"></a>
+        </div>
+      </footer>
     </container>
 </html>

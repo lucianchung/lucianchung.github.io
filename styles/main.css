@@ -1,0 +1,318 @@
+/* Typography */
+h1, h2, h3, h4, h5, p, a, li, figcaption {
+  color: #444444;
+  font-family: "Raleway";
+  text-align: center;
+}
+
+p {
+  line-height: 1.6em;
+  padding: 0 0 10px 0;
+  /* margin: auto;
+  text-align: center;
+  width: 350px; */
+}
+
+h1 {
+  font-size: 4em;
+  padding-top: 50px;
+}
+
+h2 {
+  font-size: 2.8em;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 2em;
+  margin: 30px 0 10px 0;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 1.4em;
+  margin-top: -10px;
+}
+
+h5 {
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #65353A;
+}
+
+a:hover {
+  color: #B22836;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+figcaption {
+  margin-top: 10px;
+}
+
+/* Elements unique to Homepage (index.html) */
+
+.self-intro {
+  font-size: 19px;
+  margin-top: 100px;
+}
+
+.section-title {
+  font-size: 32px;
+}
+
+#design-section {
+  margin-top: 300px;
+}
+
+#illustration-section {
+  margin-top: 100px;
+}
+
+/* Structure */
+
+body {
+  margin: auto;
+  width: 350px;
+}
+
+.navbar {
+  background-color: #ffffff;
+  margin: auto;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.navbar-contents {
+  border-bottom: 1px solid #444444;
+  height: 50px;
+  margin: auto;
+  width: 350px;
+}
+
+.logo {
+  height: 30px;
+  float: left;
+  padding: 10px 10px 10px 0;
+}
+.navbar-links {
+  float: right;
+  height: 50px;
+}
+
+.navbar-links a {
+  color: #E53345;
+  display: block;
+  float: right;
+  font-weight: 700;
+  padding: 15px 0 15px 15px;
+  text-align: center;
+}
+
+.navbar-links a:link {
+  color: #E53345;
+}
+
+a:visited {
+  color: #E53345;
+}
+
+a:hover {
+  color: #B22836;
+}
+
+
+button {
+  background-color: #E53345;
+  border: none;
+  border-radius: 6px;
+  color: #ffffff;
+  display: flex;
+  font-family: "Raleway";
+  font-weight: 700;
+  height: 36px;
+  justify-content: center;
+  margin: 20px auto;
+  text-align: center;
+  text-transform: uppercase;
+  width: 140px;
+}
+
+.full-width {
+  left: 50%;
+  right: 50%;
+  margin: 20px -50vw;
+  position: relative;
+  width: 100vw;
+}
+
+.image-border {
+  border: 1px solid #c4c4c4;
+}
+
+.roles {
+  margin-bottom: 80px;
+}
+
+.tools {
+  border-top: 1px solid #444444;
+}
+
+.title-box {
+  background-color: #B22836;
+  display: table;
+  height: 130px;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-top: 80px;
+  position: relative;
+  width: 100vw;
+}
+
+.title {
+  color: #ffffff;
+  display: table-cell;
+  vertical-align: middle;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+  position: relative;
+  width: 100vw;
+}
+
+.padding-top {
+  padding-top: 10px;
+}
+
+.half-width {
+  display: block;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 40px auto 0 auto;
+  width: 350px;
+}
+
+figure {
+  margin: 0;
+}
+
+.unit {
+  margin-bottom: 50px;
+}
+
+.background {
+  background-color: #f0f0f0;
+  display: table;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  position: relative;
+  padding: 10px 0 40px 0;
+  width: 100vw;
+}
+
+.contents {
+  margin: auto;
+  text-align: center;
+  width: 350px;
+}
+
+.solution {
+  margin-top: -80px;
+}
+
+.percentages {
+  background-color: #ffffff;
+  border: 6px solid #B22836;
+}
+
+.percentages h3, .percentages h2, .percentages p {
+    color: #B22836;
+}
+
+.percentages h2 {
+  margin: 0;
+}
+
+.percentages p {
+  margin: 0 0 20px 0;
+}
+
+.persona {
+  display: block;
+  margin: 0 auto;
+  width: 350px;
+}
+
+.simon {
+  display: none;
+}
+
+.I-want h3, .I-want li {
+  color: #B22836;
+}
+
+.I-want li {
+  line-height: 1.6em;
+}
+
+.usability-list {
+  margin-top: 20px;
+}
+
+.rale {
+  text-transform: capitalize;
+}
+
+.merri {
+  font-family: "Merriweather";
+  text-transform: capitalize;
+}
+
+.usability-change {
+  border-top: 1px solid #B22836;
+  padding-top: 20px;
+  padding-bottom: -10px;
+  margin-bottom: -10px;
+}
+
+.final-caption {
+  margin-top: -10px;
+}
+
+.footer-contents {
+  background-color: #ffffff;
+  border-top: 1px solid #444444;
+  bottom: 0;
+  height: 70px;
+  margin: auto;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+}
+
+.icon {
+  padding: 20px 15px;
+  text-align: center;
+  width: 30px;
+}
