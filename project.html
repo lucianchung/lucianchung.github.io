@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Lucian Chung | SafSav</title>
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/project1.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
-    </head>
+  </head>
 
     <div class=container>
 <!-- Navbar -->
@@ -14,7 +15,7 @@
         <div class="navbar-contents">
           <a href="index.html"><img class="logo" src="/images/Logo-Mark-red-100px.png" alt="Lucian Chung Logo"></img></a>
           <div class="navbar-links">
-            <a href="">about</a>
+            <a href="about.html">about</a>
             <a href="#illustration-section">illustration</a>
             <a href="#design-section">design</a>
           </div>
@@ -22,56 +23,57 @@
       </nav>
 
 <!-- Header / Hero Portion -->
-      <header>
-      <h1>SafSav</h1>
-      <p>I was tasked with designing a cloud storage app with only basic requirements and guidelines. Going through the design process step by step, my final product was SafSav - a cloud storage website with enhanced security and privacy geared toward tech professionals.
-      </p>
-      <a href="https://invis.io/G8LRTMODTVF" target="_blank">
-        <button type="button">Invision Prototype</button>
-      </a>
-      <figure class="hero-screen">
-        <img class="full-width" src="images/safsav/Hero-Screens-Home-1440.jpg"></img>
-      </figure>
+      <header class="hero">
+        <section class="summary">
+          <h1>SafSav</h1>
+          <p class="align-center">I was tasked with designing a cloud storage app with only basic requirements and guidelines. Going through the design process step by step, my final product was SafSav - a cloud storage website with enhanced security and privacy geared toward tech professionals.</p>
+          <a href="https://invis.io/G8LRTMODTVF" target="_blank">
+            <button type="button">Invision Prototype</button>
+          </a>
+          <figure class="hero-screen">
+            <img class="full-width" src="images/safsav/Hero-Screens-Home-1440.jpg" alt="SafSav screens"></img>
+          </figure>
+        </section>
 
-      <div class="roles">
-        <h3>I Performed</h3>
-        <ul>
-          <li>User Research</li>
-          <li>Competitor Research</li>
-          <li>Wireframe Creation</li>
-          <li>Prototyping</li>
-          <li>Usability Testing</li>
-          <li>Logo and Brand Creation</li>
-          <li>Preference Testing</li>
-        </ul>
-      </div>
-      <div class="tools">
-        <h3>I Used</h3>
-        <ul>
-          <li>Pen and Paper</li>
-          <li>Adobe Illustrator</li>
-          <li>Adobe Photoshop</li>
-          <li>Sketch</li>
-          <li>Figma</li>
-          <li>InVision</li>
-          <li>Maze.design</li>
-          <li>Usabilityhub.com</li>
-          <li>Draw.io</li>
-          <li>Google Drive</li>
-        </ul>
-      </div>
-    </header>
+        <div class="roles" "content-half">
+          <h3>I Performed</h3>
+          <ul>
+            <li>User Research</li>
+            <li>Competitor Research</li>
+            <li>Wireframe Creation</li>
+            <li>Prototyping</li>
+            <li>Usability Testing</li>
+            <li>Logo and Brand Creation</li>
+            <li>Preference Testing</li>
+          </ul>
+        </div>
+        <div class="tools" "content-half">
+          <h3>I Used</h3>
+          <ul>
+            <li>Pen and Paper</li>
+            <li>Adobe Illustrator</li>
+            <li>Adobe Photoshop</li>
+            <li>Sketch</li>
+            <li>Figma</li>
+            <li>InVision</li>
+            <li>Maze.design</li>
+            <li>Usabilityhub.com</li>
+            <li>Draw.io</li>
+            <li>Google Drive</li>
+          </ul>
+        </div>
+      </header>
 
 <!-- Body -->
       <body>
 
 <!-- Problem and Solution -->
-        <section class="phase">
+        <section class="problem-solution">
         <div class="problem unit">
-          <div class="title-box">
+          <div class="title-box title-box-problem title-box-half">
             <h2 class="title">Problem</h2>
           </div class>
-          <section class="background">
+          <section class="background background-problem">
             <div class="contents">
               <p>I was requested by a client to target an unreached portion of the cloud storage market by designing a product that includes the features of saving web content, organizing content, creating content, and uploading files. I was also asked to consider including collaborative features like sharing single items, sharing groups of items, and connecting with other users for real-time collaboration in documents.</p>
             </div>
@@ -79,7 +81,7 @@
         </div>
 
         <div class="solution">
-          <div class="title-box">
+          <div class="title-box title-box-solution title-box-half">
             <h2 class="title">Solution</h2>
           </div>
           <p class="padding-top">SafSav is a cloud storage app with security and privacy. User research found that tech professionals desire a product that will allow them to encrypt data that they upload and keep it private from the host company. SafSav does exactly that while also performing the expected functions of a cloud storage app including uploading files, organizing files, sharing files, and more. SafSav’s design became more polished, clear, and user-friendly as it went through multiple iterations based on two rounds of Usability Testing, Preference Testing, and feedback from senior designers. </p>
@@ -94,75 +96,74 @@
       </section>
 
 <!-- Discovery and Research -->
-        <section class="phase">
+
           <div class="title-box">
             <h2 class="title">Discovery and Research</h2>
           </div>
-        <section class="unit">
-          <section class="text">
-            <h3 class="subtitle">Competitive Analysis</h3>
-            <p> Google Drive and Dropbox are big names in cloud storage while Pinterest has carved out its own niche by providing something unique. I performed a SWOT analysis of these three competitors.</p>
-            <p>Google Drive and Dropbox both provide the standard features that I have been tasked with including in the app. Both products also feature a simple, minimal, text-based UI that is easy to understand and navigate. I took note of their User Flows for basic actions; they are straight-forward and not too different.</p>
-            <p>The full SWOT analysis and all competitor User Flows are available at the link below.</p>
 
-            <a href="https://docs.google.com/document/d/1SEoIhxOc1mi8D8FVeixz6wvPJ3p83ZZASQKICAKTl54/edit?usp=sharing" target="_blank">
-              <button type="button">Link</button>
-            </a>
-          </section>
+        <section class="phase disc-and-research">
+            <section class="text comp-analysis-text">
+              <h3 class="subtitle">Competitive Analysis</h3>
+              <p> Google Drive and Dropbox are big names in cloud storage while Pinterest has carved out its own niche by providing something unique. I performed a SWOT analysis of these three competitors.</p>
+              <p>Google Drive and Dropbox both provide the standard features that I have been tasked with including in the app. Both products also feature a simple, minimal, text-based UI that is easy to understand and navigate. I took note of their User Flows for basic actions; they are straight-forward and not too different.</p>
+              <p>The full SWOT analysis and all competitor User Flows are available at the link below.</p>
 
-          <div>
-            <figure>
-              <img class="half-width" src="images/safsav/CompetitiveAnalysis.jpg"></img>
-            </figure>
-          </div>
-        </section>
-
-        <section class="unit background">
-          <div class="contents">
-            <section class="text">
-              <h3 class="subtitle">User Research</h3>
-              <h4>What the user wants, the user gets</h4>
-              <p>Next I sent out a User Survey to determine what cloud storage features users want in a product. Among other questions, I asked users to rate the desirability of features the client proposed at the start of the project. It turns out users didn’t necessarily want all of these features. With creating a manageable MVP as a goal, I decided to focus on the main features desired by users.</p>
-
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfycFzlR7G7wt6S1Pv_2COq9WYEvMtfuQp4tXM6rGdEuH4R2Q/viewanalytics" target="_blank">
-                <button type="button">User Survey</button>
+              <a href="https://docs.google.com/document/d/1SEoIhxOc1mi8D8FVeixz6wvPJ3p83ZZASQKICAKTl54/edit?usp=sharing" target="_blank">
+                <button type="button">Link</button>
               </a>
-
-              <p>Interestingly enough, 60% of survey respondents came from a tech background (IT, Web Development, Network Administration, Security Specialist…), and when asked about what additional features they wanted in cloud app storage, several responded with comments about data encryption, privacy, and other security concerns.</p>
-              <p>With this product having no target audience at this point in time, it seemed like a great opportunity to focus on tech professionals who very clearly stated their desire for a cloud storage service with security and privacy. With this research, I now had a clearer direction and vision for the product. The full User Survey results can be seen here.</p>
             </section>
 
-            <aside class="percentages">
-              <h3>Desired Cloud Storage Features</h3>
-              <h2>52%</h2>
-              <p>want to organize content into groups</p>
-              <h2>72%</h2>
-              <p>want to upload files</p>
-              <h2>80%</h2>
-              <p>want to share single files</p>
-              <h2>70%</h2>
-              <p>want to share multiple files</p>
-            </aside>
-          </div>
-        </section>
 
-        <section class="unit">
-          <section class="text center">
-            <h3 class="subtitle">User Personas</h3>
-            <h4>Putting a name and face to statistics</h4>
-            <p>Now that I had determined a target audience for the product- tech professionals who want security - I focused user research on this group.<p>
+            <figure class="comp-analysis-img">
+              <img class="half-width" src="images/safsav/CompetitiveAnalysis.jpg"></img>
+            </figure>
+
+          <section class="unit background">
+            <div class="contents">
+              <section class="text user-research-text">
+                <h3 class="subtitle">User Research</h3>
+                <h4>What the user wants, the user gets</h4>
+                <p>Next I sent out a User Survey to determine what cloud storage features users want in a product. Among other questions, I asked users to rate the desirability of features the client proposed at the start of the project. It turns out users didn’t necessarily want all of these features. With creating a manageable MVP as a goal, I decided to focus on the main features desired by users.</p>
+
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfycFzlR7G7wt6S1Pv_2COq9WYEvMtfuQp4tXM6rGdEuH4R2Q/viewanalytics" target="_blank">
+                  <button type="button">User Survey</button>
+                </a>
+
+                <p>Interestingly enough, 60% of survey respondents came from a tech background (IT, Web Development, Network Administration, Security Specialist…), and when asked about what additional features they wanted in cloud app storage, several responded with comments about data encryption, privacy, and other security concerns.</p>
+                <p>With this product having no target audience at this point in time, it seemed like a great opportunity to focus on tech professionals who very clearly stated their desire for a cloud storage service with security and privacy. With this research, I now had a clearer direction and vision for the product. The full User Survey results can be seen here.</p>
+              </section>
+
+              <aside class="percentages">
+                <h3>Desired Cloud Storage Features</h3>
+                <h2>52%</h2>
+                <p>want to organize content into groups</p>
+                <h2>72%</h2>
+                <p>want to upload files</p>
+                <h2>80%</h2>
+                <p>want to share single files</p>
+                <h2>70%</h2>
+                <p>want to share multiple files</p>
+              </aside>
+            </div>
           </section>
 
-          <div class="user-personas">
-            <figure>
-              <img class="persona bryce" src="images/safsav/UserPersona-Bryce.jpg"></img>
-            </figure>
-            <figure>
-              <img class="persona simon" src="images/safsav/UserPersona-Simon.jpg"></img>
-            </figure>
-          </div>
+          <section class="unit">
+            <section class="text center user-persona-text">
+              <h3 class="subtitle">User Personas</h3>
+              <h4>Putting a name and face to statistics</h4>
+              <p class="align-center">Now that I had determined a target audience for the product- tech professionals who want security - I focused user research on this group.<p>
+            </section>
+
+            <div class="user-personas">
+              <figure>
+                <img class="persona bryce" src="images/safsav/UserPersona-Bryce.jpg"></img>
+              </figure>
+              <figure>
+                <img class="persona simon" src="images/safsav/UserPersona-Simon.jpg"></img>
+              </figure>
+            </div>
+          </section>
         </section>
-      </section>
 
 <!-- Information Architecture -->
         <section class="phase">
@@ -187,14 +188,11 @@
             <ul>
               <li>+ cross-platform functionality</li>
               <li>+ data encryption</li>
-              <li>+ to delete a single file</li>
-              <li>+ to download multiple files from the app</li>
-              <li>+ to download single files from the app</li>
+              <li>+ to delete files</li>
+              <li>+ to download files from the app</li>
               <li>+ to organize files into folders</li>
-              <li>+ to share multiple files with others</li>
-              <li>+ to share single files with others</li>
+              <li>+ to share files with others</li>
               <li>+ to upload documents from a computer</li>
-              <li>+ to upload photos from a computer</li>
               <li>+ to upload photos from a mobile device</li>
             </ul>
           </aside>
@@ -264,7 +262,7 @@
         <section class="unit">
           <section class="text center">
             <h3 class="subtitle">Usability Test 1</h3>
-            <p>I used the first Prototype in a Usability Test with three different users. Users were given three to four tasks, and they provided invaluable feedback for how to improve clarity and user-friendliness for the product. The full Usability Test Script, Notes, and Test Report can be viewed at the link below, but some changes made based on the tests are detailed below.</p>
+            <p class="align-center">I used the first Prototype in a Usability Test with three different users. Users were given three to four tasks, and they provided invaluable feedback for how to improve clarity and user-friendliness for the product. The full Usability Test Script, Notes, and Test Report can be viewed at the link below, but some changes made based on the tests are detailed below.</p>
 
             <a href="https://docs.google.com/document/d/1KBRqL-J3LG2cUOYZvENyEbafqsxEMHxSr-_qfSn11Cc/edit?usp=sharing" target="_blank">
               <button type="button">Usability Report</button>
@@ -425,7 +423,7 @@
             <section class="text center">
               <h3 class="subtitle">Hi Fidelity Mockups 1</h3>
               <h4>Starting to look like an actual website</h4>
-              <p>Using Figma, I was now able to apply the Style Guide to the user tested Wireframes.</p>
+              <p class="align-center">Using Figma, I was now able to apply the Style Guide to the user tested Wireframes.</p>
             </section>
           </div>
 
@@ -471,7 +469,7 @@
               <section class="text center">
                 <h3 class="subtitle">Hi Fidelity Mockups 2</h3>
                 <h4>Have to admit it’s getting better...</h4>
-                <p>A senior designer reviewed the first Hi Fi Mockups and suggested some revisions. I added more yellow / orange to the overall design via borders on modal windows and more line illustrations. I adjusted the logo and headline size on the homepage to make the headline more prominent. I also added drop shadows to modal windows to help separate them from the backgrounds, and I changed the appearance of the dashboard file thumbnails and filenames to look more realistic. Lastly, I applied the changes to reflect the most popular choices from the three Preference Tests.</p>
+                <p class="align-center">A senior designer reviewed the first Hi Fi Mockups and suggested some revisions. I added more yellow / orange to the overall design via borders on modal windows and more line illustrations. I adjusted the logo and headline size on the homepage to make the headline more prominent. I also added drop shadows to modal windows to help separate them from the backgrounds, and I changed the appearance of the dashboard file thumbnails and filenames to look more realistic. Lastly, I applied the changes to reflect the most popular choices from the three Preference Tests.</p>
               </section>
 
               <div>
@@ -492,7 +490,7 @@
           <div class="contents">
             <section class="text center">
               <h3 class="subtitle">Usability Test 2</h3>
-              <p>Using the updated Mockup, I created a second Prototype in InVision. Once again, a Usability Test was conducted with three users. Though I expected this second round of testing to result in minor tweaks, some significant changes were made thanks to insightful feedback from test-takers and my lead designer. The full test report can be viewed here.</p>
+              <p class="align-center">Using the updated Mockup, I created a second Prototype in InVision. Once again, a Usability Test was conducted with three users. Though I expected this second round of testing to result in minor tweaks, some significant changes were made thanks to insightful feedback from test-takers and my lead designer. The full test report can be viewed here.</p>
 
               <a href="https://docs.google.com/document/d/16pwh3taUtO5kfISoGYSQ7A-dhhmm9CrYXRg6CrmMkPs/edit?usp=sharing" target="_blank">
                 <button type="button">Usability Report</button>
@@ -576,7 +574,7 @@
         <section class="unit">
           <section class="text center">
             <h3 class="subtitle">Final Prototype</h3>
-            <p>The latest and greatest SafSav prototype can be found here.</p>
+            <p class="align-center">The latest and greatest SafSav prototype can be found here.</p>
 
             <a href="https://invis.io/G8LRTMODTVF" target="_blank">
               <button type="button">InVision Prototype</button>
@@ -600,27 +598,27 @@
 
         <section class="unit">
           <section class="text center">
-            <p>After hours, days, and weeks of research, sketching, designing, testing, reiterating, and more testing, I have come to the current version of SafSav.</p>
+            <p class="align-center">After hours, days, and weeks of research, sketching, designing, testing, reiterating, and more testing, I have come to the current version of SafSav.</p>
           </section>
         </section>
 
         <section class="unit">
           <section class="text">
-            <h5>What Worked?</h5>
-            <p>RESEARCH
-              <br>User Surveys proved to be very beneficial in providing a focus on security for this product. Researching User Flows for competitors was also helpful in guiding me on what screens and modal windows to create.</p>
+            <h4 class="conclusion-title">What Worked?</h4>
+            <h6>RESEARCH</h6>
+              <p>User Surveys proved to be very beneficial in providing a focus on security for this product. Researching User Flows for competitors was also helpful in guiding me on what screens and modal windows to create.</p>
           </section>
 
           <section class="text">
-            <h5>What kind of worked?</h5>
-            <p>BRANDING
-              <br>Though I made a change in brand typefaces and the logo by association, the overall look and color scheme of the brand identity did not change much. Users responded positively to the line illustrations of the final design, but one user commented on how they felt fun, which is not fully in line (though not necessarily against) the desired image of security, safety, and professionalism. Feedback from senior designers, Usability Tests, and Preference Tests helped me to fine-tune visuals and specific elements of UIs.
+            <h4 class="conclusion-title">What kind of worked?</h4>
+            <h6>BRANDING</h6>
+              <p>Though I made a change in brand typefaces and the logo by association, the overall look and color scheme of the brand identity did not change much. Users responded positively to the line illustrations of the final design, but one user commented on how they felt fun, which is not fully in line (though not necessarily against) the desired image of security, safety, and professionalism. Feedback from senior designers, Usability Tests, and Preference Tests helped me to fine-tune visuals and specific elements of UIs.
             </section>
 
             <section class="text">
-              <h5>What didn’t work?</h5>
-              <p>CONTENT STRATEGY
-                <br>Perhaps the biggest changes made throughout the design process were to the sign up, upload, and sharing processes. As each of these processes has multiple steps including typing in information and selecting items, there were several places and opportunities for users to be confused. A more in-depth study of how competitors conduct similar processes could have been done, but Usability Testing was the best and most direct way to determine what worked and didn’t work for this particular product.isuals and specific elements of UIs.
+              <h4 class="conclusion-title">What didn’t work?</h4>
+              <h6>CONTENT STRATEGY</h6>
+                <p>Perhaps the biggest changes made throughout the design process were to the sign up, upload, and sharing processes. As each of these processes has multiple steps including typing in information and selecting items, there were several places and opportunities for users to be confused. A more in-depth study of how competitors conduct similar processes could have been done, but Usability Testing was the best and most direct way to determine what worked and didn’t work for this particular product.isuals and specific elements of UIs.
             </section>
         </section>
 
@@ -633,20 +631,20 @@
 
         <section class="unit">
           <section class="text">
-            <h5>Mobile App?</h5>
+            <h4 class="conclusion-title">Mobile App?</h4>
             <p>Though I am satisfied with the testing of the Desktop version of SafSav, I was unable to test the Mobile version. I made edits to the Mobile version based on changes made to the Desktop version, but it is entirely possible that mobile users will have a different experience and different preferences. I would conduct Usability Tests using the Mobile version if I had more time on this project.</p>
           </section>
 
           <section class="text">
-            <h5>User input helps. A lot.</h5>
+            <h4 class="conclusion-title">User input helps. A lot.</h4>
             <p>The initial project brief was a bit overwhelming in that it was an open-ended project with no clear target market. Starting with the first User Surveys, user input helped to narrow the scope of the project and point me toward data security. The rounds of Usability Testing revealed tasks, instructions, or processes that were not clear to users. This helped me to see and realize things I could not surmise on my own. The Preference Test helped me to make design decisions that were challenging to make based solely on my opinion. In a couple of Preference Tests, users made choices different than what I would make, but there was such a statistical consensus that it made it clear that I should use the user-prefered choice.</p>
           </section>
         </section>
 
         <section class="unit">
           <section class="text center">
-            <h5>Final thoughts</h5>
-            <p>It was both challenging and fun to design SafSav from start to (sort of) finish (is a living app ever truly finished?). As a task-oriented introvert, it is natural for me to work in solitude on meticulous design work, but turning to users for input throughout the process was invaluable in forcing me to step back, breath, and hear perspectives and opinions that differ from my own. Likewise, the feedback from more experienced designers was also incredibly helpful. I am certain that moving forward and working on future projects, I will continue to learn the importance of and experience the benefit of outside perspectives.</p>
+            <h4 class="conclusion-title">Final thoughts</h4>
+            <p class="align-center">It was both challenging and fun to design SafSav from start to (sort of) finish (is a living app ever truly finished?). As a task-oriented introvert, it is natural for me to work in solitude on meticulous design work, but turning to users for input throughout the process was invaluable in forcing me to step back, breath, and hear perspectives and opinions that differ from my own. Likewise, the feedback from more experienced designers was also incredibly helpful. I am certain that moving forward and working on future projects, I will continue to learn the importance of and experience the benefit of outside perspectives.</p>
           </section>
         </section>
 

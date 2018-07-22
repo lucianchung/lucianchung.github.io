@@ -1,10 +1,13 @@
+/* red: #E53345 */
+/* dark red: #B22836 */
+
 /* Typography */
 
 * {
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, p, a, li, figcaption, button {
+h1, h2, h3, h4, h5, h6, p, a, li, figcaption, button {
   color: #444444;
   font-family: "Raleway";
   text-align: center;
@@ -12,44 +15,60 @@ h1, h2, h3, h4, h5, p, a, li, figcaption, button {
 
 html {
   font-size: 10px;
+  margin: auto;
 }
 
-.container {
-  margin: 0 auto;
-  width: 85%;
+body {
+  margin: auto;
+  min-width: 32px;
 }
 
 p {
   font-size: 1.6rem;
   line-height: 1.6em;
-  padding: 0 0 10px 0;
+  max-width: 60rem;
+  padding: 2rem;
+  text-align: left;
 }
 
 h1 {
   font-size: 4.5rem;
-  padding-top: 50px;
+  font-weight: 900;
+  margin: 10rem auto 2rem auto;
 }
 
 h2 {
   font-size: 3.2em;
+  font-weight: 700;
+  padding: 5rem auto;
   text-transform: uppercase;
 }
 
 h3 {
   font-size: 2.24em;
+  font-weight: 700;
   margin: 3rem 0 1rem 0;
   text-transform: uppercase;
 }
 
 h4 {
   font-size: 1.8rem;
-  margin-top: -1rem;
+  margin-top: -.5rem;
 }
 
 h5 {
   font-size: 1.6rem;
   font-weight: 700;
-  margin: 2rem 0;
+  margin-top: 2rem;
+  padding: 2rem;
+}
+
+h6 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 2rem auto 0rem auto;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 li {
@@ -57,33 +76,271 @@ li {
 }
 
 a:link {
+  color: #E53345;
   text-decoration: none;
-}
-
-a:visited {
-  color: #65353A;
 }
 
 a:hover {
   color: #B22836;
 }
 
+a:visited {
+  color: #65353A;
+}
+
 ul {
   list-style-type: none;
-  margin: 0;
+  margin: 0 0 3rem 0;
   padding: 0;
 }
 
 figcaption {
   font-size: 1.6rem;
-  margin-top: 1rem;
+  margin-top: -1.5rem;
+  margin-bottom: 2rem;
+}
+
+.align-center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.phase-title {
+  color: #fff;
+  padding: 2rem 0;
+}
+
+.usability-change {
+  font-size: 1.8rem;
+  padding-bottom: 0;
+}
+
+.screens-title {
+  font-size: 1.8rem;
+}
+
+.conclusion-title {
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+/* Images */
+
+.half-width {
+  margin-top: 3rem;
+}
+
+.image-border {
+  border: 2px solid #c4c4c4;
+}
+
+figure {
+  margin: 0 auto;
+}
+
+img {
+  margin: 2rem auto;
+  width: 100%;
+}
+
+/* *************** Structure *************** */
+
+.title-box {
+  background-color: #B22836;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.title-box-p {
+  background-color: #B22836;
+  margin-top: 4rem;
+  width: 100%;
+}
+
+.title-box-s {
+  background-color: #B22836;
+  width: 100%;
+}
+
+button {
+  background-color: #E53345;
+  border: none;
+  border-radius: 6px;
+  color: #ffffff;
+  display: flex;
+  font-size: 1.6rem;
+  font-weight: 700;
+  height: 3.6rem;
+  justify-content: center;
+  margin: 2rem auto;
+  text-align: center;
+  text-transform: uppercase;
+  width: 20rem;
+}
+
+.two-rem-bottom {
+  margin-bottom: 2rem;
+}
+
+.border-top {
+  border-top: 2px solid #B22836;
+  margin-top: 2rem;
+}
+
+/* *************** Grey Backgrounds***************  */
+
+.grey-bg {
+  background: rgba(196, 196, 196, .25);
+  width: 100vw;
+}
+
+/* *************** Specific Items *************** */
+
+.t-b-s-extra {
+  display:none;
+}
+
+.imp-list li{
+  font-size: 1.8rem;
+  padding: .5rem 0;
+}
+
+.tools {
+  border-top: 2px solid #444;
+}
+
+.problem {
+  padding-bottom: 2rem;
+}
+
+.img-no-top {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.percentages-box {
+  background-color: #fff;
+  border: 6px solid #B22836;
+  margin: 3em 2rem;
+}
+
+.percentages-box h3, .percentages-box h2, .percentages-box p{
+  color: #B22836;
+  text-align: center;
+}
+
+.percentages-box h2 {
+  margin: 2rem 0 -1rem 0;
+}
+
+.I-want h3, .I-want li {
+  color: #B22836;
+  text-transform: none;
+}
+
+.I-want li {
+  font-size: 1.8rem;
+  margin: 1rem 0;
+}
+
+.usability-list li {
+  margin: auto;
+  max-width: 60rem;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.rale, .merri {
+  font-size: 3rem;
+  text-transform: none;
+}
+
+.merri {
+  font-family: "Merriweather";
+  padding-bottom: 3rem;
+}
+
+.u-test-1-c2-img {
+  margin: 0;
+  padding: 0;
+}
+
+/* *************** Navbar *************** */
+
+ .navbar {
+  background-color: #ffffff;
+  height: 6rem;
+  margin: 0 auto;
+  position: fixed;
+  width: 100vw;
+}
+
+.nav-flex {
+  border-bottom: 1px solid #444;
+  display: flex;
+  flex-direction: row;
+  height: 6rem;
+}
+
+.nav-link {
+  color: #E53345;
+  display: block;
+  flex-grow: 1;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: right;
+}
+
+.design-link, .illus-link, .about-link {
+  margin: 1.5rem auto;
+  padding: .5rem;
+}
+
+.logo-li {
+  flex-grow: 10;
+  padding-left: 0;
+  text-align: left;
+}
+
+.logo {
+  height: auto;
+  margin: 1rem 1rem 1rem 0;
+  padding-left: 0;
+  width: 4rem;
+}
+
+.nav-flex a:visited {
+  color: #E53345;
+}
+
+/* *************** Footer *************** */
+
+.footer-flex {
+  align-items: center;
+  background-color: #ffffff;
+  border-top: 1px solid #444444;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 4rem auto 0 auto;
+  width: 100%;
+}
+
+.icon {
+  flex-grow: 2;
+  margin: .8rem;
+  padding: 1.2rem;
+  width: 5rem;
 }
 
 /* Elements unique to Homepage (index.html) */
 
 .self-intro {
   font-size: 1.9rem;
-  margin-top: 10rem;
+  margin: 10rem auto 0 auto;
+  max-width: 40rem;
+  text-transform: none;
 }
 
 .section-title {
@@ -98,253 +355,107 @@ figcaption {
   margin-top: 10rem;
 }
 
-/* Structure */
-
-body {
-  margin: auto;
-}
-
-/* Navbar */
-
-.navbar {
-  background-color: #ffffff;
-  margin: auto;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 10;
-}
-
-.navbar-contents {
-  border-bottom: 1px solid #444444;
-  height: 5rem;
-  margin: auto;
-  width: 85%;
-}
-
-.logo {
-  width: 4rem;
-  float: left;
-  padding: 1rem 1rem 1rem 0;
-}
-.navbar-links {
-  float: right;
-  height: 50px;
-}
-
-.navbar-links a {
-  color: #E53345;
+.portfolio-category li {
   display: block;
-  float: right;
-  font-size: 1.6rem;
-  font-weight: 700;
-  padding: 1.5rem 0 1.5rem 1.5rem;
-  text-align: center;
+  margin: 2rem 0;
 }
 
-.navbar-links a:link {
-  color: #E53345;
-}
+/* Elements unique to About page (about.html) */
 
-a:visited {
-  color: #E53345;
-}
-
-a:hover {
-  color: #B22836;
-}
-
-button {
-  background-color: #E53345;
-  border: none;
-  border-radius: 6px;
-  color: #ffffff;
-  display: flex;
-  font-size: 1.6rem;
-  font-weight: 700;
-  height: 36px;
-  justify-content: center;
-  margin: 20px auto;
-  text-align: center;
-  text-transform: uppercase;
-  width: 200px;
-}
-
-/* Images */
-
-.full-width {
-  left: 50%;
-  right: 50%;
-  margin: 20px -50vw;
-  position: relative;
-  width: 100vw;
-}
-
-.image-border {
-  border: 2px solid #c4c4c4;
-}
-
-.half-width {
+.about-image {
   display: block;
-  /* margin-left: auto;
-  margin-right: auto; */
-  margin: 40px auto 0 auto;
-  width: 350px;
+  margin: 5rem auto;
 }
 
-figure {
-  margin: 0;
+.red-text {
+  color: #E53345;
 }
 
-img {
-  margin: 0;
-}
+/* For Tablets */
 
-.roles li, .tools li {
-  font-size: 1.8rem;
-}
+@media screen and (min-width: 768px) {
 
-.roles {
-  margin-bottom: 80px;
-}
 
-.tools {
-  border-top: 1px solid #444444;
-}
+  /* .text-full {
+    max-width: 90rem;
+    width: 98%;
+  }
 
-.title-box {
-  background-color: #B22836;
-  display: table;
-  height: 130px;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  margin-top: 80px;
-  position: relative;
-  width: 100vw;
-}
+  .text-half {
+    max-width: 90rem;
+    width: 98%;
+  } */
 
-.title {
-  color: #ffffff;
-  display: table-cell;
-  vertical-align: middle;
-  max-width: 300px;
-  margin: 0 auto;
-  padding: 0 20px;
-  text-align: center;
-  position: relative;
-  width: 100vw;
-}
+/* For Computer Screens */
 
-.padding-top {
-  padding-top: 10px;
-}
+@media screen and (min-width: 1025px) {
+  html {
+    font-size: 11px;
+  }
 
-.unit {
-  margin-bottom: 50px;
-}
+  h1 {
+    font-size: 6rem;
+  }
 
-.background {
-  background-color: #f0f0f0;
-  display: table;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  position: relative;
-  padding: 10px 0 40px 0;
-  width: 100vw;
-}
+  .text {
+    max-width: 60rem;
+    /* width: 50rem; */
+  }
 
-.contents {
-  margin: auto;
-  text-align: center;
-  width: 85%;
-}
+  .title-box {
+    background-color: #B22836;
+    margin-top: 4rem;
+    width: 100%;
+  }
 
-.solution {
-  margin-top: -80px;
-}
+  .title-box-s {
+    background-color: #fff;
+    border: 3px solid #B22836;
+    margin-top: 4rem;
+  }
 
-.percentages {
-  background-color: #ffffff;
-  border: 6px solid #B22836;
-}
+  .t-b-s-extra {
+    display: block;
+  }
 
-.percentages h3, .percentages h2, .percentages p {
+  .solution-title {
     color: #B22836;
-}
+  }
 
-.percentages h2 {
-  margin: 0;
-}
+  .tools {
+    border-left: 2px solid #444;
+    border-top: none;
+  }
 
-.percentages p {
-  margin: 0 0 20px 0;
-}
+  button {
+    margin-bottom: 3rem;
+  }
 
-.persona {
-  display: block;
-  margin: 0 auto;
-  width: 85%;
-}
+  figcaption {
+    font-size: 1.4rem;
+    margin-top: -1.5rem;
+  }
 
-.simon {
-  display: none;
-}
+  .u-test-1-c1-img, .u-test-1-c2-img, .u-test-1-c3-img, .u-test-1-c4-img, .u-test-2-c1-img, .u-test-2-c2-img, .u-test-2-c3-img, .u-test-2-c4-img  {
+    border-top: 2px solid #B22836;
+    margin-top: 2rem;
+  }
 
-.I-want h3, .I-want li {
-  color: #B22836;
-}
+  .typeface-examples, .logo-samples {
+    border-top: 2px solid #B22836;
+    margin-top: 2rem;
+  }
 
-.I-want li {
-  font-size: 1.8rem;
-  line-height: 1.6em;
-}
+  .conclusion-summary, .final-thoughts {
+    margin: 0 auto;
+    text-align: center;
+  }
 
-.usability-list {
-  margin-top: 2rem;
-}
+  .icon {
+    flex-grow: 5;
+    margin: 2rem;
+    padding: 1.2rem;
+    width: 5.5rem;
+  }
 
-.rale {
-  text-transform: capitalize;
-}
-
-.merri {
-  font-family: "Merriweather";
-  text-transform: capitalize;
-}
-
-.usability-change {
-  border-top: 1px solid #B22836;
-  font-size: 1.6rem;
-  padding-top: 20px;
-  padding-bottom: -10px;
-  margin-bottom: -10px;
-}
-
-.final-caption {
-  margin-top: -1rem;
-}
-
-/* Footer */
-
-.footer-contents {
-  background-color: #ffffff;
-  border-top: 1px solid #444444;
-  bottom: 0;
-  height: auto;
-  margin: auto;
-  overflow: hidden;
-  text-align: center;
-  width: 100%;
-}
-
-.icon {
-  /* height: auto; */
-  padding: 2rem 1.5rem;
-  width: 5.5rem;
 }
