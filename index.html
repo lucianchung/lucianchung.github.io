@@ -9,60 +9,72 @@
 
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700,900" rel="stylesheet">
-</head>
-    <div class="container">
-<!-- Navbar -->
-      <nav class="navbar">
-        <div class="navbar-contents">
-          <a href="index.html"><img class="logo" src="/images/Logo-Mark-red-100px.png" alt="Lucian Chung Logo"></img></a>
-          <div class="navbar-links">
-            <a href="about.html">about</a>
-            <a href="#illustration-section">illustration</a>
-            <a href="#design-section">design</a>
-          </div>
-        </div>
-      </nav>
+  </head>
 
-<!-- Header -->
-      <header>
-      <h2 class="self-intro">I'm Lucian Chung,
-        <br>a UX Designer/Illustrator in Atlanta.
-        <br>I make visually appealing user-friendly
-        designs that people remember.
-      </h2>
-    </header>
+  <div class="container">
+    <!-- Navbar -->
+    <nav class="navbar">
+      <ul class="nav-flex">
+        <li class="logo-li"><a href="index.html"><img class="logo" src="/images/Logo-Mark-red-100px.png" alt="Lucian Chung Logo"></img></a></li>
+        <li class="nav-link design-link"><a href="#design-section">design</a></li>
+        <li class="nav-link illus-link"><a href="#illustration-section">illustration</a></li>
+        <li class="nav-link about-link"><a href="about.html">about</a></li>
+      </ul>
+    </nav>
 
-    <!-- Body -->
-      <body>
-      <img class="background robot" src=""></img>
+    <!-- Header -->
+    <section class="intro-section">
+      <header class="self-intro">
+        <h2 class="self-intro-text">I'm Lucian Chung,
+          <br>a UX Designer/Illustrator in Atlanta.
+          <br>I make visually appealing user-friendly
+          designs that people remember.
+        </h2>
+      </header>
+    </section>
 
-      <section id="design-section" class="portfolio-category">
-        <h2 class="section-title">DESIGN</h2>
-          <ul>
-            <li class="thumbnail"><a href="project1.html"><img src="/images/thumbnails/safsav.jpg"></a></li>
-          </ul>
-      </section>
+      <!-- Body -->
+      <body class="bg-robot">
+        <!-- <img class="robot" src=""></img> -->
 
-      <section id="illustration-section" class="portfolio-category">
-        <h2 class="section-title">ILLUSTRATION</h2>
-          <ul>
-            <li class="thumbnail"><a href=""><img src="/images/thumbnails/illus1-childrens.jpg"></a></li>
-            <li class="thumbnail"><a href=""><img src="/images/thumbnails/illus2-assorted.jpg"></a></li>
-            <li class="thumbnail"><a href=""><img src="/images/thumbnails/illus3-vector.jpg"></a></li>
-            <li class="thumbnail"><a href=""><img src="/images/thumbnails/illus4-yearbook.jpg"></a></li>
-            <li class="thumbnail"><a href=""><img src="/images/thumbnails/illus5-disney.jpg"></a></li>
-            <li class="thumbnail"><a href=""><img src="/images/thumbnails/illus6-pixel.jpg"></a></li>
-            <li class="thumbnail"><a href=""><img src="/images/thumbnails/illus7-webtoon.jpg"></a></li>
-            <li class="thumbnail"><a href=""><img src="/images/thumbnails/illus8-painting.jpg"></a></li>
-            <li class="thumbnail"><a href=""><img src="/images/thumbnails/illus9-sketch.jpg"></a></li>
-          </ul>
-      </section>
-    </body>
+        <section class="main-body">
+          <section id="design-section" class="portfolio-category cat-design">
+            <h2 class="section-title">DESIGN</h2>
+              <ul class="portfolio-thumbs">
+                <li class="thumbnail"><a href="project1.html"><img src="/images/thumbnails/safsav.jpg"></a></li>
+                <li><a href="">
+                  <div class="blank-thumb hide">
+                  </div>
+                </a></li>
+                <li><a href="">
+                  <div class="blank-thumb hide">
+                  </div>
+                </a></li>
+              </ul>
+          </section>
 
-<!-- Footer -->
-      <footer>
-        <div class="footer-contents">
+          <section id="illustration-section" class="portfolio-category cat-illus">
+            <h2 class="section-title title-illus">ILLUSTRATION</h2>
+              <ul class="portfolio-thumbs illus-thumbs">
+                <li class="thumbnail"><a href=""><img src="/images/thumbnails/illus1-childrens.jpg"></a></li>
+                <li class="thumbnail"><a href=""><img src="/images/thumbnails/illus2-assorted.jpg"></a></li>
+                <li class="thumbnail"><a href=""><img src="/images/thumbnails/illus6-pixel.jpg"></a></li>
+                <li class="thumbnail hide"><a href=""><img src="/images/thumbnails/illus3-vector.jpg"></a></li>
+                <li class="thumbnail hide"><a href=""><img src="/images/thumbnails/illus4-yearbook.jpg"></a></li>
+                <li class="thumbnail hide"><a href=""><img src="/images/thumbnails/illus5-disney.jpg"></a></li>
+                <li class="thumbnail hide"><a href=""><img src="/images/thumbnails/illus7-webtoon.jpg"></a></li>
+                <li class="thumbnail hide"><a href=""><img src="/images/thumbnails/illus8-painting.jpg"></a></li>
+                <li class="thumbnail hide"><a href=""><img src="/images/thumbnails/illus9-sketch.jpg"></a></li>
+              </ul>
+          </section>
+        </section>
+      </body>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-flex">
           <a href="mailto:lucianchung@gmail.com"><img class="icon" src="images/icon-mail.png"></a>
           <a href="https://www.linkedin.com/in/lucianchung/" target="_blank"><img class="icon" src="images/icon-LinkedIn.png"></a>
           <a href="https://dribbble.com/lucianchung" target="_blank"><img class="icon" src="images/icon-dribbble.png"></a>
@@ -70,5 +82,7 @@
           <a href="https://github.com/lucianchung" target="_blank"><img class="icon" src="images/icon-github.png"></a>
         </div>
       </footer>
-    </div>
+
+  </div>
+
 </html>
