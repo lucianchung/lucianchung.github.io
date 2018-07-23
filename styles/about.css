@@ -1,0 +1,188 @@
+/* background grey: #C4C4C4 */
+/* background: rgba(196, 196, 196, .25); */
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  grid-template-areas:
+  ".    nav-flex      .";
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  grid-template-areas:
+  ".    header-content      .";
+}
+
+
+.body-content {
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  grid-template-areas:
+  ".    artist      ."
+  ".    artist-text   ."
+  ".    prob-solver      ."
+  ".    prob-solver-text      ."
+  ".    researcher      ."
+  ".    researcher-text      ."
+  ".    designer      ."
+  ".    designer-text      .";
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  grid-template-areas:
+  ".    footer-flex      .";
+}
+
+.nav-flex {
+  grid-area: nav-flex;
+}
+
+.header-content {
+  grid-area: header-content;
+}
+
+.artist {
+  grid-area: artist;
+}
+
+.artist-text {
+  grid-area: artist-text;
+}
+
+.prob-solver {
+  grid-area: prob-solver;
+}
+
+.prob-solver-text {
+  grid-area: prob-solver-text;
+}
+
+.researcher {
+  grid-area: researcher;
+}
+
+.researcher-text {
+  grid-area: researcher-text;
+}
+
+.designer {
+  grid-area: designer;
+}
+
+.designer-text {
+  grid-area: designer-text;
+}
+
+.footer-flex {
+  grid-area: footer-flex;
+  margin-bottom: 0;
+}
+
+p, h4 {
+  margin: 0;
+}
+
+p {
+  margin: auto;
+  padding: 1.5rem 0;
+}
+
+h4 {
+  padding: 2rem 0;
+}
+
+.about {
+  margin-top:
+}
+
+.about-image {
+  margin: 6rem auto 4rem auto;
+  max-width: 25rem;
+}
+
+/* Elements unique to About page (about.html) */
+
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media (min-width: 1025px) {
+
+  .navbar {
+    grid-template-columns: 1fr 4fr 4fr 1fr;
+    grid-template-areas:
+    ".     nav-flex  nav-flex    .";
+  }
+
+  .header {
+    display: grid;
+    grid-template-columns: 1fr 4fr 4fr 1fr;
+    grid-template-areas:
+    ".    header-content  header-content     .";
+  }
+
+  .body-content {
+    display: grid;
+    grid-template-columns: 1fr 4fr 4fr 1fr;
+    grid-template-areas:
+    ".    artist   artist    ."
+    ".    artist-text artist-text   ."
+    ".    prob-solver  prob-solver      ."
+    ".    prob-solver-text   prob-solver-text    ."
+    ".    researcher   researcher    ."
+    ".    researcher-text   researcher-text     ."
+    ".    designer   designer    ."
+    ".    designer-text   designer-text      .";
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 4fr 4fr 1fr;
+    grid-template-areas:
+    ".   footer-flex   footer-flex   .";
+  }
+
+
+  .self-intro-text {
+    font-size: 3rem;
+    max-width: 90rem;
+    text-align: center;
+  }
+
+  .portfolio-thumbs {
+    display: grid;
+    grid-gap: 2rem;
+    grid-row-gap: 2rem;
+    grid-template-columns: auto auto auto;
+    margin: 0 auto;
+  }
+
+ .portfolio-thumbs li {
+   display: grid;
+ }
+
+  img {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+/* @media (min-width: 1400px) {
+
+  .portfolio-thumbs {
+    display: grid;
+    grid-gap: 2rem;
+    grid-row-gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+  } */
+}

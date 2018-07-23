@@ -1,0 +1,205 @@
+/* background grey: #C4C4C4 */
+/* background: rgba(196, 196, 196, .25); */
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  /* max-width: 120rem; */
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  grid-template-areas:
+  ".    nav-flex      .";
+}
+
+.intro-section {
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  grid-template-areas:
+  ".    self-intro    .";
+}
+
+.main-body {
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  grid-template-areas:
+  ".     cat-design   ."
+  ".    cat-illus       .";
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  grid-template-areas:
+  ".   footer-flex      .";
+}
+
+.nav-flex {
+  grid-area: nav-flex;
+}
+
+.self-intro {
+  grid-area: self-intro;
+}
+
+.cat-design {
+  grid-area: cat-design;
+}
+
+.cat-illus {
+  grid-area: cat-illus;
+}
+
+.footer-flex {
+  grid-area: footer-flex;
+}
+
+.footer {
+  margin-bottom: 0;
+}
+
+/* Elements unique to Homepage (index.html) */
+
+.self-intro-text {
+  font-size: 1.9rem;
+  margin: 10rem auto 0 auto;
+  max-width: 40rem;
+  text-transform: none;
+}
+
+.section-title {
+  font-size: 3.2rem;
+}
+
+.bg-robot {
+  /* background-color: grey; */
+  background-image: url("images/Robot-red.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: right top; */
+  /* height: 100%; */
+  /* margin-right: 20rem; */
+  /* background-attachment: fixed; */
+}
+
+#design-section {
+  margin-top: 30rem;
+}
+
+#illustration-section {
+  margin-top: 10rem;
+}
+
+.portfolio-category li {
+  display: block;
+  margin: auto;
+  max-width: 60rem;
+}
+
+li.hide, div.hide {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media (min-width: 1025px) {
+
+  .navbar {
+    grid-template-columns: 1fr 4fr 4fr 1fr;
+    grid-template-areas:
+    ".     nav-flex  nav-flex    .";
+  }
+
+  .intro-section {
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-areas:
+    ".    self-intro  self-intro  .";
+  }
+
+  .main-body {
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-areas:
+    ".     cat-design  .  ."
+    ".    cat-illus    .   .";
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 4fr 4fr 1fr;
+    grid-template-areas:
+    ".   footer-flex   footer-flex   .";
+  }
+
+  /* .title-illus {
+    grid-area: title-illus;
+  }
+
+  .illus-thumbs {
+    grid-area: illus-thumbs;
+    margin: auto;
+  } */
+
+  .self-intro-text {
+    font-size: 3rem;
+    max-width: 90rem;
+    text-align: center;
+  }
+
+  .section-title {
+    /* max-width: 100rem; */
+    text-align: left;
+  }
+
+  .portfolio-thumbs {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start:
+  }
+
+  /* .portfolio-thumbs {
+    display: grid;
+    grid-gap: 2rem;
+    grid-row-gap: 2rem;
+    grid-template-columns: auto auto auto;
+    margin: 0 auto;
+  } */
+
+  .blank-thumb {
+    height: 350px;
+    weight: 350px;
+  }
+
+ .portfolio-thumbs li {
+   /* flex-grow: 20; */
+   /* max-width: 100%; */
+ }
+
+ img, .thumbnail, .portfolio-thumbs li, .thumbnail a {
+    margin: 1rem 0;
+    height: 100%;
+    /* padding: 0; */
+    width: 100%;
+    /* max-width: 80%; */
+  }
+}
+
+
+
+/* @media (min-width: 1400px) {
+
+  .portfolio-thumbs {
+    display: grid;
+    grid-gap: 2rem;
+    grid-row-gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+  } */
+}
