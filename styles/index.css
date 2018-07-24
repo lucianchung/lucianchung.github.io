@@ -135,7 +135,7 @@ li.hide, div.hide {
 
   .self-intro-text {
     font-size: 3rem;
-    margin: -25rem auto 0 auto;
+    margin: -20rem auto 0 auto;
     max-width: 90rem;
     text-align: center;
   }
@@ -195,9 +195,9 @@ li.hide, div.hide {
   }
 
   .self-intro-text {
-    font-size: 3rem;
-    margin: -20rem auto 0 auto;
-    max-width: 60rem;
+    font-size: 5rem;
+    margin: -30rem auto 0 auto;
+    max-width: 100rem;
     text-align: center;
   }
 
@@ -207,7 +207,7 @@ li.hide, div.hide {
     background-size: contain;
     background-position: right;
     height: 100%;
-    margin-top: 30rem;
+    margin-top: 50rem;
     overflow: visible;
   }
 
