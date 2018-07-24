@@ -806,7 +806,7 @@
     grid-template-columns: 1fr 4fr 4fr 1fr;
     grid-template-areas:
     " .          user-persona-text user-persona-text ."
-    "bryce        bryce      simon      simon"
+    " .       bryce      bryce     . "
     "title-box-info title-box-info title-box-info title-box-info"
     ".    u-stories-text    I-want          .";
   }
@@ -927,7 +927,7 @@
     display: none;
   }
 
-/* *************** User Personas *************** */
+  /* ********** User Persona ********** */
 
   .persona {
     grid-template-columns: 1fr 1fr;
@@ -940,7 +940,104 @@
     "up-bio up-bio";
     margin: auto;
   }
+  .bryce {
+    display: grid;
+    margin-right: 10rem;
+  }
 
+  .up-title {
+    grid-area: up-title;
+  }
+
+  .up-name {
+    grid-area: up-name;
+    margin: 0;
+    padding: 7rem 2rem 2rem 2rem;
+  }
+
+  .persona-photo {
+    grid-area: persona-photo;
+  }
+
+  .up-quote {
+    grid-area: up-quote;
+  }
+
+  .up-motiv {
+    grid-area: up-motiv;
+  }
+
+  .up-frustrations {
+    grid-area: up-frustrations;
+    padding-top: 2rem;
+  }
+
+  .up-goals {
+    grid-area: up-goals;
+    padding-top: 2rem;
+  }
+
+  .up-bio {
+    grid-area: up-bio;
+  }
+
+  .equal-margins {
+    margin: 0 auto;
+  }
+
+
+  .u-test-1-c1-img {
+    grid-area: u-test-1-c1-img;
+    padding: 0;
+  }
+
+  .u-test-1-c2-img {
+    grid-area: u-test-1-c2-img;
+    padding: 0 8rem;
+  }
+
+  .upload-button {
+    max-width: 30rem;
+  }
+
+  .u-test-1-c3-img {
+    grid-area: u-test-1-c3-img;
+    padding: 0;
+  }
+
+  .u-test-2-c1-img {
+    padding: 1rem 5rem;
+  }
+
+  .u-test-2-c2-img {
+    padding: 1rem 8rem;
+  }
+}
+
+/* User Personas format works after this width */
+
+@media screen and (min-width: 1140px) {
+
+  .u-persona-section {
+    grid-template-columns: 1fr 4fr 4fr 1fr;
+    grid-template-areas:
+    " .          user-persona-text user-persona-text ."
+    "bryce        bryce      simon      simon"
+    "title-box-info title-box-info title-box-info title-box-info"
+    ".    u-stories-text    I-want          .";
+  }
+
+  .persona {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "up-title up-title"
+    "up-name persona-photo"
+    "up-quote up-quote"
+    "up-motiv up-motiv"
+    "up-frustrations up-goals"
+    "up-bio up-bio";
+    margin: auto;
+  }
   .bryce {
     display: grid;
     margin-right: 10rem;
@@ -985,32 +1082,5 @@
 
   .up-bio {
     grid-area: up-bio;
-  }
-
-  .u-test-1-c1-img {
-    grid-area: u-test-1-c1-img;
-    padding: 0;
-  }
-
-  .u-test-1-c2-img {
-    grid-area: u-test-1-c2-img;
-    padding: 0 8rem;
-  }
-
-  .upload-button {
-    max-width: 30rem;
-  }
-
-  .u-test-1-c3-img {
-    grid-area: u-test-1-c3-img;
-    padding: 0;
-  }
-
-  .u-test-2-c1-img {
-    padding: 1rem 5rem;
-  }
-
-  .u-test-2-c2-img {
-    padding: 1rem 8rem;
   }
 }

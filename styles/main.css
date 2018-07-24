@@ -527,28 +527,8 @@ img {
     margin-top: -1.5rem;
   }
 
-  .persona {
-    border: 1px solid #B22836;
-    margin: 0 5rem;
-    max-width: 50rem;
-  }
-
-  .persona-photo {
-    border: none;
-    height: 100%;
-    margin: 0 0 0 auto;
-    width: auto;
-    max-width: 20rem;
-  }
-
-  .persona-photo img {
-    margin: 0;
-  }
-
-  .persona-photo-bg {
-    background: rgba(196, 196, 196, .25);
-    margin: 0 0 0 auto;
-    width: auto;
+  .bryce p {
+    max-width: 90rem;
   }
 
   .u-test-1-c1-img, .u-test-1-c2-img, .u-test-1-c3-img, .u-test-1-c4-img, .u-test-2-c1-img, .u-test-2-c2-img, .u-test-2-c3-img, .u-test-2-c4-img  {
@@ -573,4 +553,32 @@ img {
     width: 5.5rem;
   }
 
+}
+
+
+@media screen and (min-width: 1140px) {
+
+  .persona {
+    border: 1px solid #B22836;
+    margin: 0 5rem;
+    max-width: 50rem;
+  }
+
+  .persona-photo {
+    border: none;
+    height: 100%;
+    margin: 0 0 0 auto;
+    width: auto;
+    max-width: 20rem;
+  }
+
+  .persona-photo img {
+    margin: 0;
+  }
+
+  .persona-photo-bg {
+    background: rgba(196, 196, 196, .25);
+    margin: 0 0 0 auto;
+    width: auto;
+  }
 }
