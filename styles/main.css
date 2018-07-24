@@ -75,16 +75,16 @@ li {
   font-size: 1.6rem;
 }
 
-a:link {
+p a:link {
   color: #E53345;
   text-decoration: none;
 }
 
-a:hover {
+p a:hover {
   color: #B22836;
 }
 
-a:visited {
+p a:visited {
   color: #65353A;
 }
 
@@ -163,7 +163,7 @@ img {
   width: 100%;
 }
 
-button {
+.case-study-button {
   background-color: #E53345;
   border: none;
   border-radius: 6px;
@@ -174,8 +174,10 @@ button {
   font-weight: 700;
   height: 3.6rem;
   justify-content: center;
-  margin: 2rem auto;
+  margin: 2rem auto 3rem auto;
+  padding: 1rem 1rem;
   text-align: center;
+  text-decoration: none;
   text-transform: uppercase;
   width: 20rem;
 }
@@ -406,8 +408,17 @@ button {
   width: 4rem;
 }
 
+.nav-flex a:link {
+  color: #E53345;
+  text-decoration: none;
+}
+
 .nav-flex a:visited {
   color: #E53345;
+}
+
+.nav-flex a:hover {
+  color: #B22836;
 }
 
 /* *************** Footer *************** */
@@ -503,10 +514,6 @@ button {
 
   .p-s-text {
     padding: 2rem;
-  }
-
-  button {
-    margin-bottom: 3rem;
   }
 
   figcaption {
