@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6, p, a, li, figcaption, button {
+h1, h2, h3, h4, h5, h6, p, li, figcaption {
   color: #444444;
   font-family: "Raleway";
   text-align: center;
@@ -75,16 +75,16 @@ li {
   font-size: 1.6rem;
 }
 
-a:link {
+p a:link {
   color: #E53345;
   text-decoration: none;
 }
 
-a:hover {
+p a:hover {
   color: #B22836;
 }
 
-a:visited {
+p a:visited {
   color: #65353A;
 }
 
@@ -163,18 +163,21 @@ img {
   width: 100%;
 }
 
-button {
+.case-study-button {
   background-color: #E53345;
   border: none;
   border-radius: 6px;
   color: #ffffff;
   display: flex;
+  font-family: "Raleway";
   font-size: 1.6rem;
   font-weight: 700;
   height: 3.6rem;
   justify-content: center;
-  margin: 2rem auto;
+  margin: 2rem auto 3rem auto;
+  padding: 1rem 1rem;
   text-align: center;
+  text-decoration: none;
   text-transform: uppercase;
   width: 20rem;
 }
@@ -270,73 +273,36 @@ button {
 
 .persona {
   border: 1px solid #B22836;
+  height: 100%;
 }
 
 .red {
   background-color: #E53345;
 }
 
-.dark-red {
-  background-color: #B22836;
-}
-
-.grey {
-  background: rgba(196, 196, 196, .25);
-}
-
 .white-text {
   color: #fff;
 }
 
-.red-text {
-  color: #E53345;
-}
-
-.dark-red-text {
-  color: #B22836;
-}
-
-.persona h3 {
-  font-size: 2.6rem;
+.persona-title {
   font-weight: 700;
-  margin: 0;
-  padding: 2rem 0 .5rem 0;
-  text-transform: capitalize;
-}
-
-.persona h4 {
-  font-weight: 700;
-  padding: 1rem;
+  padding: 2rem;
   text-transform: uppercase;
 }
 
-.persona h5 {
-  margin-top: 0;
-  padding: .1rem;
+.motiv-bio {
+  font-weight: 700;
+  padding: 2rem 2rem .5rem 2rem;
+  text-transform: uppercase;
 }
 
-.persona p {
+.grey {
+  background: rgba(196, 196, 196, .25);
   margin: 0;
 }
 
-.persona div {
-  padding: 1rem;
-}
-
-.persona-title {
-  padding: 1rem;
-}
-
-.top {
-  margin-top: 1rem;
-}
-
-.para {
-  padding: 0rem 1rem 1rem 1rem;
-}
-
-.two-pad {
-  padding: 2rem 0;
+.dark-red {
+  background-color: #B22836;
 }
 
 .one-pad {
@@ -347,8 +313,20 @@ button {
   text-align: left;
 }
 
+.red-text {
+  color: #E53345;
+}
+
+.top {
+  margin-top: 1rem;
+}
+
 .underline {
   text-decoration: underline;
+}
+
+.dark-red-text {
+  color: #B22836;
 }
 
 .persona li {
@@ -359,8 +337,39 @@ button {
   margin: 0;
 }
 
+.two-pad {
+  padding: 2rem;
+}
 
+.persona h3 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 0 0 .5rem 0;
+  text-transform: capitalize;
+}
 
+.persona h5 {
+  margin-top: 0;
+  padding: .2rem;
+}
+
+.persona p {
+  margin: 0;
+}
+
+.para {
+  padding: 0rem 2rem 2rem 2rem;
+}
+
+.persona-photo {
+  margin: 0;
+  width: 100%;
+}
+
+.up-name {
+  padding: 2rem;
+}
 
 /* *************** Navbar *************** */
 
@@ -405,8 +414,17 @@ button {
   width: 4rem;
 }
 
+.nav-flex a:link {
+  color: #E53345;
+  text-decoration: none;
+}
+
 .nav-flex a:visited {
   color: #E53345;
+}
+
+.nav-flex a:hover {
+  color: #B22836;
 }
 
 /* *************** Footer *************** */
@@ -504,13 +522,33 @@ button {
     padding: 2rem;
   }
 
-  button {
-    margin-bottom: 3rem;
-  }
-
   figcaption {
     font-size: 1.4rem;
     margin-top: -1.5rem;
+  }
+
+  .persona {
+    border: 1px solid #B22836;
+    margin: 0 5rem;
+    max-width: 50rem;
+  }
+
+  .persona-photo {
+    border: none;
+    height: 100%;
+    margin: 0 0 0 auto;
+    width: auto;
+    max-width: 20rem;
+  }
+
+  .persona-photo img {
+    margin: 0;
+  }
+
+  .persona-photo-bg {
+    background: rgba(196, 196, 196, .25);
+    margin: 0 0 0 auto;
+    width: auto;
   }
 
   .u-test-1-c1-img, .u-test-1-c2-img, .u-test-1-c3-img, .u-test-1-c4-img, .u-test-2-c1-img, .u-test-2-c2-img, .u-test-2-c3-img, .u-test-2-c4-img  {

@@ -291,6 +291,12 @@
   grid-area: simon;
 }
 
+/************ Sections in User Personas ************/
+
+.up-1 {
+  grid-area: up-1;
+}
+
 /************ Info Architecture ************/
 
 .title-box-info {
@@ -921,13 +927,64 @@
     display: none;
   }
 
+/* *************** User Personas *************** */
+
+  .persona {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "up-title up-title"
+    "up-name persona-photo"
+    "up-quote up-quote"
+    "up-motiv up-motiv"
+    "up-frustrations up-goals"
+    "up-bio up-bio";
+    margin: auto;
+  }
+
   .bryce {
-    margin-right: 1rem;
+    display: grid;
+    margin-right: 10rem;
   }
 
   .simon {
     display: grid;
-    margin-left: 1rem;
+    margin-left: 10rem;
+  }
+
+  .up-title {
+    grid-area: up-title;
+  }
+
+  .up-name {
+    grid-area: up-name;
+    margin: 0;
+    padding: 2rem;
+  }
+
+  .persona-photo {
+    grid-area: persona-photo;
+  }
+
+  .up-quote {
+    grid-area: up-quote;
+  }
+
+  .up-motiv {
+    grid-area: up-motiv;
+  }
+
+  .up-frustrations {
+    grid-area: up-frustrations;
+    padding-top: 2rem;
+  }
+
+  .up-goals {
+    grid-area: up-goals;
+    padding-top: 2rem;
+  }
+
+  .up-bio {
+    grid-area: up-bio;
   }
 
   .u-test-1-c1-img {
