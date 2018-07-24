@@ -32,9 +32,14 @@
         </a>
       </section>
 
-      <figure class="hero-img">
-        <img src="images/safsav/Hero-Screens-Home-1440.jpg"</img>
-      </figure>
+      <section class="hero-img">
+        <figure>
+          <img class="full-width hero-img-mobile" src="images/safsav/Hero-Mobile.jpg"</img>
+        </figure>
+        <figure>
+          <img class="full-width hero-img-desk" src="images/safsav/Hero-Desk.jpg"</img>
+        </figure>
+      </section>
 
       <section class="roles">
         <h3>I Performed</h3>
@@ -75,7 +80,7 @@
     </div>
 
     <section class="problem">
-      <p class="problem-text text">I was requested by a client to target an unreached portion of the cloud storage market by designing a product that includes the features of saving web content, organizing content, creating content, and uploading files. I was also asked to consider including collaborative features like sharing single items, sharing groups of items, and connecting with other users for real-time collaboration in documents.</p>
+      <p class="p-s-text text">I was requested by a client to target an unreached portion of the cloud storage market by designing a product that includes the features of saving web content, organizing content, creating content, and uploading files. I was also asked to consider including collaborative features like sharing single items, sharing groups of items, and connecting with other users for real-time collaboration in documents.</p>
     </section>
 
     <div class="extra-grey-2">
@@ -86,12 +91,15 @@
       <h2 class="solution-title phase-title">Solution</h2>
     </div>
     <section class="solution">
-      <p class="text">SafSav is a cloud storage app with security and privacy. User research found that tech professionals desire a product that will allow them to encrypt data that they upload and keep it private from the host company. SafSav does exactly that while also performing the expected functions of a cloud storage app including uploading files, organizing files, sharing files, and more. SafSav’s design became more polished, clear, and user-friendly as it went through multiple iterations based on two rounds of Usability Testing, Preference Testing, and feedback from senior designers.</p>
+      <p class="p-s-text">SafSav is a cloud storage app with security and privacy. User research found that tech professionals desire a product that will allow them to encrypt data that they upload and keep it private from the host company. SafSav does exactly that while also performing the expected functions of a cloud storage app including uploading files, organizing files, sharing files, and more. SafSav’s design became more polished, clear, and user-friendly as it went through multiple iterations based on two rounds of Usability Testing, Preference Testing, and feedback from senior designers.</p>
     </section>
 
     <section class="p-s-img">
-      <figure class="">
-        <img class="full-width img-no-top image-border" src="images/safsav/Hero-Screens-All-1440.jpg"></img>
+      <figure class="solution-screenshot-mobile">
+        <img class="full-width img-no-top image-border" src="images/safsav/Solution-Mobile.jpg"></img>
+      </figure>
+      <figure class="solution-screenshot-desk">
+        <img class="full-width img-no-top image-border" src="images/safsav/Solution-Desk.jpg"></img>
       </figure>
       <a href="https://invis.io/G8LRTMODTVF" target="_blank">
         <button type="button">Invision Prototype</button>
@@ -106,7 +114,7 @@
         <h2 class="phase-title">Research</h2>
       </div>
 
-      <section class="comp-analysis-text">
+      <section class="comp-analysis-text text">
         <h3 class="">Competitive Analysis</h3>
         <p class="text"> Google Drive and Dropbox are big names in cloud storage while Pinterest has carved out its own niche by providing something unique. I performed a SWOT analysis of these three competitors.</p>
         <p class="text">Google Drive and Dropbox both provide the standard features that I have been tasked with including in the app. Both products also feature a simple, minimal, text-based UI that is easy to understand and navigate. I took note of their User Flows for basic actions; they are straight-forward and not too different.</p>
@@ -159,24 +167,59 @@
 
     <section class="u-persona-section">
       <section class="user-persona-text">
-        <h3 class="">User Personas</h3>
+        <h3 class="text-center">User Personas</h3>
         <h4>Putting a name and face to statistics</h4>
         <p class="text align-center">Now that I had determined a target audience for the product- tech professionals who want security - I focused user research on this group.</p>
       </section>
 
-      <figure class="bryce">
+      <!-- <figure class="bryce">
         <img class="persona" src="images/safsav/UserPersona-Bryce.jpg"></img>
       </figure>
       <figure class="simon">
         <img class="persona" src="images/safsav/UserPersona-Simon.jpg"></img>
-      </figure>
+      </figure> -->
+
+      <section class="bryce persona">
+        <div class="red">
+          <h4 class="white-text persona-title">Pro Cloud User</h4>
+        </div>
+        <div class="grey">
+          <h3>Bryce</h3>
+          <h5>40 | Security Specialist</h5>
+          <h5>San Francisco, California</h5>
+          <img src=""></img>
+        </div>
+        <div class="red">
+          <p class="white-text one-pad">"I want to be able to sync my Linux and OpenBSD servers, my Macbook, my mom's RasperryPi, and my wife's Windows box."</p>
+        </div>
+        <h4 class="left-align red-text top">Motivation</h4>
+        <p class="para">Bryce uses a variety of cloud storage apps for personal and work files. He uses some programs based on the recommendations of friends and others simply because someone he needed to share files with already used another program. For his work, Bryce must back up company data daily using cloud storage software.</p>
+        <div class="dark-red">
+          <h4 class="white-text underline">Frustrations</h4>
+          <ul>
+            <li class="white-text">- Doesn't trust companies with his data</li>
+            <li class="white-text">- Some apps are insecure with too many breaches</li>
+            <li class="white-text">- Unable to encrypt data easily</li>
+          </ul>
+        </div>
+        <div class="grey">
+          <h4 class="dark-red-text underline two-pad">Goals</h4>
+          <ul>
+            <li class="dark-red-text">- Have software that is cross platform friendly</li>
+            <li class="dark-red-text">- Prevent host company from seeing or opening files</li>
+            <li class="dark-red-text">- Encrypt data before uploading</li>
+          </ul>
+        </div>
+        <h4 class="left-align red-text top">Bio</h4>
+        <p class="para">Bryce is happily married to his high school sweetheart. His daily job is a Security Specialist for his company involved in the Internet of Things. He enjoys engaging in volunteer work and contributing to different open source projects. With the rest of his spare time he can be found rebinding books from his classic book collection.</p>
+      </section>
 
       <!-- Information Architecture -->
       <div class="title-box title-box-info">
         <h2 class="phase-title">Info Architecture</h2>
       </div>
 
-      <section class="u-stories-text">
+      <section class="u-stories-text text">
         <h3 class="">User Stories</h3>
         <h4>What shall this product do?</h4>
         <p class="text">With the User Survey and more in-depth User Personas, I could now create User Stories to determine the types of tasks to include in the product. Using percentages and statistics from user research, as well as specific comments made by potential users, I compiled lists for new and returning users ranging between 40-50 tasks. Users wanted to perform a lot of the standard tasks and collaborative tasks initially requested by the client with the important addition of data encryption. High priority tasks are displayed below with the full lists available here.</p>
@@ -186,7 +229,7 @@
         </a>
       </section>
 
-      <aside class="I-want">
+      <aside class="I-want text-center">
         <h3>I want:</h3>
 
         <ul>
@@ -203,8 +246,8 @@
     </section>
 
     <section class="u-flows-section grey-bg">
-      <section class="u-flows">
-        <h3 class="">User Flows</h3>
+      <section class="u-flows text">
+        <h3 class="text-half-width">User Flows</h3>
         <h4>How shall I accomplish tasks?</h4>
         <p class="text">With my User Stories, I now had specific lists of potential tasks to include in the cloud storage app. With an MVP in mind, I focused on high priority tasks first. I used pen and paper to sketch rough versions of User Flows. I also referenced User Flows I created from the Competitive Analysis to see how competitors mapped out tasks similar to those I wanted. The process for onboarding, uploading files, moving files, and sharing files isn’t that different from product to product. An important distinction we had was including extra security measures and steps.</p>
         <p class="text">Based off of the rough sketches, I was able to create more refined User Flows using Draw.io. For onboarding, I did not include the option to sign up using social media sites like Facebook or Twitter. Because security is a major selling point of this product, I didn’t want to risk users’ data being in danger from potential security risks from social media accounts. I wanted to create a contained environment in which we and only we would determine the safety, security, and privacy for our users.</p>
@@ -222,7 +265,7 @@
     </section>
 
     <section class="wireframes-section">
-      <section class="wireframes">
+      <section class="wireframes text">
         <h3 class="">Wireframes</h3>
         <p class="text">As with the User Flows, I started designing Wireframes with pen and paper first. I created 4-Up sketches for each screen I was going to need. I wanted to try different versions of each screen, but I also wanted there to be some sort of logical or visual consistency between each screen to make navigating the site as simple and clear for users as possible.</p>
         <p class="text">The early rounds of digital wireframes were made using Sketch. For inspiration and reference, I looked at the screens for other cloud storage sites like Google Drive, Dropbox, and OneDrive.</p>
@@ -239,7 +282,7 @@
     </section>
 
     <section class="proto-1-section grey-bg">
-      <section class="proto-1">
+      <section class="proto-1 text">
         <h3 class="">Prototype 1</h3>
         <h4>It's alive!</h4>
         <p class="text">I used InVision to create the first clickable Prototype using the digital Wireframes. This first Prototype had more functionality and screens than necessary for the MVP. However, designing these screens helped me to establish a layout that was consistent across the website. It wasn’t necessary to reiterate all of these screens in the later stages. The Prototype can be viewed here.</p>
@@ -291,7 +334,7 @@
       </section>
 
       <div class="u-test-1-c2-img">
-        <figure>
+        <figure class="upload-button">
           <img class="half-width" src="images/safsav/UsabilityTest1-C2.jpg"></img>
           <figcaption>“Upload” button appears greyed out and inactive.</figcaption>
         </figure>
@@ -310,7 +353,7 @@
         </figure>
       </div>
 
-      <section class="u-test-1-c4 border-top">
+      <section class="u-test-1-c4 border-top text-center">
         <h5 class="usability-change">Other changes made for the next iteration include:</h5>
         <ul class="usability-list">
           <li>+ Add “X” to modal windows giving users a clear way to close them</li>
@@ -325,15 +368,22 @@
 
       <section class="mind-map">
         <h3 class="">Mind Map and Sketches</h3>
-        <p class="text">Based on the user research I had conducted thus far, I now set out to build the brand for our cloud storage app. I built a Mind Map focusing on the keywords of “security”, “privacy”, and “cloud.”</p>
-        <p class="text">I did more pen and paper sketches, this time to capture imagery related to the desired brand identity. Images include locks, safes, and clouds.</p>
+        <p class="text align-center">Based on the user research I had conducted thus far, I now set out to build the brand for our cloud storage app. I built a Mind Map focusing on the keywords of “security”, “privacy”, and “cloud.”</p>
+        <p class="text align-center">I did more pen and paper sketches, this time to capture imagery related to the desired brand identity. Images include locks, safes, and clouds.</p>
       </section>
 
-      <div class="mind-map-img">
-        <figure>
+      <!-- <div class="mind-map-img"> -->
+      <div class="mind-map-sketch">
+        <figure >
           <img class="half-width" src="images/safsav/Logo-Mindmap.jpg"></img>
         </figure>
       </div>
+      <div class="logo-sketch-1 two-rem-bottom">
+        <figure>
+          <img class="half-width" src="images/safsav/Logo-Sketch1.jpg"></img>
+        </figure>
+      </div>
+      <!-- </div> -->
     </section>
 
     <section class="logo-section grey-bg">
@@ -380,7 +430,7 @@
     </section>
 
     <section class="style-guide-section">
-      <section class="style-guide-text">
+      <section class="style-guide-text text">
         <h3 class="">Style Guide</h3>
         <p class="text">I designed a Style Guide detailing the logo usage, brand typefaces, and brand colors. All design choices including the logo design, thick typeface, and extensive use of blue were made to convey the brand values of security, strength, dependability, and professionalism. Yellow / orange was added as a contrast to the different blues that serve as the main product color. This complementary yellow / orange could be used to draw attention to CTAs or other clickable elements.</p>
 
@@ -392,6 +442,9 @@
       <div class="style-guide-img">
         <figure>
           <img class="half-width" src="images/safsav/StyleGuide1.jpg"></img>
+        </figure>
+        <figure class="style-guide-3">
+          <img class="half-width" src="images/safsav/StyleGuide3.jpg"></img>
         </figure>
       </div>
     </section>
@@ -419,7 +472,7 @@
     </section>
 
     <section class="pref-test-section">
-      <section class="pref-test">
+      <section class="pref-test text">
         <h3 class="">Preference Test</h3>
         <h4>The user is never wrong.</h4>
         <p class="text">Using Usabilityhub.com, I conducted three preference tests to get user feedback on different design elements. Though I was drawn to design choices that were unique or internally consistent, users preferred other options based on clarity and ease of use. I edited the tested design elements on the mockup to reflect the users’ most popular choices.</p>
@@ -432,15 +485,15 @@
           <img class="half-width" src="images/safsav/PreferenceTest.jpg"></img>
         </figure>
       </div>
-    </section>
+    <!-- </section> -->
 
     <!-- Prototype / Testing -->
-    <section class="proto-section">
+    <!-- <section class="proto-section"> -->
       <div class="title-box title-box-proto">
-        <h2 class="phase-title">Prototype / Testing</h2>
+        <h2 class="phase-title">Prototype</h2>
       </div>
 
-      <section class="hi-fi-2 align-center">
+      <section class="hi-fi-2">
         <h3 class="">Hi Fidelity Mockups 2</h3>
         <h4>Have to admit it’s getting better...</h4>
         <p class="text align-center">A senior designer reviewed the first Hi Fi Mockups and suggested some revisions. I added more yellow / orange to the overall design via borders on modal windows and more line illustrations. I adjusted the logo and headline size on the homepage to make the headline more prominent. I also added drop shadows to modal windows to help separate them from the backgrounds, and I changed the appearance of the dashboard file thumbnails and filenames to look more realistic. Lastly, I applied the changes to reflect the most popular choices from the three Preference Tests.</p>
@@ -479,16 +532,16 @@
 
       <div class="u-test-2-c1-img">
         <figure>
-          <img class="half-width" src="images/safsav/UsabilityTest2-C1a.jpg"></img>
+          <img class="half-width" src="images/safsav/UTest2-C1a.jpg"></img>
           <figcaption>The sign up process used to start on the homepage.</figcaption>
         </figure>
         <figure>
-          <img class="half-width" src="images/safsav/UsabilityTest2-C1b.jpg"></img>
+          <img class="half-width" src="images/safsav/UTest2-C1b.jpg"></img>
           <figcaption>I moved the entire sign up process to the “New Account” page.</figcaption>
         </figure>
       </div>
 
-      <section class="u-test-2-c2 border-top">
+      <section class="u-test-2-c2 border-top text">
         <h5 class="usability-change">Change 2
           <br>Redo the “Select Recipients” Modal</h5>
         <p class="text">A couple of users experienced confusion with the modal window for selecting recipients with whom to share files. Though I addressed this problem after the first user tests, it seems my first solution needed work. The new modal has only one input field making it clear to users where to click.</p>
@@ -496,11 +549,11 @@
 
       <div class="u-test-2-c2-img">
         <figure>
-          <img class="half-width" src="images/safsav/UsabilityTest2-C2a.jpg"></img>
+          <img class="half-width" src="images/safsav/UTest2-C2a.jpg"></img>
           <figcaption>Old Modal Window</figcaption>
         </figure>
         <figure>
-          <img class="half-width" src="images/safsav/UsabilityTest2-C2b.jpg"></img>
+          <img class="half-width" src="images/safsav/UTest2-C2b.jpg"></img>
           <figcaption>New Modal Window</figcaption>
         </figure>
       </div>
@@ -513,16 +566,16 @@
 
       <div class="u-test-2-c3-img">
         <figure>
-          <img class="half-width" src="images/safsav/UsabilityTest2-C3a.jpg"></img>
+          <img class="half-width" src="images/safsav/UTest2-C3a.jpg"></img>
           <figcaption>Old Navbar</figcaption>
         </figure>
         <figure>
-          <img class="half-width" src="images/safsav/UsabilityTest2-C3b.jpg"></img>
+          <img class="half-width" src="images/safsav/UTest2-C3b.jpg"></img>
           <figcaption>New Navbar</figcaption>
         </figure>
       </div>
 
-      <section class="u-test-2-c4 border-top">
+      <section class="u-test-2-c4 border-top text">
         <h5 class="usability-change">Change 4
           <br>Add Overlays Behind Modals</h5>
         <p class="text">White transparent overlays were added behind all modal windows, clarifying to users where they can click</p>
@@ -530,7 +583,7 @@
 
       <div class="u-test-2-c4-img">
         <figure>
-          <img class="half-width" src="images/safsav/UsabilityTest2-C4.jpg"></img>
+          <img class="half-width" src="images/safsav/UTest2-C4.jpg"></img>
           <figcaption>White overlays behind modal windows</figcaption>
         </figure>
       </div>
@@ -584,7 +637,7 @@
 
       <div class="screen-evolution">
         <figure>
-          <img class="full-width" src="images/safsav/ScreenEvolution.jpg"></img>
+          <img class="full-width image-border" src="images/safsav/ScreenEvolution.jpg"></img>
           <figcaption class="final-caption">The evolution of three different screens</figcaption>
         </figure>
       </div>

@@ -31,7 +31,6 @@
   display: grid;
   grid-template-columns: 1fr 10fr 1fr;
   grid-template-areas:
-
  "title-box-disc title-box-disc title-box-disc"
  ".           comp-analysis-text     ."
  ".      comp-analysis-img         .";
@@ -94,7 +93,8 @@
   ".      u-test-1-c4     ."
   "title-box-visual-design title-box-visual-design title-box-visual-design"
   ".     mind-map   ."
-  ".   mind-map-img   .";
+  ".   mind-map-sketch   ."
+  ".    logo-sketch-1  .";
 }
 
 .logo-section {
@@ -339,7 +339,7 @@
 
 .u-test-1-c1-img {
   grid-area: u-test-1-c1-img;
-  padding: 0 5rem;
+  padding: 0;
 }
 
 .u-test-1-c2 {
@@ -357,7 +357,7 @@
 
 .u-test-1-c3-img {
   grid-area: u-test-1-c3-img;
-  padding: 0 5rem;
+  padding: 0;
 }
 
 .u-test-1-c4 {
@@ -376,6 +376,14 @@
 
 .mind-map-img {
   grid-area: mind-map-img;
+}
+
+.mind-map-sketch {
+  grid-area: mind-map-sketch;
+}
+
+.logo-sketch-1 {
+  grid-area: logo-sketch-1;
 }
 
 .logo-1 {
@@ -462,7 +470,7 @@
 
 .u-test-2-c1-img {
   grid-area: u-test-2-c1-img;
-  padding: 0 5rem;
+  padding: 0;
 }
 
 .u-test-2-c2 {
@@ -471,7 +479,7 @@
 
 .u-test-2-c2-img {
   grid-area: u-test-2-c2-img;
-  padding: 0 10rem;
+  padding: 0;
 }
 
 .u-test-2-c3 {
@@ -488,7 +496,7 @@
 
 .u-test-2-c4-img {
   grid-area: u-test-2-c4-img;
-  padding: 0 5rem;
+  padding: 0;
 }
 
 .final-proto {
@@ -543,26 +551,217 @@
   grid-area: footer-flex;
 }
 
-/* @media screen and (min-width: 768px) {
-  body {
-   display: grid;
-   grid-template-columns: 3fr 7fr 3fr;
-   grid-template-areas:
-   ".              navbar         ."
-   ".             summary        ."
-   " hero-img     hero-img      hero-img"
-   ".             roles           ."
-   ".              tools         ."
-   "title-box-p title-box-p title-box-p"
-   "extra-grey    problem        extra-grey-2"
-   "title-box-s title-box-s title-box-s"
-   ".               solution          ."
-   "p-s-img     p-s-img       p-s-img"
-   "title-box-disc title-box-disc title-box-disc"
-   ".           comp-analysis-text       ."
-   ".        comp-analysis-img          .";
+.hero-img-desk, .solution-screenshot-desk, .style-guide-3 {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:
+    ".              nav-flex          .";
   }
-} */
+
+  .hero {
+   display: grid;
+   grid-template-columns: 2fr 3fr 3fr 2fr;
+   grid-template-areas:
+   ".             summary    summary     ."
+   " hero-img     hero-img   hero-img   hero-img"
+   ".             roles   tools        ."
+   "title-box-p title-box-p title-box-p title-box-p"
+   "extra-grey    problem   problem     extra-grey-2"
+   "title-box-s title-box-s title-box-s  title-box-s"
+   ".               solution   solution       ."
+   "p-s-img      p-s-img     p-s-img  p-s-img";
+
+  }
+
+  .comp-analysis-section {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:
+   "title-box-disc title-box-disc title-box-disc"
+   ".           comp-analysis-text     ."
+   ".      comp-analysis-img         .";
+  }
+
+  .grey-bg {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:
+     ".  u-research-text  ."
+     ".      percentages   .";
+  }
+
+  .u-persona-section {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:
+     ".        user-persona-text        ."
+     ".              bryce              ."
+     "title-box-info  title-box-info  title-box-info"
+     " .      u-stories-text       ."
+     ".             I-want                  .";
+  }
+
+  .u-flows-section {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:
+    ".        u-flows               ."
+    ".          u-flows-img       .";
+  }
+
+  .wireframes-section {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:
+    ".         wireframes      ."
+    ".         wireframes-img      .";
+  }
+
+  .proto-1-section {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:
+    ".       proto-1         ."
+    ".      proto-1-img     .";
+  }
+
+  .u-test-1-section {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:
+    ".      u-test-1         ."
+    ".      u-test-1-c1     ."
+    ".      u-test-1-c1-img     ."
+    ".      u-test-1-c2     ."
+    ".      u-test-1-c2-img     ."
+    ".      u-test-1-c3     ."
+    ".      u-test-1-c3-img     ."
+    ".      u-test-1-c4     ."
+    "title-box-visual-design title-box-visual-design title-box-visual-design"
+    ".     mind-map   ."
+    ".     mind-map-sketch   ."
+    ".   logo-sketch-1   .";
+  }
+
+  .logo-section {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:
+    ".   logo-1    ."
+    ". logo-sketch  ."
+    ".  logo-sketch-digital  ."
+    ".   logo-samples-text    ."
+    ".    logo-samples    ."
+    ". typeface-text    ."
+    ".   typeface-examples   .";
+  }
+
+  .style-guide-section {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:
+    ".    style-guide-text   ."
+    ".  style-guide-img    .";
+  }
+
+  .hi-fi-1-section {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:
+    ". hi-fi-1 ."
+    "hi-fi-1-desk hi-fi-1-desk hi-fi-1-desk"
+    "hi-fi-1-mobile hi-fi-1-mobile hi-fi-1-mobile";
+  }
+
+  .pref-test-section {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:
+    ". pref-test ."
+    ". pref-test-img ."
+    "title-box-proto   title-box-proto   title-box-proto"
+    ".  hi-fi-2   ."
+    "hi-fi-2-desk  hi-fi-2-desk   hi-fi-2-desk"
+    "hi-fi-2-mobile   hi-fi-2-mobile  hi-fi-2-mobile";
+  }
+
+  .u-test-2-section {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:
+    ". u-test-2 ."
+    ". u-test-2-c1 ."
+    ".  u-test-2-c1-img  ."
+    ".  u-test-2-c2   ."
+    ".   u-test-2-c2-img  ."
+    ".   u-test-2-c3  ."
+    ".   u-test-2-c3-img  ."
+    ".   u-test-2-c4  ."
+    ".   u-test-2-c4-img  .";
+  }
+
+  .final-proto-section {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:
+    ". final-proto ."
+    "final-proto-img  final-proto-img  final-proto-img";
+  }
+
+  .conc-section {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:
+    "title-box-conclusion  title-box-conclusion  title-box-conclusion"
+    ".   conclusion-summary  ."
+    ".  what-worked  ."
+    ".  what-kind-of  ."
+    ".  what-didnt  ."
+    "screen-evolution  screen-evolution  screen-evolution"
+    ".  conc-1  ."
+    ".  conc-2  ."
+    ".  final-thoughts  .";
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:
+    ".    footer-flex   .";
+  }
+
+
+  .hero-img-mobile, .solution-screenshot-mobile {
+    display: none;
+  }
+
+  .hero-img-desk, .solution-screenshot-desk {
+    display: inline;
+  }
+
+  .u-test-1-c2-img {
+    grid-area: u-test-1-c2-img;
+    padding: 0 12rem;
+  }
+
+  .u-test-2-c1-img {
+    padding: 0 7rem;
+  }
+
+  .u-test-2-c2-img {
+    padding: 0 12rem;
+  }
+
+  .u-test-2-c4-img {
+    padding: 0 7rem;
+  }
+
+}
 
 
 @media (min-width: 1025px) {
@@ -633,7 +832,8 @@
     ".   u-test-1-c3      u-test-1-c3-img     ."
     ".   u-test-1-c4      u-test-1-c4     ."
     "title-box-visual-design  title-box-visual-design title-box-visual-design  title-box-visual-design"
-    ".     mind-map   mind-map-img    .";
+    ".     mind-map   mind-map    ."
+    ".    mind-map-sketch   logo-sketch-1   .";
   }
 
   .logo-section {
@@ -705,6 +905,18 @@
     ".   footer-flex  footer-flex  .";
   }
 
+  .hero-img-mobile, .solution-screenshot-mobile {
+    display: none;
+  }
+
+  .hero-img-desk, .solution-screenshot-desk, .style-guide-3 {
+    display: inline;
+  }
+
+  .style-guide-3 img {
+    margin-top: 0;
+  }
+
   .extra-grey-2 {
     display: none;
   }
@@ -725,7 +937,11 @@
 
   .u-test-1-c2-img {
     grid-area: u-test-1-c2-img;
-    padding: 0 12rem;
+    padding: 0 8rem;
+  }
+
+  .upload-button {
+    max-width: 30rem;
   }
 
   .u-test-1-c3-img {

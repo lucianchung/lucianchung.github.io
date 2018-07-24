@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-.container {
-  /* max-width: 120rem; */
-}
-
 .navbar {
   display: grid;
   grid-template-columns: 1fr 10fr 1fr;
@@ -35,6 +31,12 @@
   grid-template-columns: 1fr 10fr 1fr;
   grid-template-areas:
   ".   footer-flex      .";
+}
+
+
+/* ********** Different grid-areas ********** */
+.navbar {
+  grid-area: navbar;
 }
 
 .nav-flex {
@@ -75,14 +77,11 @@
 }
 
 .bg-robot {
-  /* background-color: grey; */
-  background-image: url("images/Robot-red.png");
+  background-image: url("/images/Robot-red.png");
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-position: right top; */
-  /* height: 100%; */
-  /* margin-right: 20rem; */
-  /* background-attachment: fixed; */
+  background-position: 5rem 25rem;
+  overflow: visible;
 }
 
 #design-section {
@@ -96,7 +95,7 @@
 .portfolio-category li {
   display: block;
   margin: auto;
-  max-width: 60rem;
+  max-width: 40rem;
 }
 
 li.hide, div.hide {
@@ -105,6 +104,64 @@ li.hide, div.hide {
 
 @media screen and (min-width: 768px) {
 
+  .navbar {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:
+    ".    nav-flex      .";
+  }
+
+  .intro-section {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:
+    ".    self-intro    .";
+  }
+
+  .main-body {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:
+    ".     cat-design   ."
+    ".    cat-illus       .";
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:
+    ".   footer-flex      .";
+  }
+
+  .self-intro-text {
+    font-size: 3rem;
+    margin: -25rem auto 0 auto;
+    max-width: 90rem;
+    text-align: center;
+  }
+
+  .bg-robot {
+    background-image: url("/images/Robot-red.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    height: 100%;
+    margin: 35rem 0 1rem 0;
+    overflow: visible;
+  }
+
+  .section-title {
+    text-align: left;
+  }
+
+  .portfolio-thumbs {
+    display: grid;
+    grid-gap: 2rem;
+    grid-row-gap: 2rem;
+    grid-template-columns: auto;
+    justify-content: start;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 1025px) {
@@ -137,58 +194,63 @@ li.hide, div.hide {
     ".   footer-flex   footer-flex   .";
   }
 
-  /* .title-illus {
-    grid-area: title-illus;
-  }
-
-  .illus-thumbs {
-    grid-area: illus-thumbs;
-    margin: auto;
-  } */
-
   .self-intro-text {
     font-size: 3rem;
-    max-width: 90rem;
+    margin: -20rem auto 0 auto;
+    max-width: 60rem;
     text-align: center;
   }
 
+  .bg-robot {
+    background-image: url("/images/Robot-red.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    height: 100%;
+    margin-top: 30rem;
+    overflow: visible;
+  }
+
   .section-title {
-    /* max-width: 100rem; */
     text-align: left;
   }
 
   .portfolio-thumbs {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: start:
-  }
-
-  /* .portfolio-thumbs {
     display: grid;
     grid-gap: 2rem;
     grid-row-gap: 2rem;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto;
+    justify-content: start;
     margin: 0 auto;
-  } */
+  }
 
-  .blank-thumb {
+
+ /* Creating a flex display for when there are more thumbnails */
+
+  /* .blank-thumb {
     height: 350px;
     weight: 350px;
   }
 
  .portfolio-thumbs li {
-   /* flex-grow: 20; */
-   /* max-width: 100%; */
- }
+   flex-grow: 20;
+   max-width: 100%;
+ } */
 
- img, .thumbnail, .portfolio-thumbs li, .thumbnail a {
-    margin: 1rem 0;
-    height: 100%;
-    /* padding: 0; */
-    width: 100%;
-    /* max-width: 80%; */
-  }
+ /* .portfolio-thumbs {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: start:
+ } */
+
+ /* img, .thumbnail, .portfolio-thumbs li, .thumbnail a {
+    margin: 1rem auto 1rem 0;
+    height: 80%;
+    padding: 0;
+    width: 80%;
+    max-width: 80%;
+  } */
 }
 
 

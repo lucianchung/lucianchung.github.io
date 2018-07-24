@@ -27,7 +27,7 @@ p {
   font-size: 1.6rem;
   line-height: 1.6em;
   max-width: 60rem;
-  padding: 2rem;
+  padding: 2rem 0;
   text-align: left;
 }
 
@@ -124,14 +124,14 @@ figcaption {
   margin-top: 2rem;
 }
 
-/* Images */
+/* *************** Images *************** */
 
 .half-width {
   margin-top: 3rem;
 }
 
 .image-border {
-  border: 2px solid #c4c4c4;
+  border: 1px solid #c4c4c4;
 }
 
 figure {
@@ -142,6 +142,7 @@ img {
   margin: 2rem auto;
   width: 100%;
 }
+
 
 /* *************** Structure *************** */
 
@@ -221,7 +222,7 @@ button {
 .percentages-box {
   background-color: #fff;
   border: 6px solid #B22836;
-  margin: 3em 2rem;
+  margin: 3em 0rem;
 }
 
 .percentages-box h3, .percentages-box h2, .percentages-box p{
@@ -265,6 +266,102 @@ button {
   padding: 0;
 }
 
+/* *************** User Persona *************** */
+
+.persona {
+  border: 1px solid #B22836;
+}
+
+.red {
+  background-color: #E53345;
+}
+
+.dark-red {
+  background-color: #B22836;
+}
+
+.grey {
+  background: rgba(196, 196, 196, .25);
+}
+
+.white-text {
+  color: #fff;
+}
+
+.red-text {
+  color: #E53345;
+}
+
+.dark-red-text {
+  color: #B22836;
+}
+
+.persona h3 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 2rem 0 .5rem 0;
+  text-transform: capitalize;
+}
+
+.persona h4 {
+  font-weight: 700;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+.persona h5 {
+  margin-top: 0;
+  padding: .1rem;
+}
+
+.persona p {
+  margin: 0;
+}
+
+.persona div {
+  padding: 1rem;
+}
+
+.persona-title {
+  padding: 1rem;
+}
+
+.top {
+  margin-top: 1rem;
+}
+
+.para {
+  padding: 0rem 1rem 1rem 1rem;
+}
+
+.two-pad {
+  padding: 2rem 0;
+}
+
+.one-pad {
+  padding: 1rem;
+}
+
+.left-align {
+  text-align: left;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.persona li {
+  padding: 0 .5rem 1rem .5rem;
+}
+
+.persona ul {
+  margin: 0;
+}
+
+
+
+
 /* *************** Navbar *************** */
 
  .navbar {
@@ -272,6 +369,7 @@ button {
   height: 6rem;
   margin: 0 auto;
   position: fixed;
+  top: 0;
   width: 100%;
 }
 
@@ -289,12 +387,9 @@ button {
   flex-grow: 1;
   font-size: 1.6rem;
   font-weight: 700;
-  text-align: right;
-}
-
-.design-link, .illus-link, .about-link {
   margin: 1.5rem auto;
   padding: .5rem;
+  text-align: right;
 }
 
 .logo-li {
@@ -318,7 +413,7 @@ button {
 
 .footer-flex {
   align-items: center;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   border-top: 1px solid #444444;
   bottom: 0;
   display: flex;
@@ -330,38 +425,34 @@ button {
 
 .icon {
   flex-grow: 2;
-  margin: .8rem;
-  padding: 1.2rem;
-  width: 5rem;
+  /* margin: 1rem; */
+  padding: 1.1rem;
+  width: 5.3rem;
 }
 
-
-
-/* Elements unique to About page (about.html) */
-
-.about-image {
-  display: block;
-  margin: 5rem auto;
-}
-
-.red-text {
-  color: #E53345;
-}
 
 /* For Tablets */
 
 @media screen and (min-width: 768px) {
 
-
-  /* .text-full {
-    max-width: 90rem;
-    width: 98%;
+  .tools {
+    border-left: 2px solid #444;
+    border-top: none;
   }
 
-  .text-half {
-    max-width: 90rem;
-    width: 98%;
-  } */
+  .conclusion-summary p {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .icon {
+    flex-grow: 5;
+    margin: 2rem;
+    padding: 1.2rem;
+    width: 5.5rem;
+  }
+
+}
 
 /* For Computer Screens */
 
@@ -375,9 +466,18 @@ button {
     font-size: 6rem;
   }
 
+  p {
+    padding: 2rem;
+  }
+
   .text {
     max-width: 60rem;
     /* width: 50rem; */
+  }
+
+  .text-center, .I-want.li {
+    max-width: 100%;
+    text-align: center;
   }
 
   .title-box {
@@ -400,9 +500,8 @@ button {
     color: #B22836;
   }
 
-  .tools {
-    border-left: 2px solid #444;
-    border-top: none;
+  .p-s-text {
+    padding: 2rem;
   }
 
   button {

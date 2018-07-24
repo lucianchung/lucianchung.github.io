@@ -107,11 +107,57 @@ h4 {
   max-width: 25rem;
 }
 
+
 /* Elements unique to About page (about.html) */
+
+.about-image {
+  display: block;
+  margin: 5rem auto;
+}
+
+.red-text {
+  color: #E53345;
+}
 
 
 @media screen and (min-width: 768px) {
 
+
+  .navbar {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:
+    ".    nav-flex      .";
+  }
+
+  .header {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:
+    ".    header-content      .";
+  }
+
+
+  .body-content {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:
+    ".    artist      ."
+    ".    artist-text   ."
+    ".    prob-solver      ."
+    ".    prob-solver-text      ."
+    ".    researcher      ."
+    ".    researcher-text      ."
+    ".    designer      ."
+    ".    designer-text      .";
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:
+    ".    footer-flex      .";
+  }
 }
 
 @media (min-width: 1025px) {
