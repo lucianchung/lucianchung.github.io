@@ -98,10 +98,6 @@ h4 {
   padding: 2rem 0;
 }
 
-.about {
-  margin-top:
-}
-
 .about-image {
   margin: 6rem auto 4rem auto;
   max-width: 25rem;
@@ -230,5 +226,5 @@ h4 {
     grid-row-gap: 2rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 0 auto;
-  } */
-}
+  }
+} */

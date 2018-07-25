@@ -40,7 +40,7 @@ h1 {
 h2 {
   font-size: 3.2em;
   font-weight: 700;
-  padding: 5rem auto;
+  padding: 5rem 0;
   text-transform: uppercase;
 }
 

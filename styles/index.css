@@ -159,7 +159,7 @@ li.hide, div.hide {
     grid-gap: 2rem;
     grid-row-gap: 2rem;
     grid-template-columns: auto;
-    justify-content: start;
+    justify-content: flex-start;
     margin: 0 auto;
   }
 }
@@ -220,7 +220,7 @@ li.hide, div.hide {
     grid-gap: 2rem;
     grid-row-gap: 2rem;
     grid-template-columns: auto;
-    justify-content: start;
+    justify-content: flex-start;
     margin: 0 auto;
   }
 
@@ -263,5 +263,5 @@ li.hide, div.hide {
     grid-row-gap: 2rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 0 auto;
-  } */
-}
+  }
+} */
