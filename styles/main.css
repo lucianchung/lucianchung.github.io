@@ -53,7 +53,7 @@ h3 {
 
 h4 {
   font-size: 1.8rem;
-  margin-top: -.5rem;
+  /* margin-top: -.5rem; */
 }
 
 h5 {
@@ -110,9 +110,30 @@ figcaption {
   padding: 2rem 0;
 }
 
-.usability-change {
+.subtitle {
+  color: #B22836;
+  /* font-size: 1.6rem; */
+  font-weight: 700;
+  /* text-transform: uppercase; */
+}
+
+.usability-change-title {
+
   font-size: 1.8rem;
+  margin: 0 auto;
   padding-bottom: 0;
+  /* text-transform: uppercase; */
+
+}
+
+.usability-change {
+  color: #B22836;
+  /* font-size: 1.8rem; */
+  font-weight: 400;
+  margin-top: 1rem;
+  padding-bottom: 0;
+  padding-top: 0;
+  text-transform: uppercase;
 }
 
 .screens-title {
@@ -164,8 +185,8 @@ img {
 }
 
 .case-study-button {
-  background-color: #E53345;
-  border: none;
+  background: #E53345;
+  border: .3rem solid rgba(0,0,0,0);
   border-radius: 6px;
   color: #ffffff;
   display: flex;
@@ -175,11 +196,25 @@ img {
   height: 3.6rem;
   justify-content: center;
   margin: 2rem auto 3rem auto;
-  padding: 1rem 1rem;
+  padding: 1rem 1rem 2.3rem 1rem;
+  /* position: relative; */
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  transition: all 500ms ease;
   width: 20rem;
+}
+
+/* .case-study-button:before {
+  content: '';
+  transition: all 2s ease;
+} */
+
+.case-study-button:hover {
+  border: .3rem solid #E53345;
+  background: rgba(0,0,0,0);
+  color: #E53345;
+
 }
 
 .two-rem-bottom {
@@ -225,16 +260,25 @@ img {
 .percentages-box {
   background-color: #fff;
   border: 6px solid #B22836;
-  margin: 3em 0rem;
+  margin: 3em auto;
+  max-width: 50rem;
 }
 
-.percentages-box h3, .percentages-box h2, .percentages-box p{
+.percentages-box h3, .percentages-box h2, .percentages-box h4{
   color: #B22836;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   text-align: center;
 }
 
+.percentages-box h4 {
+  padding-bottom: 2rem;
+}
+
 .percentages-box h2 {
-  margin: 2rem 0 -1rem 0;
+  margin: 1.2rem 0 -1rem 0;
+  padding: 0rem 0 2rem 0;
 }
 
 .I-want h3, .I-want li {
@@ -250,7 +294,7 @@ img {
 .usability-list li {
   margin: auto;
   max-width: 60rem;
-  padding: 1rem 0;
+  padding: 1rem;
   text-align: center;
 }
 
@@ -458,10 +502,6 @@ img {
     border-top: none;
   }
 
-  .conclusion-summary p {
-    margin: 0 auto;
-    text-align: center;
-  }
 
   .icon {
     flex-grow: 5;
@@ -527,6 +567,20 @@ img {
     margin-top: -1.5rem;
   }
 
+  .align-center-desktop {
+    margin: auto;
+    text-align: center;
+  }
+
+  .center-margin {
+    margin: auto;
+  }
+
+  .bryce {
+    margin: 0 auto;
+    width: 80%;
+  }
+
   .bryce p {
     max-width: 90rem;
   }
@@ -541,7 +595,7 @@ img {
     margin-top: 2rem;
   }
 
-  .conclusion-summary, .final-thoughts {
+  .conclusion-summary p {
     margin: 0 auto;
     text-align: center;
   }

@@ -113,6 +113,9 @@ h4 {
 
 .red-text {
   color: #E53345;
+  line-height: 3rem;
+  margin: 2rem auto;
+  text-transform: capitalize;
 }
 
 

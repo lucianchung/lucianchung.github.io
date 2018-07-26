@@ -70,7 +70,7 @@
 
 .self-intro-text {
   font-size: 1.9rem;
-  margin: 10rem auto 0 auto;
+  margin: 7rem auto 0 auto;
   max-width: 40rem;
   text-transform: none;
 }
@@ -83,7 +83,7 @@
   background-image: url("/images/Robot-red.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 5rem 25rem;
+  background-position: 8rem 27rem;
   overflow: visible;
 }
 
@@ -221,7 +221,7 @@ li.hide, div.hide {
 
   .self-intro-text {
     font-size: 3rem;
-    margin: -20rem auto 0 auto;
+    margin: -25rem auto 0 auto;
     max-width: 90rem;
     text-align: center;
   }
@@ -282,7 +282,7 @@ li.hide, div.hide {
 
   .self-intro-text {
     font-size: 5rem;
-    margin: -30rem auto 0 auto;
+    margin: -35rem auto 0 auto;
     max-width: 100rem;
     text-align: center;
   }

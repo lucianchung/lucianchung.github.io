@@ -750,6 +750,65 @@
     display: inline;
   }
 
+  /* ********** User Persona ********** */
+
+  .persona {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "up-title up-title"
+    "up-name persona-photo"
+    "up-quote up-quote"
+    "up-motiv up-motiv"
+    "up-frustrations up-goals"
+    "up-bio up-bio";
+    margin: auto;
+  }
+
+  .bryce {
+    display: grid;
+    margin: auto;
+  }
+
+  .up-title {
+    grid-area: up-title;
+  }
+
+  .up-name {
+    grid-area: up-name;
+    margin: auto;
+    padding: 2rem 1rem;
+  }
+
+  .persona-photo {
+    grid-area: persona-photo;
+  }
+
+  .up-quote {
+    grid-area: up-quote;
+  }
+
+  .up-motiv {
+    grid-area: up-motiv;
+  }
+
+  .up-frustrations {
+    grid-area: up-frustrations;
+    padding-top: 0;
+  }
+
+  .up-goals {
+    grid-area: up-goals;
+    padding-top: 0;
+  }
+
+  .up-bio {
+    grid-area: up-bio;
+  }
+
+  .equal-margins {
+    margin: 0 auto;
+  }
+
   .u-test-1-c2-img {
     grid-area: u-test-1-c2-img;
     padding: 0 12rem;
@@ -927,63 +986,13 @@
     display: none;
   }
 
-  /* ********** User Persona ********** */
 
-  .persona {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-    "up-title up-title"
-    "up-name persona-photo"
-    "up-quote up-quote"
-    "up-motiv up-motiv"
-    "up-frustrations up-goals"
-    "up-bio up-bio";
-    margin: auto;
-  }
-  .bryce {
-    display: grid;
-    margin-right: 10rem;
-  }
-
-  .up-title {
-    grid-area: up-title;
-  }
-
-  .up-name {
+  /* .up-name {
     grid-area: up-name;
     margin: 0;
     padding: 7rem 2rem 2rem 2rem;
-  }
+  } */
 
-  .persona-photo {
-    grid-area: persona-photo;
-  }
-
-  .up-quote {
-    grid-area: up-quote;
-  }
-
-  .up-motiv {
-    grid-area: up-motiv;
-  }
-
-  .up-frustrations {
-    grid-area: up-frustrations;
-    padding-top: 2rem;
-  }
-
-  .up-goals {
-    grid-area: up-goals;
-    padding-top: 2rem;
-  }
-
-  .up-bio {
-    grid-area: up-bio;
-  }
-
-  .equal-margins {
-    margin: 0 auto;
-  }
 
 
   .u-test-1-c1-img {
@@ -1038,8 +1047,10 @@
     "up-bio up-bio";
     margin: auto;
   }
+
   .bryce {
     display: grid;
+    margin-left: auto;
     margin-right: 10rem;
   }
 
@@ -1072,12 +1083,12 @@
 
   .up-frustrations {
     grid-area: up-frustrations;
-    padding-top: 2rem;
+    padding-top: 0;
   }
 
   .up-goals {
     grid-area: up-goals;
-    padding-top: 2rem;
+    padding-top: 0;
   }
 
   .up-bio {
