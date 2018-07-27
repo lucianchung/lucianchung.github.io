@@ -557,7 +557,7 @@
   grid-area: footer-flex;
 }
 
-.hero-img-desk, .solution-screenshot-desk, .style-guide-3 {
+.hero-img-desk, .solution-screenshot-desk {
   display: none;
 }
 
@@ -974,12 +974,8 @@
     display: none;
   }
 
-  .hero-img-desk, .solution-screenshot-desk, .style-guide-3 {
+  .hero-img-desk, .solution-screenshot-desk {
     display: inline;
-  }
-
-  .style-guide-3 img {
-    margin-top: 0;
   }
 
   .extra-grey-2 {
