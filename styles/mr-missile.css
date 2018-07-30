@@ -1,0 +1,193 @@
+/* red: #E53345 */
+/* dark red: #B22836 */
+/* background grey: #C4C4C4 */
+/* background: rgba(196, 196, 196, .25); */
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  grid-template-areas:
+  ".    nav-flex      .";
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  grid-template-areas:
+  "hero-img    hero-img    hero-img";
+}
+
+.game-description {
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  grid-template-areas:
+  ".    content       ."
+  ".    video       ."
+  ".    content-two      ."
+  ".    download-buttons      ."
+  ".    screenshots      .";
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  grid-template-areas:
+  ".   footer-flex      .";
+}
+
+.nav-flex {
+  grid-area: nav-flex;
+}
+
+.hero-img {
+  grid-area: hero-img;
+}
+
+.content {
+  grid-area: content;
+}
+
+.video {
+  grid-area: video;
+}
+
+.content-two {
+  grid-area: content-two;
+}
+
+.download-buttons {
+  grid-area: download-buttons;
+}
+
+.screenshots {
+  grid-area: screenshots;
+}
+
+.footer-flex {
+  grid-area: footer-flex;
+}
+
+/* ***** Elements ***** */
+
+.hero {
+  margin-top: 10rem;
+}
+
+.content, .game-description, .video, .content-two, .download-buttons {
+  margin:auto;
+  max-width: 80vw;
+}
+
+.game-title {
+  font-size: 3rem;
+  width: 100%;
+}
+
+.text {
+ margin: -1rem auto;
+}
+
+.quote {
+  color: #B22836;
+  font-weight: 700;
+}
+
+.screenshots img {
+  margin: .3rem auto;
+}
+
+@media screen and (min-width: 768px) {
+
+  .navbar {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:
+    ".    nav-flex      .";
+  }
+
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:
+    "hero-img    hero-img    hero-img";
+  }
+
+  .game-description {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:
+    ".    content       ."
+    ".    video       ."
+    ".    content-two      ."
+    ".    download-buttons      ."
+    ".    screenshots      .";
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas:
+    ".   footer-flex      .";
+  }
+
+  .game-title {
+    font-size: 3.2rem;
+  }
+
+  .android-button, .ios-button {
+    display: inline-block;
+    margin: 2rem;
+    max-width: 40%;
+  }
+
+  .ios-button {
+    float: right;
+  }
+
+  .video {
+    width: 56rem;
+    height: 31.5rem;
+  }
+}
+
+@media (min-width: 1025px) {
+
+  .navbar {
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-areas:
+    ".     nav-flex    .";
+  }
+
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-areas:
+    "hero-img    hero-img    hero-img";
+  }
+
+  .game-description {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-areas:
+    ".    content       ."
+    ".    video       ."
+    ".    content-two      ."
+    ".    download-buttons      ."
+    ".    screenshots      .";
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-areas:
+    ".   footer-flex      .";
+  }
+
+  .video {
+    width: 76.6rem;
+    height: 43.1rem;
+    max-width: 100vw;
+  }

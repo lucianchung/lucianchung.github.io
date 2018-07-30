@@ -80,7 +80,9 @@
 }
 
 .bg-robot {
-  background-image: url("/images/Robot-red.png");
+  background-image: url("/images/Robot-red.svg");
+  background-color: rgba(255, 255, 255, .5);
+  background-blend-mode: lighten;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 8rem 27rem;
@@ -117,7 +119,6 @@ li.hide, div.hide {
 /* ***** Red div in middle on hover - Start ***** */
 
 .image2 {
-
   opacity: 1;
   display: block;
   width: 100%;
@@ -155,7 +156,6 @@ li.hide, div.hide {
   font-weight: 700;
   line-height: 2.5rem;
   opacity: 1;
-
 }
 
 /* ***** Red div in middle on hover - End ***** */
@@ -283,6 +283,8 @@ li.hide, div.hide {
     ".   footer-flex      .";
   }
 
+
+
   .self-intro-text {
     font-size: 3rem;
     margin: -25rem auto 0 auto;
@@ -291,7 +293,7 @@ li.hide, div.hide {
   }
 
   .bg-robot {
-    background-image: url("/images/Robot-red.png");
+    background-image: url("/images/Robot-red.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
@@ -324,14 +326,14 @@ li.hide, div.hide {
 
   .intro-section {
     display: grid;
-    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-columns: 1fr 8fr 1fr;
     grid-template-areas:
     ".    self-intro  self-intro  .";
   }
 
   .main-body {
     display: grid;
-    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-columns: 1fr 8fr 1fr;
     grid-template-areas:
     ".     cat-design  .  ."
     ".    cat-illus    .   .";
@@ -352,7 +354,7 @@ li.hide, div.hide {
   }
 
   .bg-robot {
-    background-image: url("/images/Robot-red.png");
+    background-image: url("/images/Robot-red.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
@@ -361,8 +363,16 @@ li.hide, div.hide {
     overflow: visible;
   }
 
+  #design-section {
+    margin-top: 20rem;
+  }
+
   .section-title {
     text-align: left;
+  }
+
+  .portfolio-category li {
+    max-width: 30rem;
   }
 
   .portfolio-thumbs {
@@ -371,7 +381,7 @@ li.hide, div.hide {
     grid-row-gap: 2rem;
     grid-template-columns: auto;
     justify-content: flex-start;
-    margin: 0 auto;
+    margin: 0 auto
   }
 
 
