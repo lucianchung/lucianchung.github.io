@@ -107,18 +107,72 @@
         <!-- Images used to open lightbox -->
       <section class="portfolio">
         <div class="portfolio-images">
-          <!-- Images used to open the lightbox -->
-          <div class="row">
-            <div class="column">
-              <img src="images/illus-vector/Produce-800x800.jpg" onclick="openModal();currentSlide(1)" class="">
-            </div>
-            <div class="column">
-              <img src="images/illus-vector/Tools-800ht.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
-            </div>
-            <div class="column">
-              <img src="images/illus-vector/Divided-800x800.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
-            </div>
-          </div>
+          <ul class="row portfolio-thumbs">
+
+            <li class="column container">
+              <div class="img-bg-red" onclick="openModal();currentSlide(1)">
+                <img class="image" src="images/illus-vector/Produce-800x800.jpg">
+              </div>
+              <div class="middle" onclick="openModal();currentSlide(1)">
+                <div class="img-text">
+                  <h4 class="img-title">Produce Cars</h4>
+                  <p class="img-desc square-text">They are produce cars. Need I say more?
+                    <br>apple, banana, carrot
+                    <br>date, eggplant, fig
+                    <br>grapes, honeydew, ?</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="column container">
+              <div class="img-bg-red" onclick="openModal();currentSlide(2)">
+                <img class="image" src="images/illus-vector/Tools-800ht.jpg">
+              </div>
+              <div class="middle" onclick="openModal();currentSlide(2)">
+                <div class="img-text">
+                  <h4 class="img-title">My Tools</h4>
+                  <p class="img-desc">The tools I use for illustration / design.
+                    <br>Clockwise: mouse, stylus, Intuos Pro medium, mechanical pencil, Pigma Micron felt tip pens x 2, Pentel brush pen, kneaded eraser</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="column container">
+              <div class="img-bg-red" onclick="openModal();currentSlide(3)">
+                <img class="image" src="images/illus-vector/Divided-800x800.jpg">
+              </div>
+              <div class="middle" onclick="openModal();currentSlide(3)">
+                <div class="img-text">
+                  <h4 class="img-title">Divided</h4>
+                  <p class="img-desc square-text">Vector version of a drawing done for Inktober 2017 with the keyword "Divided"</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="column container">
+              <div class="img-bg-red" onclick="openModal();currentSlide(4)">
+                <img class="image" src="images/illus-vector/LandingLion-800ht.jpg">
+              </div>
+              <div class="middle" onclick="openModal();currentSlide(4)">
+                <div class="img-text">
+                  <h4 class="img-title">Man with Glasses</h4>
+                  <p class="img-desc square-text">Unused image for a client depicting an analyst for a website</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="column container">
+              <div class="img-bg-red" onclick="openModal();currentSlide(5)">
+                <img class="image" src="images/illus-vector/LucianHouse-800x800.jpg">
+              </div>
+              <div class="middle" onclick="openModal();currentSlide(5)">
+                <div class="img-text">
+                  <h4 class="img-title">Lucian House 2.0</h4>
+                  <p class="img-desc square-text">Trying out Flat 2.0 by mimicking an image found online</p>
+                </div>
+              </div>
+            </li>
+
         </div>
 
         <!-- ******** Modal / Lightbox ******** -->
@@ -127,18 +181,28 @@
           <div class="modal-content">
 
             <div class="mySlides">
-              <div class="numbertext">1 / 3</div>
-              <img src="images/illus-vector/Produce-800x800.jpg" style="width:100%">
+              <div class="numbertext">1 / 5</div>
+              <img src="images/illus-vector/Produce-800x800.jpg">
             </div>
 
             <div class="mySlides">
-              <div class="numbertext">2 / 3</div>
-              <img src="images/illus-vector/Tools-800ht.jpg" style="width:100%">
+              <div class="numbertext">2 / 5</div>
+              <img src="images/illus-vector/Tools-800ht.jpg">
             </div>
 
             <div class="mySlides">
-              <div class="numbertext">3 / 3</div>
-              <img src="images/illus-vector/Divided-800x800.jpg" style="width:100%">
+              <div class="numbertext">3 / 5</div>
+              <img src="images/illus-vector/Divided-800x800.jpg">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">4 / 5</div>
+              <img src="images/illus-vector/LandingLion-800ht.jpg">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">5 / 5</div>
+              <img src="images/illus-vector/LucianHouse-800x800.jpg">
             </div>
 
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -150,16 +214,34 @@
             </div>
 
             <!-- Thumbnail image controls -->
-            <div class="column">
-              <img class="demo" src="images/illus-vector/Produce-800x800.jpg" onclick="currentSlide(1)" alt="Nature">
+            <!-- Lightbox image descriptions -->
+            <div class="caption-text">
+              <img class="demo" src="images/Logo-Mark-red.svg" onclick="currentSlide(1)" alt="<h4>Produce Cars</h4>
+                They are produce cars. Need I say more?
+                <br>apple, banana, carrot
+                <br>date, eggplant, fig
+                <br>grapes, honeydew, ?">
             </div>
 
-            <div class="column">
-              <img class="demo" src="images/illus-vector/Tools-800ht.jpg" onclick="currentSlide(2)" alt="Snow">
+            <div class="">
+              <img class="demo" src="images/Logo-Mark-red.svg" onclick="currentSlide(2)" alt="<h4>My Tools</h4>
+              The tools I use for illustration / design.
+                <br>Clockwise: mouse, stylus, Intuos Pro medium, mechanical pencil, Pigma Micron felt tip pens x 2, Pentel brush pen, kneaded eraser">
             </div>
 
-            <div class="column">
-              <img class="demo" src="images/illus-vector/Divided-800x800.jpg" onclick="currentSlide(3)" alt="Mountains">
+            <div class="">
+              <img class="demo" src="images/Logo-Mark-red.svg" onclick="currentSlide(3)" alt="<h4>Divided</h4>
+              Vector version of a drawing done for Inktober 2017 with the keyword &quot;Divided&quot;">
+            </div>
+
+            <div class="">
+              <img class="demo" src="images/Logo-Mark-red.svg" onclick="currentSlide(4)" alt="<h4>Man with Glasses</h4>
+              Unused image for a client depicting an analyst for a website">
+            </div>
+
+            <div class="">
+              <img class="demo" src="images/Logo-Mark-red.svg" onclick="currentSlide(5)" alt="<h4>Lucian House 2.0</h4>
+              Trying out Flat 2.0 by mimicking an image found online">
             </div>
 
           </div>
@@ -221,6 +303,24 @@
       dots[slideIndex-1].className += " active";
       captionText.innerHTML = dots[slideIndex-1].alt;
     }
+
+    // function showSlides(n) {
+    //   var i;
+    //   var slides = document.getElementsByClassName("mySlides");
+    //   var dots = document.getElementsByClassName("demo");
+    //   var captionText = document.getElementById("caption");
+    //   if (n > slides.length) {slideIndex = 1}
+    //   if (n < 1) {slideIndex = slides.length}
+    //   for (i = 0; i < slides.length; i++) {
+    //     slides[i].style.display = "none";
+    //   }
+    //   for (i = 0; i < dots.length; i++) {
+    //     dots[i].className = dots[i].className.replace(" active", "");
+    //   }
+    //   slides[slideIndex-1].style.display = "block";
+    //   dots[slideIndex-1].className += " active";
+    //   captionText.innerHTML = dots[slideIndex-1].alt;
+    // }
     </script>
 
   </body>

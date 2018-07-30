@@ -52,107 +52,139 @@
       <!-- ************* Images ************* -->
       <section class="portfolio">
         <div class="portfolio-images">
-          <ul class="portfolio-thumbs">
+          <ul class="row portfolio-thumbs">
 
-            <li class="container">
-              <div class="img-bg-red">
-                <img src="images/illus-children/TortoiseAndHare-2000x1000.jpg" alt="Tortoise and the Hare" class="image" onclick="openModal ();currentSlide(1)">
+            <li class="column container">
+              <div class="img-bg-red" onclick="openModal();currentSlide(1)">
+                <img class="image" src="images/illus-children/TortoiseAndHare-2000x1000.jpg">
               </div>
-              <div class="middle">
+              <div class="middle" onclick="openModal();currentSlide(1)">
                 <div class="img-text">
                   <h4 class="img-title">The Tortoise and the Hare</h4>
-                  <p class="img-desc">My version of the classic Aesop fable featuring the eponymous Tortoise and Hare in automobiles.</p>
+                  <p class="img-desc square-text">My version of the classic Aesop fable featuring the eponymous Tortoise and Hare in automobiles.</p>
                 </div>
               </div>
             </li>
 
-            <li class="container">
-                <div class="img-bg-red">
-                  <img src="images/illus-children/RedRidingHood-India_1500x750.jpg" alt="Little Red Riding Hood - India" class="image" onclick="openModal ();currentSlide(2)">
+            <li class="column container">
+              <div class="img-bg-red" onclick="openModal();currentSlide(2)">
+                <img class="image" src="images/illus-children/RedRidingHood-India_1500x750.jpg">
+              </div>
+              <div class="middle" onclick="openModal();currentSlide(2)">
+                <div class="img-text">
+                  <h4 class="img-title">Little Red Riding Hood - India</h4>
+                  <p class="img-desc square-text">This is Little Red Riding Hood (Shawl) in an Indian jungle followed by a Bengal tiger.</p>
                 </div>
-                <div class="middle">
-                  <div class="img-text">
-                    <h4 class="img-title">Little Red Riding Hood - India</h4>
-                    <!-- <p class="img-desc">From a series depecting Little Red Riding Hood in different cultures with different environments and wolf substitutes. -->
-                      <p class="img-desc">This is Little Red Riding Hood (Shawl) in an Indian jungle followed by a Bengal tiger.</p>
-                  </div>
-                </div>
+              </div>
             </li>
 
-            <li class="container">
-                <div class="img-bg-red square">
-                  <img src="images/illus-children/MaryLittleLamb-02-800x800.jpg" alt="Mary and her Lamb in the Bathroom" class="image" onclick="openModal ();currentSlide(3)">
+            <li class="column container">
+              <div class="img-bg-red" onclick="openModal();currentSlide(3)">
+                <img class="image" src="images/illus-children/MaryLittleLamb-02-800x800.jpg">
+              </div>
+              <div class="middle" onclick="openModal();currentSlide(3)">
+                <div class="img-text">
+                  <h4 class="img-title">Mary Had a Little Lamb</h4>
+                  <p class="img-desc square-text">My attempt to add some levity to the second verse of "Mary Had a Little Lamb." The illustration could serve as a pun if one so desired.</p>
                 </div>
-                <div class="middle">
-                  <div class="img-text">
-                    <h4 class="img-title">Mary Had a Little Lamb</h4>
-                    <p class="img-desc square-text">My attempt to add some levity to the second verse of "Mary Had a Little Lamb." The illustration could serve as a pun if one so desired.</p>
-                  </div>
+              </div>
+            </li>
+
+            <li class="column container">
+              <div class="img-bg-red" onclick="openModal();currentSlide(4)">
+                <img class="image" src="images/illus-children/LucasWonderfulAdventure10-pg35-desk.png">
+              </div>
+              <div class="middle" onclick="openModal();currentSlide(4)">
+                <div class="img-text">
+                  <h4 class="img-title">Lucas's Wonderful Adventure</h4>
+                  <p class="img-desc square-text">Page from a digital children's book</p>
                 </div>
+              </div>
+            </li>
+
+            <li class="column container">
+              <div class="img-bg-red" onclick="openModal();currentSlide(5)">
+                <img class="image" src="images/illus-children/2015.03.19_RiceFieldMonster.jpg">
+              </div>
+              <div class="middle" onclick="openModal();currentSlide(5)">
+                <div class="img-text">
+                  <h4 class="img-title">Rice Field Monster</h4>
+                  <p class="img-desc square-text">From a short series of digital images drawn on photographs</p>
+                </div>
+              </div>
             </li>
 
           </ul>
         </div>
 
-        <!-- Images used to open lightbox -->
-        <!-- <div class="portfolio-images"> -->
-          <!-- Images used to open the lightbox -->
-          <!-- <div class="row">
-            <div class="column middle">
-              <img src="images/illus-vector/Produce-800x800.jpg" onclick="openModal();currentSlide(1)" class="">
-            </div>
-            <div class="column">
-              <img src="images/illus-vector/Tools-800ht.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
-            </div>
-            <div class="column">
-              <img src="images/illus-vector/Divided-800x800.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
-            </div>
-          </div>
-        </div> -->
-
         <!-- ******** Modal / Lightbox ******** -->
-        <!-- <div id="myModal" class="modal">
+        <div id="myModal" class="modal">
           <span class="close cursor" onclick="closeModal()">&times;</span>
           <div class="modal-content">
 
             <div class="mySlides">
-              <div class="numbertext">1 / 4</div>
-              <img src="images/illus-vector/Produce-800x800.jpg" style="width:100%">
+              <div class="numbertext">1 / 5</div>
+              <img src="images/illus-children/TortoiseAndHare-2000x1000.jpg">
             </div>
 
             <div class="mySlides">
-              <div class="numbertext">2 / 4</div>
-              <img src="images/illus-vector/Tools-800ht.jpg" style="width:100%">
+              <div class="numbertext">2 / 5</div>
+              <img src="images/illus-children/RedRidingHood-India_1500x750.jpg">
             </div>
 
             <div class="mySlides">
-              <div class="numbertext">3 / 4</div>
-              <img src="images/illus-vector/Divided-800x800.jpg" style="width:100%">
+              <div class="numbertext">3 / 5</div>
+              <img src="images/illus-children/MaryLittleLamb-02-800x800.jpg">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">4 / 5</div>
+              <img src="images/illus-children/LucasWonderfulAdventure10-pg35-desk.png">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">5 / 5</div>
+              <img src="images/illus-children/2015.03.19_RiceFieldMonster.jpg">
             </div>
 
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
             <!-- Caption text -->
-            <!-- <div class="caption-container">
+            <div class="caption-container">
               <p id="caption"></p>
-            </div> -->
+            </div>
 
             <!-- Thumbnail image controls -->
-            <!-- <div class="column">
-              <img class="demo" src="images/illus-vector/Produce-800x800.jpg" onclick="currentSlide(1)" alt="Nature">
+            <!-- Lightbox image descriptions -->
+            <div class="caption-text">
+              <img class="demo" src="images/Logo-Mark-red.svg" onclick="currentSlide(1)" alt="<h4>The Tortoise and the Hare</h4>
+                My version of the classic Aesop fable featuring the eponymous Tortoise and Hare in automobiles.">
             </div>
 
-            <div class="column">
-              <img class="demo" src="images/illus-vector/Tools-800ht.jpg" onclick="currentSlide(2)" alt="Snow">
+            <div class="">
+              <img class="demo" src="images/Logo-Mark-red.svg" onclick="currentSlide(2)" alt="<h4>Little Red Riding Hood - India</h4>
+              This is Little Red Riding Hood (Shawl) in an Indian jungle followed by a Bengal tiger.">
             </div>
 
-            <div class="column">
-              <img class="demo" src="images/illus-vector/Divided-800x800.jpg" onclick="currentSlide(3)" alt="Mountains">
+            <div class="">
+              <img class="demo" src="images/Logo-Mark-red.svg" onclick="currentSlide(3)" alt="<h4>Mary Had a Little Lamb</h4>
+              My attempt to add some levity to the second verse of &quot;Mary Had a Little Lamb.&quot; The illustration could serve as a pun if one so desired.">
+            </div>
+
+            <div class="">
+              <img class="demo" src="images/Logo-Mark-red.svg" onclick="currentSlide(4)" alt="<h4>Lucas's Wonderful Adventure</h4>
+              Page from a digital children's book">
+            </div>
+
+            <div class="">
+              <img class="demo" src="images/Logo-Mark-red.svg" onclick="currentSlide(5)" alt="<h4>Rice Field Monster</h4>
+              From a short series of digital images drawn on photographs">
             </div>
 
           </div>
-        </div> -->
+        </div>
+
 
       </section>
 
