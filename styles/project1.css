@@ -557,7 +557,7 @@
   grid-area: footer-flex;
 }
 
-.hero-img-desk, .solution-screenshot-desk {
+.hero-img-desk, .solution-screenshot-desk, .final-proto-desk {
   display: none;
 }
 
@@ -826,6 +826,14 @@
     padding: 0 7rem;
   }
 
+  .hero-img-mobile, .solution-screenshot-mobile, .final-proto-mobile {
+    display: none;
+  }
+
+  .hero-img-desk, .solution-screenshot-desk, .final-proto-desk {
+    display: inline;
+  }
+
 }
 
 
@@ -970,13 +978,7 @@
     ".   footer-flex  footer-flex  .";
   }
 
-  .hero-img-mobile, .solution-screenshot-mobile {
-    display: none;
-  }
 
-  .hero-img-desk, .solution-screenshot-desk {
-    display: inline;
-  }
 
   .extra-grey-2 {
     display: none;

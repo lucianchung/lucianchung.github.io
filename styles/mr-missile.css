@@ -148,6 +148,7 @@
   }
 
   .video {
+    border: none;
     width: 56rem;
     height: 31.5rem;
   }

@@ -75,18 +75,22 @@ li {
   font-size: 1.6rem;
 }
 
-p a:link {
+p a {
   color: #E53345;
   text-decoration: none;
+}
+
+p a:link {
+  color: #E53345;
 }
 
 p a:hover {
   color: #B22836;
 }
 
-p a:visited {
+/* p a:visited {
   color: #65353A;
-}
+} */
 
 ul {
   list-style-type: none;
