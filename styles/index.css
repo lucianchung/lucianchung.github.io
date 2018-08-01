@@ -77,6 +77,7 @@
 
 .section-title {
   font-size: 3.2rem;
+  padding: 1rem 0;
 }
 
 .bg-robot {
@@ -94,7 +95,7 @@
 }
 
 #illustration-section {
-  margin-top: 10rem;
+  margin-top: 2rem;
 }
 
 .portfolio-category li {
@@ -156,6 +157,10 @@ li.hide, div.hide {
   font-weight: 700;
   line-height: 2.5rem;
   opacity: 1;
+}
+
+.thumb-rect {
+  display: none;
 }
 
 /* ***** Red div in middle on hover - End ***** */
@@ -283,8 +288,6 @@ li.hide, div.hide {
     ".   footer-flex      .";
   }
 
-
-
   .self-intro-text {
     font-size: 3rem;
     margin: -25rem auto 0 auto;
@@ -326,17 +329,17 @@ li.hide, div.hide {
 
   .intro-section {
     display: grid;
-    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-columns: 1fr 4fr 4fr 1fr;
     grid-template-areas:
     ".    self-intro  self-intro  .";
   }
 
   .main-body {
     display: grid;
-    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-columns: 1fr 4fr 4fr 1fr;
     grid-template-areas:
-    ".     cat-design  .  ."
-    ".    cat-illus    .   .";
+    ".     cat-design  cat-design  ."
+    ".    cat-illus    cat-illus   .";
   }
 
   .footer {
@@ -348,41 +351,33 @@ li.hide, div.hide {
 
   .self-intro-text {
     font-size: 5rem;
-    margin: -35rem auto 0 auto;
+    margin: -30rem auto 0 auto;
     max-width: 100rem;
-    text-align: center;
   }
 
-  .bg-robot {
-    background-image: url("/images/Robot-red.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right;
-    height: 100%;
-    margin-top: 50rem;
-    overflow: visible;
-  }
+  /* .bg-robot {
+    height: 180rem;
+  } */
 
   #design-section {
     margin-top: 20rem;
   }
 
-  .section-title {
-    text-align: left;
-  }
-
   .portfolio-category li {
-    max-width: 30rem;
+    max-width: 60rem;
   }
 
-  .portfolio-thumbs {
-    display: grid;
-    grid-gap: 2rem;
-    grid-row-gap: 2rem;
-    grid-template-columns: auto;
-    justify-content: flex-start;
-    margin: 0 auto
+  .thumb-square {
+    display: none;
   }
+
+  .thumb-rect {
+    display: block;
+  }
+
+  /* .footer {
+    margin-top: 15rem;
+  } */
 
 
  /* Creating a flex display for when there are more thumbnails */
@@ -415,13 +410,33 @@ li.hide, div.hide {
 
 
 
-/* @media (min-width: 1400px) {
+@media (min-width: 1400px) {
 
-  .portfolio-thumbs {
+  /* .portfolio-thumbs {
     display: grid;
     grid-gap: 2rem;
     grid-row-gap: 2rem;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 0 auto;
+  } */
+
+
+  .self-intro-text {
+    font-size: 5rem;
+    margin: -30rem auto 0 auto;
+    max-width: 100rem;
   }
-} */
+
+    /* .bg-robot {
+      height: 200rem;
+    } */
+
+  .portfolio-category li {
+    max-width: 80vw;
+  }
+
+  /* .footer {
+    margin-top: 25rem;
+  } */
+
+}
