@@ -100,7 +100,7 @@
 
 .container {
   justify-content: center;
-  margin: auto;
+  margin: 0 auto;
   position: relative;
   text-align: center;
   width: 100%;
@@ -134,7 +134,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
   width: 90%;
 }
@@ -306,13 +306,13 @@ img.demo {
   opacity: 1;
 }
 
-img.hover-shadow {
+/* img.hover-shadow {
   transition: 0.3s;
 }
 
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+} */
 
 /* My changes */
 
@@ -340,12 +340,6 @@ img.hover-shadow {
   color: #fff;
   display: inline-block;
   padding: 0;
-  text-align: center;
-}
-
-h4 {
-  color: #fff;
-  font-weight: 700;
   text-align: center;
 }
 
@@ -378,7 +372,7 @@ h4 {
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: flex-start;
-  margin: 0;
+  /* margin: 0; */
 }
 
 .links-flex-container > li {
@@ -389,14 +383,14 @@ h4 {
 
 .img-bg-dark-grey {
   background-color: #444;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   max-width: 40rem;
   padding: 0;
 }
 
 .link-img {
   display: flex;
-  margin: 0 auto;
+  margin: 0;
   opacity: 0.5;
   transition: .5s ease;
 }
@@ -407,8 +401,9 @@ h4 {
 
 .link-text {
   background-color: #E53345;
-  border-radius: 6px;
+  border-radius: .6rem;
   line-height: 2.4rem;
+  max-width: 70%;
   padding: 1rem;
   /* text-transform: uppercase; */
 }

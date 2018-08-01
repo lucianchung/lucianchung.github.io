@@ -300,7 +300,6 @@ li.hide, div.hide {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
-    height: 100%;
     margin: 35rem 0 1rem 0;
     overflow: visible;
   }
@@ -351,7 +350,7 @@ li.hide, div.hide {
 
   .self-intro-text {
     font-size: 5rem;
-    margin: -30rem auto 0 auto;
+    margin: -25rem auto 0 auto;
     max-width: 100rem;
   }
 
@@ -419,13 +418,6 @@ li.hide, div.hide {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 0 auto;
   } */
-
-
-  .self-intro-text {
-    font-size: 5rem;
-    margin: -30rem auto 0 auto;
-    max-width: 100rem;
-  }
 
     /* .bg-robot {
       height: 200rem;
