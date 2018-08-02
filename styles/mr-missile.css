@@ -82,8 +82,9 @@
 }
 
 .game-title {
-  font-size: 3rem;
-  width: 100%;
+  font-size: 4rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 .text {
@@ -93,6 +94,10 @@
 .quote {
   color: #B22836;
   font-weight: 700;
+}
+
+.ios-button {
+  margin-bottom: 4rem;
 }
 
 .screenshots img {
@@ -134,12 +139,12 @@
   }
 
   .game-title {
-    font-size: 3.2rem;
+    font-size: 4.5rem;
   }
 
   .android-button, .ios-button {
     display: inline-block;
-    margin: 2rem;
+    margin: 4rem 2rem 5rem 2rem;
     max-width: 40%;
   }
 
@@ -187,9 +192,18 @@
     ".   footer-flex      .";
   }
 
+  .game-title {
+    font-size: 6rem;
+  }
+
   .video {
     width: 76.6rem;
     height: 43.1rem;
     max-width: 100vw;
   }
+
+  .android-button, .ios-button {
+    margin: 6rem 2rem 8rem 2rem;
+  }
+
 }

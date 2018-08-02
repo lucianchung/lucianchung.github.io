@@ -69,14 +69,14 @@
 /* Elements unique to Homepage (index.html) */
 
 .self-intro-text {
-  font-size: 1.9rem;
+  font-size: 2.6rem;
   margin: 7rem auto 0 auto;
   max-width: 40rem;
   text-transform: none;
 }
 
 .section-title {
-  font-size: 3.2rem;
+  font-size: 2.6rem;
   padding: 1rem 0;
 }
 
@@ -86,7 +86,7 @@
   background-blend-mode: lighten;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 8rem 27rem;
+  background-position: 8rem 30rem;
   overflow: visible;
 }
 
@@ -305,6 +305,7 @@ li.hide, div.hide {
   }
 
   .section-title {
+    font-size: 2.6rem;
     text-align: left;
   }
 
@@ -350,13 +351,18 @@ li.hide, div.hide {
 
   .self-intro-text {
     font-size: 5rem;
-    margin: -25rem auto 0 auto;
+    margin: -30rem auto 0 auto;
     max-width: 100rem;
+    text-align: left;
   }
 
-  /* .bg-robot {
-    height: 180rem;
-  } */
+  .bg-robot {
+    margin-top: 40rem;
+  }
+
+  .section-title {
+    font-size: 3rem;
+  }
 
   #design-section {
     margin-top: 20rem;
@@ -373,11 +379,6 @@ li.hide, div.hide {
   .thumb-rect {
     display: block;
   }
-
-  /* .footer {
-    margin-top: 15rem;
-  } */
-
 
  /* Creating a flex display for when there are more thumbnails */
 
