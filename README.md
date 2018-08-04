@@ -7,7 +7,7 @@ This responsive portfolio site was coded by Lucian Chung(me) using HTML, CSS, an
 I tried my best to use semantic HTML and CSS class names.
 I used CSS Grid (grid-template-areas) and flexbox.
 
-##Areas for Improvement
+## Areas for Improvement
 The CSS classes admittedly get pretty messy as I wanted to customize spacing (margins and padding) for different elements, particularly on my SafSav Case Study.
 
 I want to fine-tune the illustration pages (hover area exceed image width, and lightbox images are sometimes too tall and require scrolling).
