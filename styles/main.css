@@ -173,6 +173,7 @@ img {
 
 .title-box {
   background-color: #B22836;
+  margin-bottom: 3rem;
   margin-top: 2rem;
   width: 100%;
 }
@@ -206,7 +207,7 @@ img {
   text-decoration: none;
   text-transform: uppercase;
   transition: all 500ms ease;
-  width: 20rem;
+  width: 22rem;
 }
 
 /* .case-study-button:before {
@@ -225,9 +226,26 @@ img {
   margin-bottom: 2rem;
 }
 
+.four-pad-bottom {
+  padding-bottom: 4rem;
+}
+
+.top-bottom-padding {
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}
+
 .border-top {
   border-top: 2px solid #B22836;
   margin-top: 2rem;
+}
+
+.three-rem-top {
+  margin-top: 3rem;
+}
+
+.three-rem-top-pad {
+  margin-top: 3rem;
 }
 
 /* *************** Grey Backgrounds***************  */
@@ -248,12 +266,14 @@ img {
   padding: .5rem 0;
 }
 
-.tools {
-  border-top: 2px solid #444;
+.roles {
+  margin-bottom: 3rem;
+  margin-top: 3rem;
 }
 
-.problem {
-  padding-bottom: 2rem;
+.tools {
+  border-top: 2px solid #444;
+  padding-top: 3rem;
 }
 
 .img-no-top {
@@ -283,6 +303,10 @@ img {
 .percentages-box h2 {
   margin: 1.2rem 0 -1rem 0;
   padding: 0rem 0 2rem 0;
+}
+
+.title-box-info {
+  margin-top: 6rem;
 }
 
 .I-want h3, .I-want li {
@@ -318,6 +342,10 @@ img {
 }
 
 /* *************** User Persona *************** */
+
+.u-persona-section {
+  padding-bottom: 4rem;
+}
 
 .persona {
   border: 1px solid #B22836;
@@ -432,6 +460,7 @@ img {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
 }
 
 .nav-flex {
@@ -531,11 +560,18 @@ img {
     display: none;
   }
 
+  .roles {
+    margin-bottom: 3rem;
+    margin-top: 0;
+    padding-top: 3rem;
+  }
+
   .tools {
     border-left: 2px solid #444;
     border-top: none;
+    margin-top: 3rem;
+    padding-top: 0;
   }
-
 
   .icon {
     flex-grow: 5;
@@ -610,6 +646,19 @@ img {
     margin: auto;
   }
 
+  .comp-analysis-text {
+    margin-bottom: 3rem;
+  }
+
+  .percentages-box {
+    margin-top: 6rem;
+  }
+
+  .u-research-text, .u-flows-section, .wireframes-section, .proto-1-section,
+  .typeface-text, .style-guide-section {
+    padding-bottom: 3rem;
+  }
+
   .bryce {
     margin: 0 auto;
     width: 80%;
@@ -617,6 +666,10 @@ img {
 
   .bryce p {
     max-width: 90rem;
+  }
+
+  .u-flows-img, .proto-1-img {
+    margin-top: 3rem;
   }
 
   .u-test-1-c1-img, .u-test-1-c2-img, .u-test-1-c3-img, .u-test-1-c4-img, .u-test-2-c1-img, .u-test-2-c2-img, .u-test-2-c3-img, .u-test-2-c4-img  {

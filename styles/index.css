@@ -108,14 +108,10 @@ li.hide, div.hide {
   display: none;
 }
 
-
-
 .container {
   position: relative;
   /* width: 50%; */
 }
-
-
 
 /* ***** Red div in middle on hover - Start ***** */
 
@@ -165,7 +161,7 @@ li.hide, div.hide {
 
 /* ***** Red div in middle on hover - End ***** */
 
-/* ***** Red div in middle on hover - Start ***** */
+/* ***** Red div in middle on hover: first version - Start ***** */
 
 /* .image2 {
 
@@ -211,7 +207,7 @@ li.hide, div.hide {
   padding: 2rem;
 } */
 
-/* ***** Red div in middle on hover - End ***** */
+/* ***** Red div in middle on hover: first version  - End ***** */
 
 /* ***** Solid red overlay on hover - Start ***** */
 /*
@@ -351,7 +347,7 @@ li.hide, div.hide {
 
   .self-intro-text {
     font-size: 5rem;
-    margin: -30rem auto 0 auto;
+    margin: -30rem auto 0 0;
     max-width: 100rem;
     text-align: left;
   }
@@ -420,16 +416,7 @@ li.hide, div.hide {
     margin: 0 auto;
   } */
 
-    /* .bg-robot {
-      height: 200rem;
-    } */
-
   .portfolio-category li {
     max-width: 80vw;
   }
-
-  /* .footer {
-    margin-top: 25rem;
-  } */
-
 }

@@ -228,11 +228,4 @@ h4 {
 
 /* @media (min-width: 1400px) {
 
-  .portfolio-thumbs {
-    display: grid;
-    grid-gap: 2rem;
-    grid-row-gap: 2rem;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 0 auto;
-  }
 } */
