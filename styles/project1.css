@@ -657,6 +657,11 @@
   opacity: 1;
 }
 
+/* ***********NetAgain Files*********** */
+.netagain-temp {
+  max-width: 800px;
+}
+
 @media screen and (min-width: 768px) {
   .navbar {
     display: grid;
