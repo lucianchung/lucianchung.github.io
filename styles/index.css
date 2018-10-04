@@ -70,7 +70,16 @@
 
 .self-intro-text {
   font-size: 2.6rem;
+  line-height: 3rem;
   margin: 7rem auto 0 auto;
+  max-width: 40rem;
+  text-transform: none;
+}
+
+.self-intro-subtext {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  margin: -9rem auto 0 auto;
   max-width: 40rem;
   text-transform: none;
 }
@@ -286,7 +295,16 @@ li.hide, div.hide {
 
   .self-intro-text {
     font-size: 3rem;
+    line-height: 3.4rem;
     margin: -25rem auto 0 auto;
+    max-width: 90rem;
+    text-align: center;
+  }
+
+  .self-intro-subtext {
+    font-size: 2.4rem;
+    line-height: 3rem;
+    margin: -9rem auto 0 auto;
     max-width: 90rem;
     text-align: center;
   }
@@ -347,7 +365,16 @@ li.hide, div.hide {
 
   .self-intro-text {
     font-size: 5rem;
+    line-height: 6rem;
     margin: -30rem auto 0 0;
+    max-width: 100rem;
+    text-align: left;
+  }
+
+  .self-intro-subtext {
+    font-size: 4rem;
+    line-height: 4.8rem;
+    margin: -8rem auto 0 0;
     max-width: 100rem;
     text-align: left;
   }
