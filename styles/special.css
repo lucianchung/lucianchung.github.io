@@ -32,8 +32,8 @@
 }
 
 .thinner {
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .ps {
@@ -53,12 +53,6 @@
   .fit {
     max-width: 600px;
   }
-
-  .thinner {
-    margin-left: 10rem;
-    margin-right: 10rem;
-  }
-
 }
 
 @media (min-width: 1025px) {
@@ -75,41 +69,17 @@
     max-width: 800px;
   }
 
-  .thinner {
-    margin-left: 6rem;
-    margin-right: 6rem;
-  }
-
-  .ps {
-    font-size: 1.4rem;
-  }
 
 }
 
 @media screen and (min-width: 1140px) {
   .all {
     display: grid;
-    grid-template-columns: 2fr 1fr 4fr 1fr 2fr;
+    grid-template-columns: 1fr 1fr 4fr 1fr 1fr;
     grid-template-areas:
     ".        hero     hero   hero     ."
     ".         .    letter    .    ."
     ".      images      images    images     .";
    }
 
-  .border {
-    border: .1rem solid #333333;
-  }
-
-  .fit {
-    max-width: 800px;
-  }
-
-  .thinner {
-    margin-left: 0rem;
-    margin-right: 0rem;
-  }
-
-  .ps {
-    font-size: 1.4rem;
-  }
 }
