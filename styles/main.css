@@ -75,16 +75,16 @@ li {
   font-size: 1.6rem;
 }
 
-p a {
+p a, figcaption a {
   color: #E53345;
   text-decoration: none;
 }
 
-p a:link {
+p a, figcaption a:link {
   color: #E53345;
 }
 
-p a:hover {
+p a, figcaption a:hover {
   color: #B22836;
 }
 
@@ -248,6 +248,10 @@ img {
   margin-top: 3rem;
 }
 
+.minus-2rem-bottom-margin {
+  margin-bottom: -2rem;
+}
+
 /* *************** Grey Backgrounds***************  */
 
 .grey-bg {
@@ -256,6 +260,10 @@ img {
 }
 
 /* *************** Specific Items *************** */
+
+.hidden {
+  color: #ffffff;
+}
 
 .t-b-s-extra {
   display:none;
