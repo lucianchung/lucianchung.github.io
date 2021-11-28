@@ -1,0 +1,231 @@
+/* red: #E53345 */
+/* dark red: #B22836 */
+/* background grey: #e7e7e7 */
+
+/* Typography */
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p, li, figcaption {
+  color: #444444;
+  font-family: "Raleway";
+}
+
+html {
+  font-size: 10px;
+  margin: auto;
+}
+
+body {
+  margin: auto;
+  min-width: 32px;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  max-width: 50rem;
+  padding: 2rem 0;
+  text-align: left;
+}
+
+h1 {
+  font-size: 4.5rem;
+  font-weight: 900;
+  line-height: 6rem;
+  margin: 10rem auto 2rem auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3.2em;
+  font-weight: 700;
+  padding: 2rem 0;
+}
+
+h3 {
+  font-size: 2.24rem;
+  font-weight: 700;
+  line-height: 3rem;
+  margin: 3rem auto;
+  max-width: 50rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+h5 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+h6 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 2rem auto 0rem auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+li {
+  font-size: 1.6rem;
+}
+
+a {
+  color: #E53345;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+a:hover {
+  color: #B22836;
+  text-decoration: underline;
+}
+
+/* -- Navbar -- */
+
+.navbar {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  width:100%;
+  z-index: 1;
+}
+
+.nav-list {
+  border-bottom: 1px solid #444;
+  margin: 0 8vw;
+  
+  text-align: center;
+}
+
+.nav-list li {
+  padding: 2rem;
+  margin: 0 10vw;
+}
+
+.hero {
+  padding: 0 10%;
+  margin: auto;
+}
+
+.hero p {
+  text-align: center;
+}
+
+.description {
+  padding-bottom: 2rem;
+  margin: 0 10%;
+  max-width: 50rem;
+}
+
+.description-border {
+  border-bottom: 1px solid #444;
+  margin: 0 10%;
+  padding-bottom: 2rem;
+  max-width: 50rem;
+}
+
+.description h5 {
+  padding-top: 2rem;
+}
+
+.description li {
+  padding: .5rem 0;
+}
+
+.description p {
+  padding: .5rem 0;
+  margin: auto;
+}
+
+.description-last {
+  border: none;
+  margin-bottom: 4rem;
+}
+
+.title-bar {
+  color: #fff;
+  background: #B22836;
+  width: 100%;
+  text-align: center;
+}
+
+.ss-desk {
+  display:none;
+}
+
+.full-width {
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.image {
+  background: blue;
+  height: 10rem;
+  width: 100%;
+}
+
+.footer {
+  margin: 0 10vw;
+}
+
+.footer li {
+  text-align: right;
+  padding: 4rem 0;
+  margin-left: 50vw;
+}
+
+
+/* Normal width is 768px for tablets, but this is smaller to accomodate max-width of paragraphs.
+Once paragraphs met their max-width, they weren't vertically centered in the viewport. */
+
+@media screen and (min-width: 627px) {
+
+  p, .description, .description-border {
+    margin: auto;
+  }
+
+}
+
+/* -------- For Tablets -------- */
+
+@media screen and (min-width: 768px) {
+
+  .ss-mobile {
+    display: none;
+  }
+  
+  .ss-desk {
+    display:inline;
+  }
+
+}
+
+/* -------- For Small (Laptop) Computer Screens -------- */
+
+@media screen and (min-width: 1025px) {
+
+  .screenshot {
+    background: #569BCD;
+  }
+
+  .full-width {
+    display: block;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+}
+
+/* -------- For Wide Computer Screens -------- */
+
+@media screen and (min-width: 1140px) {
+
+  
+
+}
