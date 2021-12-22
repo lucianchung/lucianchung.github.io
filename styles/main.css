@@ -505,7 +505,7 @@ img {
 
 .logo-mark {
   display: flex;
-  background: url(/images/Logo-Mark-red.svg) no-repeat left;
+  background: url(../images/Logo-Mark-red.svg) no-repeat left;
   background-size: contain;
   height: 4.2rem;
   margin: .8rem 1rem 0 0;
@@ -513,7 +513,7 @@ img {
 }
 
 .logo-mark:hover {
-  background-image: url(/images/Logo-Mark-red-wink.svg);
+  background-image: url(../images/Logo-Mark-red-wink.svg);
 }
 
 .nav-flex a:link {
