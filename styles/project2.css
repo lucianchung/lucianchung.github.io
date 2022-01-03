@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6, p, li, figcaption {
+h1, h2, h3, h4, h5, h6, p, li, a, figcaption {
   color: #444444;
   font-family: "Raleway";
 }
@@ -99,7 +99,6 @@ a:hover {
 .nav-list {
   border-bottom: 1px solid #444;
   margin: 0 8vw;
-  
   text-align: center;
 }
 
@@ -134,6 +133,12 @@ a:hover {
   padding-top: 2rem;
 }
 
+.circle-bullets {
+  list-style-type: circle;
+  padding-left: 2rem;
+  line-height: 2.4rem;
+}
+
 .description li {
   padding: .5rem 0;
 }
@@ -160,8 +165,19 @@ a:hover {
 }
 
 .full-width {
+  display: block;
   width: 100%;
   padding: 2rem 0;
+}
+
+/* This is an image directly above another */
+.first-image {
+  padding-bottom: 0;
+}
+
+/* This is an image directly underneath another */
+.second-image {
+  padding-top: 0;
 }
 
 .image {
@@ -170,15 +186,28 @@ a:hover {
   width: 100%;
 }
 
+.lone-link {
+  text-align: center;
+  font-size: 1.6rem;
+  text-decoration: underline;
+  padding: 2rem;
+}
+
 .footer {
+  display: flex;
   margin: 0 10vw;
+  justify-content: space-between;
 }
 
 .footer li {
+  padding: 4rem 0;
+}
+
+/* .footer li {
   text-align: right;
   padding: 4rem 0;
   margin-left: 50vw;
-}
+} */
 
 
 /* Normal width is 768px for tablets, but this is smaller to accomodate max-width of paragraphs.
@@ -212,6 +241,14 @@ Once paragraphs met their max-width, they weren't vertically centered in the vie
 
   .screenshot {
     background: #569BCD;
+  }
+
+  .screenshot-sl-green {
+    background: #D9E4E0;
+  }
+
+  .screenshot-white {
+    background: #fff;
   }
 
   .full-width {
