@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lucian Chung | Settings Redesign</title>
+
+    <!-- Favicon save 16x16 .ico image file -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="styles/project2.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700,900" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-53951538-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-53951538-2');
+    </script>
+  </head>
+
+  <body class="">
+    <section class="all">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li class=""><a href="design-index.html">design projects</a></li>
+        </ul>
+      </nav>
+
+      <!-- Summary - Hero -->
+      <section class="hero">
+        <h1>Settings Redesign</h1>
+        <p>The 30+ settings pages in our app had very inconsistent UI and UX. Though a complete overhaul of our settings pages could not be prioritized from the business, a group of designers came up with an updated, consistent design pattern that we have been applying to the app little by little.</p>
+      </section>
+
+      <section class="screenshot-sl-green">
+        <figure class="ss-mobile">
+          <img class="full-width" src="images/settings/hero-mobile.png" alt="Screenshot of Final Settings UI">
+        </figure>
+        <figure class="ss-desk">
+          <img class="full-width" src="images/settings/hero-desktop.png" alt="Screenshot of Final Settings UI">
+        </figure>
+      </section>
+
+      <section class="description description-border">
+        <h3>Team</h3>
+          <div>
+            <h5>Core</h5>
+            <ul>
+              <li>4 Product Designers</li>
+            </ul>
+          </div>
+          <div>
+            <h5>Additional Input and Approval</h5>
+            <ul>
+              <li>Director of Design</li>
+              <li>Rest of Design Team (~10 members total)</li>
+            </ul>
+          </div>
+      </section>
+
+      <section class="description description-border">
+        <h3>Problem</h3>
+        <div>
+          <p>Due to the many inconsistencies on our numerous settings pages, users would often have a different user experience from page to page. Sometimes users were confused about how to update certain settings.</p>
+        </div>
+      </section>
+
+      <section class="description description-last">
+        <h3>Solution</h3>
+          <div>
+            <p>We created a single, flexible design pattern that would allow users to update settings requiring different methods of input. This pattern enabled us to use consistent copy and information architecture for our diverse body of settings.</p>
+          </div>
+      </section>
+    
+      <!-- Personas -->
+      <h2 class="title-bar">Personas</h2>
+
+      <section class="description description-border">
+        <h3>Uri the User</h3>
+          <div>
+            <h5>Motivations</h5>
+            <p>Uri is a sales representative who is required to reach out to hundreds of prospects a day via emails and phone calls. His work can be stressful, as he has a quota of meetings or demos that he needs to book. Uri wants to set up his personal settings when he first creates his user profile, and hopefully never touch them again.</p>
+          </div>
+          <div>
+            <h5>Example Tasks in Settings</h5>
+            <ul class="circle-bullets">
+              <li>Select and connect to email client (Gmail, Outlook 365, etc)</li>
+              <li>Set up personal dialer and create pre-recorded voicemail messages</li>
+              <li>Connect to personal CRM account</li>
+              <li>Set up personal calendar</li>
+            </ul>
+          </div>
+      </section>
+
+      <section class="description description-border">
+        <h3>Adam the Admin</h3>
+          <div>
+            <h5>Motivations</h5>
+            <p>Adam manages the different software that his sales team uses. This could be several applications, depending on the size of his company and team. Adam is in charge of team-wide settings that can help or hinder his team. Some of Adam’s work can be very technical in nature, so he wants clear explanations and instructions on how to properly enable more complex settings. Because Adam is working in different applications, he wants to be notified when there are errors in a given app.</p>
+          </div>
+          <div>
+            <h5>Example Tasks in Settings</h5>
+            <ul class="circle-bullets">
+              <li>Determine what email clients (Gmail, Outlook 365, etc) are available and how many emails a user can send in a day</li>
+              <li>Purchase and assign phone numbers</li>
+              <li>Connect to his team’s CRM and determine what kind of data is synced between the two applications</li>
+              <li>Create unique roles and permissions for different members of his team</li>
+            </ul>
+          </div>
+      </section>
+
+      <section class="description description-last">
+        <h3>Connie the Customer-Facing Internal User</h3>
+          <div>
+            <h5>Motivations</h5>
+            <p>Connie can be a support agent, a customer success manager, or in professional services. Connie spends her day interfacing with customers who are encountering issues with the app. Whether it’s through support tickets or video conference calls, Connie listens to customer questions, then walks them through steps on how to address their issues. Connie often encounters customers who are upset and want their problems solved as soon as possible.</p>
+          </div>
+          <div>
+            <h5>Example Tasks in Settings</h5>
+            <ul class="circle-bullets">
+              <li>Help admins set up custom, non-standard email clients</li>
+              <li>Purchase and provision phone numbers for international cities that require extensive documentation</li>
+              <li>Search through CRM sync error logs to determine why data isn’t properly syncing</li>
+              <li>Set up complex automation rules to trigger actions based on certain events</li>
+              <li>Assist large sales teams in importing hundreds to thousands of people or account records</li>
+            </ul>
+          </div>
+      </section>
+
+      <!-- Problem -->
+      <h2 class="title-bar">Problem</h2>
+
+      <section class="description description-last">
+        <h3>Inconsistent UI</h3>
+          <div>
+            <p>Standard users have access to seven different settings pages, while admins have access to 24 additional pages, several of these with multiple tabs. Many of these 30+ pages were built by different teams at different times, so there are many inconsistencies in the UI and information architecture. Font styles for page titles, subsection headings, and field labels vary as do the tone and language for microcopy. In addition, older pages may use styles and UI components from an older design system while newer pages use new components that look and behave differently (for example, checkboxes with labels may differ). In short, a user may have a completely different experience from one settings page to another, making it confusing and more time-consuming to complete their tasks.</p>
+          </div>
+      </section>
+
+      <section class="screenshot-white">
+        <figure class="ss-mobile">
+          <img class="full-width" src="images/settings/inconsistent-ui-mobile.png" alt="Screenshot of Inconsistencies in UI">
+        </figure>
+        <figure class="ss-desk">
+          <img class="full-width" src="images/settings/inconsistent-ui-desktop.png" alt="Screenshot of Inconsistencies in UI">
+        </figure>
+      </section>
+
+      <section class="description description-last">
+        <h3>Inconsistent Saving Pattern</h3>
+          <div>
+            <p>Along with the aforementioned inconsistencies with UI, some settings have different mechanisms for saving, even if they involve the same user input. For example, some select inputs and checkboxes trigger a save automatically once they are updated, while other select inputs and checkboxes require the user to click a save button.</p>
+            <p>In one extreme example, there is a page with three subsections, each with its own save button. An internal user from professional services was struggling to help a customer who wanted to update a given setting in the first subsection on the page. Both the customer and internal user were updating the setting, then scrolling to the bottom of the screen to select the save button for the third subsection. The setting was not updated because both users were scrolling past the relevant save button for the first subsection. In their defense, the three subsections are not clearly delineated.</p>
+          </div>
+      </section>
+
+      <section class="screenshot-sl-green">
+        <figure class="ss-mobile">
+          <img class="full-width" src="images/settings/inconsistent-save-mobile.png" alt="Screenshot of Settings page with 3 unmarked subsections">
+        </figure>
+        <figure class="ss-desk">
+          <img class="full-width" src="images/settings/inconsistent-save-desktop.png" alt="Screenshot of Settings page with 3 unmarked subsections">
+        </figure>
+      </section>
+
+      <section class="description description-last">
+        <h3>Inconsistent Feedback</h3>
+          <div>
+            <p>Though some settings provide users with clear error messaging, some do not. For the latter instances, it is challenging for users to identify why the app is not performing as expected. To continue the discussion of inconsistent saving patterns above, though many settings  trigger a toast (flash) message when updated, some settings do not. In these instances, it is unclear to users if their recent changes have taken effect or not.</p>
+          </div>
+      </section>
+
+      <section class="screenshot-white">
+        <figure class="ss-mobile">
+          <img class="full-width" src="images/settings/inconsistent-feedback-mobile.png" alt="Screenshot of 3 toasts with different microcopy">
+        </figure>
+        <figure class="ss-desk">
+          <img class="full-width" src="images/settings/inconsistent-feedback-desktop.png" alt="Screenshot of 3 toasts with different microcopy">
+        </figure>
+      </section>
+
+      <!-- Process -->
+      <h2 class="title-bar">Process</h2>
+
+      <section class="description">
+        <h3>Comparative Analysis</h3>
+          <div>
+            <p>The four designers working on this project spent time looking at other applications and websites to see how they managed their settings. I looked at a number of apps that my company used including Jira, Atlassian, Zoom, Google Suite, Slack, and more. I took screenshots and documented different interactions that stood out to me.</p>
+          </div>
+      </section>
+
+      <section class="screenshot-sl-green">
+        <figure class="ss-mobile">
+          <img class="full-width" src="images/settings/comp-analysis-mobile.png" alt="Screenshot of settings pages from different apps">
+        </figure>
+        <figure class="ss-desk">
+          <img class="full-width" src="images/settings/comp-analysis-desktop.png" alt="Screenshot of settings pages from different apps">
+        </figure>
+      </section>
+
+      <section class="description">
+        <h3>Iterations</h3>
+          <div>
+            <p>The team of four designers shared our comparative analysis findings and discussed what elements we liked from different applications. We discussed the problems with our current settings pages and came to a general agreement on what we wanted to address and improve. We then separately worked on designs for updates to different settings pages. We each chose pages with which we had some familiarity, and made sure that we included the different types of inputs found on all existing settings pages. We met weekly, sharing our designs and giving each other feedback. We continued to refine our designs as we were inspired by each other’s work and our weekly reviews.</p>
+          </div>
+      </section>
+
+      <section class="screenshot-sl-green">
+        <figure class="ss-mobile">
+          <img class="full-width" src="images/settings/iterations-mobile.png" alt="Screenshot of different redesign iterations">
+        </figure>
+        <figure class="ss-desk">
+          <img class="full-width" src="images/settings/iterations-desktop.png" alt="Screenshot of different redesign iterations">
+        </figure>
+      </section>
+
+      <!-- Solution -->
+      <h2 class="title-bar">Solution</h2>
+
+      <section class="description">
+        <h3>Single, Flexible Pattern</h3>
+          <div>
+            <p>We agreed upon a pattern where a given setting is contained in a box with an outline to clearly separate it from other settings. This container includes a title, a description, the current status of the setting (if applicable), and an element for the user to interact with. This pattern enables us to use consistent microcopy, especially for the setting status and edit button. We are also able to support different input methods with this UI. We apply a max width to the container, so that the interactable element won’t be too far from the microcopy on larger monitors.</p>
+          </div>
+      </section>
+
+      <section class="lone-link">
+        <a href="https://www.figma.com/proto/3TG0dTYF6gsSKLwuMcxb8H/Settings-Squad?page-id=3%3A54667&node-id=9%3A49641&viewport=241%2C48%2C0.13&scaling=contain&starting-point-node-id=9%3A49641" target="_blank">View Prototype</a>
+      </section>
+      
+      <section class="screenshot-sl-green">
+        <figure class="ss-mobile">
+          <img class="full-width first-image" src="images/settings/sol-key-mobile.png" alt="Screenshot of new Settings UI">
+        </figure>
+        <figure class="ss-desk">
+          <img class="full-width first-image" src="images/settings/sol-key-desktop.png" alt="Screenshot of new Settings UI">
+        </figure>
+      </section>
+
+      <section class="screenshot-sl-green">
+        <figure class="ss-mobile">
+          <img class="full-width second-image" src="images/settings/sol-inputs-mobile.png" alt="Screenshot of new Settings UI for modals, text fields, and toggles">
+        </figure>
+        <figure class="ss-desk">
+          <img class="full-width second-image" src="images/settings/sol-inputs-desktop.png" alt="Screenshot of new Settings UI for modals, text fields, and toggles">
+        </figure>
+      </section>
+
+      <section class="description">
+        <h3>Saving</h3>
+          <div>
+            <p>Selecting the save button from modals or inline editing for text/select fields triggers a toast. Enabling or disabling a toggle also triggers a toast, providing users with feedback. These toasts typically say “[Setting name] Updated,” though exceptions can exist.</p>
+          </div>
+      </section>
+
+      <section class="screenshot-sl-green">
+        <figure class="ss-mobile">
+          <img class="full-width" src="images/settings/sol-saving-mobile.png" alt="Screenshot of 3 toasts with similar microcopy">
+        </figure>
+        <figure class="ss-desk">
+          <img class="full-width" src="images/settings/sol-saving-desktop.png" alt="Screenshot of 3 toasts with similar microcopy">
+        </figure>
+      </section>
+
+      <section class="description">
+        <h3>Reducing Cognitive Load</h3>
+          <div>
+            <p>Selecting the save button from modals or inline editing for text/select fields triggers a toast. Enabling or disabling a toggle also triggers a toast, providing users with feedback. These toasts typically say “[Setting name] Updated,” though exceptions can exist.</p>
+          </div>
+      </section>
+
+      <section class="screenshot-sl-green">
+        <figure class="ss-mobile">
+          <img class="full-width first-image" src="images/settings/sol-cogload-1-mobile.png" alt="Screenshot of old email settings">
+        </figure>
+        <figure class="ss-desk">
+          <img class="full-width first-image" src="images/settings/sol-cogload-1-desktop.png" alt="Screenshot of old email settings">
+        </figure>
+      </section>
+
+      <section class="screenshot-sl-green">
+        <figure class="ss-mobile">
+          <img class="full-width second-image" src="images/settings/sol-cogload-2-mobile.png" alt="Screenshot of new email settings">
+        </figure>
+        <figure class="ss-desk">
+          <img class="full-width second-image" src="images/settings/sol-cogload-2-desktop.png" alt="Screenshot of new email settings">
+        </figure>
+      </section>
+
+      <section class="description">
+        <h3>Responsive Design</h3>
+          <div>
+            <p>Though we are not an explicity responsive web application, knowing that sometimes our users work on small monitors or decrease the width of their browser windows, I created designs for how our new pattern will behave at smaller resolutions.</p>
+          </div>
+      </section>
+
+      <section class="screenshot-sl-green">
+        <figure class="ss-mobile">
+          <img class="full-width" src="images/settings/sol-responsive-mobile.png" alt="Screenshot of responsive UI for new settings">
+        </figure>
+        <figure class="ss-desk">
+          <img class="full-width" src="images/settings/sol-responsive-desktop.png" alt="Screenshot of responsive UI for new settings">
+        </figure>
+      </section>
+
+      <!-- Final Thoughts -->
+      <h2 class="title-bar">Final Thoughts</h2>
+
+      <section class="description">
+        <h3>Reception and Implementation</h3>
+          <div>
+            <p>Because this project was initiated by the design team vs. being a product feature, we did not gather metrics to measure success. We have received very positive feedback internally from internal users and even developers who have built this new UI.</p>
+            <p>It is also worth noting that due to the number of our settings pages and other business priorities, we are still in the process of implementing this new design pattern. Most of our settings pages still have the older, inconsistent UI. However, whenever we implement new settings, we use the new pattern. And we are currently in the middle of an ongoing initiative to rebuild a lot of the older pages in our app, so we have been applying this new pattern whenever the opportunity arises, little by little.</p>
+          </div>
+      </section>
+
+      <section class="screenshot-sl-green">
+        <figure class="ss-mobile">
+          <img class="full-width" src="images/settings/implementation-mobile.png" alt="Screenshot of old and new UI on the same settings page">
+        </figure>
+        <figure class="ss-desk">
+          <img class="full-width" src="images/settings/implementation-desktop.png" alt="Screenshot of old and new UI on the same settings page">
+        </figure>
+      </section>
+
+      <section class="description">
+        <h3>Future Considerations</h3>
+          <div>
+            <p>The team of designers working on this project have other improvements that we have not been able to implement in the app.</p>
+          </div>
+          <div>
+            <h5>Other Improvements</h5>
+            <ul class="circle-bullets">
+              <li>decrease the width of the settings side menu to accomodate the longest list item, but provide more room for the main content</li>
+              <li>use breadcrumbs or a breadcrumb-type info architecture for page headings to make it clear to the user where they are</li>
+              <li>reorganize or consolidate the number of settings pages as 30+ is a lot</li>
+              <li>make settings more accessible via keyboard-only interactions, semantic HTML, and proper labels for screen readers</li>
+            </ul>
+          </div>
+         
+      </section>
+
+      <section class="screenshot-sl-green">
+        <figure class="ss-mobile">
+          <img class="full-width" src="images/settings/future-mobile.png" alt="Screenshot of old and new versions of side menu and page titles">
+        </figure>
+        <figure class="ss-desk">
+          <img class="full-width" src="images/settings/future-desktop.png" alt="Screenshot of old and new versions of side menu and page titles">
+        </figure>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <ul>
+          <li><a href="emails-list.html">previous project</a></li>
+        </ul>
+        <ul>
+          <li><a href="https://www.figma.com/proto/ulpfRliAwcMDHTwBr2z819/SL?page-id=0%3A1&node-id=3%3A30632&starting-point-node-id=3%3A30632&scaling=scale-down">next project</a></li>
+        </ul>
+      </footer>
+
+    </section>  
+  </body>
+
+</html>
