@@ -50,7 +50,7 @@ h1 {
 
 li {
   font-size: 1.6rem;
-  padding: 2rem 0rem;
+  margin: 4rem 0rem;
   text-align: left;
 }
 
@@ -65,13 +65,71 @@ a:hover {
 }
 
 .project-list {
-  padding-top: 2rem;
+  margin-top: 2rem;
+}
+
+.project {
+  position: relative;
+}
+
+.thumb {
+  border-radius: 1.3rem;
+  background: #E53345;
+}
+
+.thumb-img {
+  width: 100%;
+  vertical-align: top;
+  transition: .5s ease;
+}
+
+.thumb-desktop {
+  display: none;
+}
+
+.project-title {
+  position: absolute;
+  top: 10%;
+  left: 7%;
+  padding-right: 7%;
+  color: #fff;
+  font-size: 2.4rem;
+}
+
+.description {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.8rem;
+  text-align: left;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+/* ***** Red on Hover - Start **** */
+
+.project:hover .thumb-img {
+  opacity: 0.2;
+}
+
+.project:hover .description {
+  opacity: 1;
+}
+
+/* ***** Red on Hover - End **** */
+
+.dark-text {
+  color: #444;
+}
+
+.project:hover .dark-text {
+  color: #fff;
+  transition: .5s ease;
 }
 
 .footer {
-  position: fixed;
+  /* position: fixed;
   bottom: 0;
-  z-index: 1;
+  z-index: 1; */
   width: 80vw;
   margin: auto;
 }
@@ -96,14 +154,56 @@ a:hover {
     max-width: 50rem;
   }
 
+  .project-title {
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding-right: 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .description {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
 }
  
 /* -------- For Small (Laptop) Computer Screens -------- */
 
 @media (min-width: 1025px) {
+
+  .thumb {
+    border-radius: .9rem;
+  }
+
+  .thumb-mobile {
+    display: none;
+  }
+
+  .thumb-desktop {
+    display: block;
+  }
+
+  .project-title {
+    width: 60vw;
+    padding: 1.8% 5% 0;
+    text-align: left;
+  }
+  
+  .description {
+    text-align: left;
+    margin: 0;
+    width: 50%;
+    padding: 1% 5% 0 0;
+  }
+
 }
 
 /* -------- For Wide Computer Screens -------- */
 
 @media (min-width: 1400px) {
+  .thumb {
+    border-radius: 1.2rem;
+  }
 }
