@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lucian Chung | Illustrations-Children's Books</title>
 
-    <!-- Favicon save 16x16 .ico image file -->
-    <link rel="icon" href="images/favicon.ico">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lucian Chung | Illustrations-Children's Books</title>
 
-    <link rel="stylesheet" type="text/css" href="styles/reset.css">
-    <link rel="stylesheet" type="text/css" href="styles/main.css">
-    <link rel="stylesheet" type="text/css" href="styles/illus-portfolio.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700,900" rel="stylesheet">
+  <!-- Favicon save 16x16 .ico image file -->
+  <link rel="icon" href="images/favicon.ico">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-53951538-2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+  <link rel="stylesheet" type="text/css" href="styles/reset.css">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <link rel="stylesheet" type="text/css" href="styles/illus-portfolio.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700,900" rel="stylesheet">
 
-      gtag('config', 'UA-53951538-2');
-    </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-53951538-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-53951538-2');
+  </script>
 
 
-  </head>
-  <body>
+</head>
 
-    <!-- Navbar -->
-    <section class="navbar-section">
+<body>
+
+  <!-- Navbar -->
+  <section class="navbar-section">
     <nav class="navbar">
       <ul class="nav-flex">
         <li class="logo-li">
@@ -42,91 +44,101 @@
         <li class="nav-link about-link"><a href="about.html">about</a></li>
       </ul>
     </nav>
+  </section>
+
+  <main>
+    <section class="portfolio-summary">
+      <div class="summary-text">
+        <h1>Children's Book Illustrations</h1>
+        <p class="text">Various illustrations for children's books. Some were done based on classic stories / songs, and
+          some are from original stories.<br>Visit my <a href="https://www.instagram.com/lucianchungart/"
+            target="_blank">Instagram</a> to see more illustrations and more recent work.</p>
+        <p class="text">Images created using traditional media, Adobe Photoshop, and Procreate.</p>
+      </div>
     </section>
 
-    <main>
-      <section class="portfolio-summary">
-        <div class="summary-text">
-          <h1>Children's Book Illustrations</h1>
-          <p class="text">Various illustrations for children's books. Some were done based on classic stories / songs, and some are from original stories.</p>
-          <p class="text">Images created using traditional media and Adobe Photoshop.</p>
-        </div>
-      </section>
+    <!-- ************* Images ************* -->
+    <section class="portfolio">
+      <div class="portfolio-images">
+        <ul class="row portfolio-thumbs">
 
-      <!-- ************* Images ************* -->
-      <section class="portfolio">
-        <div class="portfolio-images">
-          <ul class="row portfolio-thumbs">
+          <li class="column container">
+            <div class="img-bg-red" onclick="openModal();currentSlide(1)">
+              <img class="image" src="images/illus-children/TortoiseAndHare.jpg"
+                alt="Tortoise and Hare racing in automobiles">
+            </div>
+            <div class="middle" onclick="openModal();currentSlide(1)">
+              <div class="img-text">
+                <h4 class="img-title">The Tortoise and the Hare</h4>
+                <p class="img-desc square-text">My version of the classic Aesop fable featuring the eponymous Tortoise
+                  and Hare in automobiles.</p>
+              </div>
+            </div>
+          </li>
 
-            <li class="column container">
-              <div class="img-bg-red" onclick="openModal();currentSlide(1)">
-                <img class="image" src="images/illus-children/TortoiseAndHare.jpg" alt="Tortoise and Hare racing in automobiles">
+          <li class="column container">
+            <div class="img-bg-red" onclick="openModal();currentSlide(2)">
+              <img class="image" src="images/illus-children/RedRidingHood-India.jpg"
+                alt="Indian girl in red shawl followed by a tiger in the jungle">
+            </div>
+            <div class="middle" onclick="openModal();currentSlide(2)">
+              <div class="img-text">
+                <h4 class="img-title">Little Red Riding Hood - India</h4>
+                <p class="img-desc square-text">This is Little Red Riding Hood (Shawl) in an Indian jungle followed by a
+                  Bengal tiger.</p>
               </div>
-              <div class="middle" onclick="openModal();currentSlide(1)">
-                <div class="img-text">
-                  <h4 class="img-title">The Tortoise and the Hare</h4>
-                  <p class="img-desc square-text">My version of the classic Aesop fable featuring the eponymous Tortoise and Hare in automobiles.</p>
-                </div>
-              </div>
-            </li>
+            </div>
+          </li>
 
-            <li class="column container">
-              <div class="img-bg-red" onclick="openModal();currentSlide(2)">
-                <img class="image" src="images/illus-children/RedRidingHood-India.jpg" alt="Indian girl in red shawl followed by a tiger in the jungle">
+          <li class="column container">
+            <div class="img-bg-red" onclick="openModal();currentSlide(3)">
+              <img class="image" src="images/illus-children/MaryLittleLamb-02.jpg"
+                alt="Lamb waiting for Mary in a public restroom">
+            </div>
+            <div class="middle " onclick="openModal();currentSlide(3)">
+              <div class="img-text ">
+                <h4 class="img-title">Mary Had a Little Lamb</h4>
+                <p class="img-desc square-text">My attempt to add some levity to the second verse of "Mary Had a Little
+                  Lamb." The illustration could serve as a pun if one so desired.</p>
               </div>
-              <div class="middle" onclick="openModal();currentSlide(2)">
-                <div class="img-text">
-                  <h4 class="img-title">Little Red Riding Hood - India</h4>
-                  <p class="img-desc square-text">This is Little Red Riding Hood (Shawl) in an Indian jungle followed by a Bengal tiger.</p>
-                </div>
-              </div>
-            </li>
+            </div>
+          </li>
 
-            <li class="column container">
-              <div class="img-bg-red" onclick="openModal();currentSlide(3)">
-                <img class="image" src="images/illus-children/MaryLittleLamb-02.jpg" alt="Lamb waiting for Mary in a public restroom">
+          <li class="column container">
+            <div class="img-bg-red" onclick="openModal();currentSlide(4)">
+              <img class="image" src="images/illus-children/LucasWonderfulAdventure10.jpg"
+                alt="Boy and a lizard in a school classroom">
+            </div>
+            <div class="middle" onclick="openModal();currentSlide(4)">
+              <div class="img-text">
+                <h4 class="img-title">Lucas's Wonderful Adventure</h4>
+                <p class="img-desc square-text">Page from a digital children's book</p>
               </div>
-              <div class="middle " onclick="openModal();currentSlide(3)">
-                <div class="img-text ">
-                  <h4 class="img-title">Mary Had a Little Lamb</h4>
-                  <p class="img-desc square-text">My attempt to add some levity to the second verse of "Mary Had a Little Lamb." The illustration could serve as a pun if one so desired.</p>
-                </div>
-              </div>
-            </li>
+            </div>
+          </li>
 
-            <li class="column container">
-              <div class="img-bg-red" onclick="openModal();currentSlide(4)">
-                <img class="image" src="images/illus-children/LucasWonderfulAdventure10.jpg" alt="Boy and a lizard in a school classroom">
+          <li class="column container">
+            <div class="img-bg-red" onclick="openModal();currentSlide(5)">
+              <img class="image" src="images/illus-children/2015.03.19_RiceFieldMonster.jpg"
+                alt="Monster in a Rice Field">
+            </div>
+            <div class="middle" onclick="openModal();currentSlide(5)">
+              <div class="img-text">
+                <h4 class="img-title">Rice Field Monster</h4>
+                <p class="img-desc square-text">From a short series of digital images drawn on photographs</p>
               </div>
-              <div class="middle" onclick="openModal();currentSlide(4)">
-                <div class="img-text">
-                  <h4 class="img-title">Lucas's Wonderful Adventure</h4>
-                  <p class="img-desc square-text">Page from a digital children's book</p>
-                </div>
-              </div>
-            </li>
+            </div>
+          </li>
 
-            <li class="column container">
-              <div class="img-bg-red" onclick="openModal();currentSlide(5)">
-                <img class="image" src="images/illus-children/2015.03.19_RiceFieldMonster.jpg" alt="Monster in a Rice Field">
-              </div>
-              <div class="middle" onclick="openModal();currentSlide(5)">
-                <div class="img-text">
-                  <h4 class="img-title">Rice Field Monster</h4>
-                  <p class="img-desc square-text">From a short series of digital images drawn on photographs</p>
-                </div>
-              </div>
-            </li>
+        </ul>
+      </div>
 
-          </ul>
-        </div>
+      <!-- ********** Links to other portfolios ********** -->
+      <section class="links-section">
+        <h4 class="links-headline">Sate your uncontrollable desire to see more</h4>
+        <ul class="links-flex-container">
 
-        <!-- ********** Links to other portfolios ********** -->
-        <section class="links-section">
-          <h4 class="links-headline">Sate your uncontrollable desire to see more</h4>
-          <ul class="links-flex-container">
-
-            <!-- <li class="container img-bg-dark-grey">
+          <!-- <li class="container img-bg-dark-grey">
               <a href="safsav.html">
                 <img class="link-img" src="images/thumbnails/safsav.jpg" alt="Design thumbnail: SafSav">
                 <div class="middle middle-link">
@@ -135,112 +147,120 @@
               </a>
             </li> -->
 
-            <li class="container img-bg-dark-grey">
-              <a href="illus-vector.html">
-                <img class="link-img" src="images/thumbnails/illus3-vector.jpg" alt="Vector illustrations thumbnail: Apple on Wheels">
-                <div class="middle middle-link">
-                  <h4 class="link-text">View Vector Illustrations</h4>
-                </div>
-              </a>
-            </li>
+          <li class="container img-bg-dark-grey">
+            <a href="illus-vector.html">
+              <img class="link-img" src="images/thumbnails/illus3-vector.jpg"
+                alt="Vector illustrations thumbnail: Apple on Wheels">
+              <div class="middle middle-link">
+                <h4 class="link-text">View Vector Illustrations</h4>
+              </div>
+            </a>
+          </li>
 
-            <li class="container img-bg-dark-grey">
-              <a href="illus-assorted.html">
-                <img class="link-img" src="images/thumbnails/illus5-disney.jpg" alt="Assorted illustrations thumbnail: Poocahontas">
-                <div class="middle middle-link">
-                  <h4 class="link-text">View Assorted Illustrations</h4>
-                </div>
-              </a>
-            </li>
+          <li class="container img-bg-dark-grey">
+            <a href="illus-assorted.html">
+              <img class="link-img" src="images/thumbnails/illus5-disney.jpg"
+                alt="Assorted illustrations thumbnail: Poocahontas">
+              <div class="middle middle-link">
+                <h4 class="link-text">View Assorted Illustrations</h4>
+              </div>
+            </a>
+          </li>
 
-          </ul>
-        </section>
-
-        <!-- ******** Modal / Lightbox ******** -->
-        <div id="myModal" class="modal">
-          <span class="close cursor" onclick="closeModal()">&times;</span>
-          <div class="modal-content">
-
-            <div class="mySlides">
-              <div class="numbertext">1 / 5</div>
-              <img src="images/illus-children/TortoiseAndHare.jpg" alt="Tortoise and Hare racing in automobiles">
-            </div>
-
-            <div class="mySlides">
-              <div class="numbertext">2 / 5</div>
-              <img src="images/illus-children/RedRidingHood-India.jpg" alt="Indian girl in red shawl followed by a tiger in the jungle">
-            </div>
-
-            <div class="mySlides">
-              <div class="numbertext">3 / 5</div>
-              <img src="images/illus-children/MaryLittleLamb-02.jpg" alt="Lamb waiting for Mary in a public restroom">
-            </div>
-
-            <div class="mySlides">
-              <div class="numbertext">4 / 5</div>
-              <img src="images/illus-children/LucasWonderfulAdventure10.jpg" alt="Boy and a lizard in a school classroom">
-            </div>
-
-            <div class="mySlides">
-              <div class="numbertext">5 / 5</div>
-              <img src="images/illus-children/2015.03.19_RiceFieldMonster.jpg" alt="Monster in a Rice Field">
-            </div>
-
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-            <!-- Caption text -->
-            <div class="caption-container">
-              <p id="caption"></p>
-            </div>
-
-            <!-- Thumbnail image controls -->
-            <!-- Lightbox image descriptions -->
-            <div class="caption-text">
-              <img class="demo" src="images/Logo-Mark-red.svg" onclick="currentSlide(1)" alt="<h4>The Tortoise and the Hare</h4>
-                My version of the classic Aesop fable featuring the eponymous Tortoise and Hare in automobiles.">
-            </div>
-
-            <div class="">
-              <img class="demo" src="images/Logo-Mark-red.svg" onclick="currentSlide(2)" alt="<h4>Little Red Riding Hood - India</h4>
-              This is Little Red Riding Hood (Shawl) in an Indian jungle followed by a Bengal tiger.">
-            </div>
-
-            <div class="">
-              <img class="demo" src="images/Logo-Mark-red.svg" onclick="currentSlide(3)" alt="<h4>Mary Had a Little Lamb</h4>
-              My attempt to add some levity to the second verse of &quot;Mary Had a Little Lamb.&quot; The illustration could serve as a pun if one so desired.">
-            </div>
-
-            <div class="">
-              <img class="demo" src="images/Logo-Mark-red.svg" onclick="currentSlide(4)" alt="<h4>Lucas's Wonderful Adventure</h4>
-              Page from a digital children's book">
-            </div>
-
-            <div class="">
-              <img class="demo" src="images/Logo-Mark-red.svg" onclick="currentSlide(5)" alt="<h4>Rice Field Monster</h4>
-              From a short series of digital images drawn on photographs">
-            </div>
-
-          </div>
-        </div>
-
-
+        </ul>
       </section>
 
-    </main>
+      <!-- ******** Modal / Lightbox ******** -->
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="footer-flex">
-        <a href="mailto:lucianchung@gmail.com"><img class="icon" src="images/icon-mail.svg" alt="email icon"></a>
-        <a href="https://www.linkedin.com/in/lucianchung/" target="_blank"><img class="icon" src="images/icon-LinkedIn.svg" alt="LinkedIn icon"></a>
-        <a href="https://dribbble.com/lucianchung" target="_blank"><img class="icon" src="images/icon-dribbble.svg" alt="Dribbble icon"></a>
-        <a href="https://www.instagram.com/lucianchungart/" target="_blank"><img class="icon" src="images/icon-instagram.svg" alt="Instagram icon"></a>
-        <a href="https://github.com/lucianchung" target="_blank"><img class="icon" src="images/icon-github.svg" alt="GitHub icon"></a>
+          <div class="mySlides">
+            <div class="numbertext">1 / 5</div>
+            <img src="images/illus-children/TortoiseAndHare.jpg" alt="Tortoise and Hare racing in automobiles">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">2 / 5</div>
+            <img src="images/illus-children/RedRidingHood-India.jpg"
+              alt="Indian girl in red shawl followed by a tiger in the jungle">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">3 / 5</div>
+            <img src="images/illus-children/MaryLittleLamb-02.jpg" alt="Lamb waiting for Mary in a public restroom">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">4 / 5</div>
+            <img src="images/illus-children/LucasWonderfulAdventure10.jpg" alt="Boy and a lizard in a school classroom">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">5 / 5</div>
+            <img src="images/illus-children/2015.03.19_RiceFieldMonster.jpg" alt="Monster in a Rice Field">
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <!-- Caption text -->
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <!-- Thumbnail image controls -->
+          <!-- Lightbox image descriptions -->
+          <div class="caption-text">
+            <img class="demo" src="images/Logo-Mark-red.svg" onclick="currentSlide(1)" alt="<h4>The Tortoise and the Hare</h4>
+                My version of the classic Aesop fable featuring the eponymous Tortoise and Hare in automobiles.">
+          </div>
+
+          <div class="">
+            <img class="demo" src="images/Logo-Mark-red.svg" onclick="currentSlide(2)" alt="<h4>Little Red Riding Hood - India</h4>
+              This is Little Red Riding Hood (Shawl) in an Indian jungle followed by a Bengal tiger.">
+          </div>
+
+          <div class="">
+            <img class="demo" src="images/Logo-Mark-red.svg" onclick="currentSlide(3)"
+              alt="<h4>Mary Had a Little Lamb</h4>
+              My attempt to add some levity to the second verse of &quot;Mary Had a Little Lamb.&quot; The illustration could serve as a pun if one so desired.">
+          </div>
+
+          <div class="">
+            <img class="demo" src="images/Logo-Mark-red.svg" onclick="currentSlide(4)" alt="<h4>Lucas's Wonderful Adventure</h4>
+              Page from a digital children's book">
+          </div>
+
+          <div class="">
+            <img class="demo" src="images/Logo-Mark-red.svg" onclick="currentSlide(5)" alt="<h4>Rice Field Monster</h4>
+              From a short series of digital images drawn on photographs">
+          </div>
+
+        </div>
       </div>
-    </footer>
 
-    <script>
+
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-flex">
+      <a href="mailto:lucianchung@gmail.com"><img class="icon" src="images/icon-mail.svg" alt="email icon"></a>
+      <a href="https://www.linkedin.com/in/lucianchung/" target="_blank"><img class="icon"
+          src="images/icon-LinkedIn.svg" alt="LinkedIn icon"></a>
+      <a href="https://dribbble.com/lucianchung" target="_blank"><img class="icon" src="images/icon-dribbble.svg"
+          alt="Dribbble icon"></a>
+      <a href="https://www.instagram.com/lucianchungart/" target="_blank"><img class="icon"
+          src="images/icon-instagram.svg" alt="Instagram icon"></a>
+      <a href="https://github.com/lucianchung" target="_blank"><img class="icon" src="images/icon-github.svg"
+          alt="GitHub icon"></a>
+    </div>
+  </footer>
+
+  <script>
     // Open the Modal
     function openModal() {
       document.getElementById('myModal').style.display = "block";
@@ -269,21 +289,21 @@
       var slides = document.getElementsByClassName("mySlides");
       var dots = document.getElementsByClassName("demo");
       var captionText = document.getElementById("caption");
-      if (n > slides.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = slides.length}
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
       for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
       }
       for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
       }
-      slides[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].className += " active";
-      captionText.innerHTML = dots[slideIndex-1].alt;
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      captionText.innerHTML = dots[slideIndex - 1].alt;
     }
-    </script>
+  </script>
 
-  </body>
+</body>
 
 
 
