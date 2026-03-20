@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lucian Chung | AI Document Extraction</title>
+
+    <!-- Favicon save 16x16 .ico image file -->
+    <link rel="icon" href="../images/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="../styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="../styles/project2.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700,900" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-53951538-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-53951538-2');
+    </script>
+  </head>
+
+  <body class="">
+    <section class="all">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li class=""><a href="design-index.html">design projects</a></li>
+        </ul>
+      </nav>
+
+      <!-- Summary - Hero -->
+      <section class="hero">
+        <h1>AI Document Extraction</h1>
+        <p>To establish our platform as the source of truth for financial spend, organizations needed to extract key information from contract documents. However, the process was historically tedious, error-prone, and time-consuming. We sought to improve this by integrating AI tools from Google and OpenAI to make this data extraction task faster and more accurate.</p>
+      </section>
+
+      <section class="screenshot-white">
+        <figure class="ss-mobile">
+          <img class="full-width" src="../images/tr-ai-document-extraction/00 hero-mobile.png" alt="Screenshot of UI with AI confidence levels next to field values">
+          <figcaption>Final UI</figcaption>
+        </figure>
+        <figure class="ss-desk">
+          <img class="full-width" src="../images/tr-ai-document-extraction/00 hero-desktop.png" alt="Screenshot of UI with AI confidence levels next to field values">
+          <figcaption>Final UI</figcaption>
+        </figure>
+      </section>
+
+      <section class="description description-border">
+        <h3>Team</h3>
+          <div>
+            <h5>Core</h5>
+            <ul>
+              <li>Product Designer (me)</li>
+              <li>Product Manager</li>
+              <li>Director of Engineering</li>
+              <li>3 Software Engineers</li>
+            </ul>
+          </div>
+          <div>
+            <h5>Additional Input</h5>
+            <ul>
+              <li>Head of Product</li>
+              <li>Head of Data Extraction Team</li>
+              <li>Director of Product</li>
+              <li>Design Team</li>
+            </ul>
+          </div>
+      </section>
+
+      <section class="description description-border">
+        <h3>Stages</h3>
+          <div>
+            <ul>
+              <li>Gathering Requirements</li>
+              <li>UX Research</li>
+              <li>Feature Grooming</li>
+              <li>Design Iteration</li>
+              <li>Final Design</li>
+            </ul>
+          </div>
+      </section>
+
+      <section class="description description-border">
+        <h3>Hypothesis</h3>
+          <div>
+            <p>By supporting customers with AI-powered metadata extraction, they would save more data to contracts, complete contract records more accurately, and create new contract records more efficiently.</p>
+          </div>
+      </section>
+
+      <section class="description description-last">
+        <h3>Goals</h3>
+          <div>
+            <ol class="circle-bullets">
+              <li>Position the product as innovative and aligned with market-leading technology by integrating advanced AI capabilities</li>
+              <li>Get more data into the product to become stickier</li>
+              <li>Ensure high data accuracy and a user-friendly experience to drive adoption</li>
+              <li>Leverage internal metadata extraction tool to deliver a customer-facing feature</li>
+              <li>Redesign the contract form to include user-requested fields, enhancing usability and consistency across workflows</li>
+            </ol>
+          </div>
+      </section>
+    
+      <!-- Gathering Requirements -->
+      <h2 class="title-bar">Gathering Requirements</h2>
+
+      <section class="description">
+        <h3>Background</h3>
+          <div>
+            <p>Within our product, organizations create “contract” objects to manage agreements with various vendors. Users attach documents to these contracts and extract metadata such as start dates, end dates, total contract value, payment frequency, and more. </p>
+          </div>
+      </section>
+
+      <section class="description description-last">
+        <h3>Preceding Feature 1</h3>
+          <div>
+            <p>During onboarding for new customers, a data extraction team creates contract objects, attaches associated documents, and extracts metadata manually.</p>
+            <p>To streamline this process, I led the design for a feature leveraging Google’s DocumentAI and OpenAI. This feature scanned documents, extracted values for ten key fields, and presented the values with low, medium, or high confidence scores which humans then confirmed. We also tracked AI prediction accuracy to improve the model over time. This feature was designed exclusively for internal users, primarily the data extraction team.</p>
+          </div>
+      </section>
+
+      <section class="screenshot-white">
+        <figure class="ss-mobile">
+          <img class="full-width" src="../images/tr-ai-document-extraction/01 preceding-mobile.png" alt="Screenshot of internal UI for AI data extraction">
+          <figcaption>Internal UI for AI data extraction</figcaption>
+        </figure>
+        <figure class="ss-desk">
+          <img class="full-width" src="../images/tr-ai-document-extraction/01 preceding-desktop.png" alt="Screenshot of internal UI for AI data extraction">
+          <figcaption>Internal UI for AI data extraction</figcaption>
+        </figure>
+      </section>
+
+      <section class="description description-last">
+        <h3>Preceding Feature 2</h3>
+          <div>
+            <p>Users could edit contract objects in four areas of our product, but these implementations were inconsistent, with variations in user experience and field availability on each form.</p> 
+            <p>I collaborated with another designer to update two of these implementations, aligning them under a consistent form structure and field set. This update resulted in three customer-facing forms with a cohesive experience, while maintaining necessary differences for the fourth form which was internal-facing.</p>
+            <p>One key improvement was adding custom fields to the implementation for the “Create Contract” task. This addressed customer feedback and improved the consistency of contract editing workflows.</p>
+          </div>
+      </section>
+
+      <section class="screenshot-white">
+        <figure class="ss-mobile">
+          <img class="full-width" src="../images/tr-ai-document-extraction/02 preceding2-mobile.png" alt="Screenshots of two contract forms with shared fields but different layouts">
+          <figcaption>Two contract forms with shared fields but different layouts</figcaption>
+        </figure>
+        <figure class="ss-desk">
+          <img class="full-width" src="../images/tr-ai-document-extraction/02 preceding2-desktop.png" alt="Screenshots of two contract forms with shared fields but different layouts">
+          <figcaption>Two contract forms with shared fields but different layouts</figcaption>
+        </figure>
+      </section>
+
+      <!-- UX Research -->
+      <h2 class="title-bar">UX Research</h2>
+
+      <section class="description description-last">
+        <h3>Usability Testing</h3>
+          <div>
+            <p>Our initial metadata extraction feature (Preceding Feature 1) was designed for our data extraction team, who processed hundreds of documents daily. As power users, they benefit from a streamlined and efficient UX with minimal guidance.
+              In contrast, our new feature targeted customers, many of whom were unfamiliar with the task of creating a contract in our system. To ensure the new feature met their needs, we conducted usability testing with 10 internal users representing a range of familiarity with the product:</p>
+            <ul class="circle-bullets">
+              <li>2 managers from the data extraction team, experienced with the existing feature after several weeks of use</li>
+              <li>2 internal users from the implementations team, knowledgeable about contract onboarding and related customer workflows</li>
+              <li>6 internal users from various departments, approximately half of whom had never created a contract in our product</li>
+            </ul>
+          </div>
+      </section>
+
+      <section class="screenshot-white">
+        <figure class="ss-mobile">
+          <img class="full-width" src="../images/tr-ai-document-extraction/03 uxr-mobile.png" alt="Screenshot of affinity mapping in Figjam">
+          <figcaption>Affinity mapping in Figjam</figcaption>
+        </figure>
+        <figure class="ss-desk">
+          <img class="full-width" src="../images/tr-ai-document-extraction/03 uxr-desktop.png" alt="Screenshot of affinity mapping in Figjam">
+          <figcaption>Affinity mapping in Figjam</figcaption>
+        </figure>
+      </section>
+
+      <section class="description description-last">
+        <h3>Affinity Mapping & Synthesis</h3>
+          <div>
+            <p></p>
+            <ul class="circle-bullets">
+              <li><span style="font-weight: bold;">Users needed clearer instructions and guidance</span>
+              <br>
+              While the original feature was intentionally designed with fewer steps to accommodate the data extraction team, other users found this lack of guidance challenging. A more structured and guided approach was needed for non-power users.
+              
+              <figure class="">
+                <img class="full-width" src="../images/tr-ai-document-extraction/04 instructions-mobile.png" alt="Screenshots of original instructions and related user feedback">
+                <figcaption>Original instructions and related user feedback</figcaption>
+              </figure>
+
+            </li>
+            <li><span style="font-weight: bold;">Hover interactions were jarring—especially the shifting documents</span>
+              <br>
+              Hovering over an AI-extracted field triggered the document display to shift and highlight the relevant value. This interaction was disruptive and confused some users.
+              
+              <figure>
+                <video width="100%" height="100%" autoplay muted loop>
+                  <source src="../images/tr-ai-document-extraction/05 uxr before interaction.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+                <figcaption>Hover interaction before change</figcaption>
+              </figure>
+
+            </li>
+            <li><span style="font-weight: bold;">Confidence scores for AI extractions were intuitive and valuable</span>
+              <br>
+              Users appreciated the clarity of the low, medium, and high confidence ratings. Highlighting extracted values in the document added further trust and usability to the feature.
+            
+              <figure class="">
+                <img class="full-width" src="../images/tr-ai-document-extraction/06 uxr confidence-mobile.png" alt="Screenshots of AI confidence badges and user feedback">
+                <figcaption>Original AI confidence badges and user feedback</figcaption>
+              </figure>
+            
+            </li>
+            </ul>
+          </div>
+      </section>
+
+      <!-- Design Iteration -->
+      <h2 class="title-bar">Design Iteration</h2>
+
+      <section class="description">
+        <h3>Universal Contract Form</h3>
+          <div>
+            <p>Another pod was updating the UI for the “create contract” task that we were working on, so I partnered with that pod’s designer to implement changes that would support both of our projects’ goals. This is referenced above as Preceding Feature 2 where I ended up contributing to the redesign of two of our product’s four contract forms, resulting in three consistent forms for customers and one intentionally different form for internal users.</p>
+          </div>
+      </section>
+
+      <section class="screenshot-white">
+        <figure class="ss-mobile">
+          <img class="full-width" src="../images/tr-ai-document-extraction/07 universal contract form-mobile.png" alt="Lists of the field order for original contract forms and screenshots of the redesigned forms">
+          <figcaption>Original form field order comparison the redesigned forms</figcaption>
+        </figure>
+        <figure class="ss-desk">
+          <img class="full-width" src="../images/tr-ai-document-extraction/07 universal contract form-desktop.png" alt="Lists of the field order for original contract forms and screenshots of the redesigned forms">
+          <figcaption>Original form field order comparison and the redesigned forms</figcaption>
+        </figure>
+      </section>
+
+      <section class="description">
+        <h3>More Guided Experience</h3>
+          <div>
+            <p>Based on our key takeaway from usability testing that users wanted a more guided experience, I designed a stepped experience with interstitials between each step to focus the users’ attention and explain what they had done in the previous step and what they would do in the next one.</p>
+            <p>I worked with the PM and Claude.ai to craft copy that prioritized the following items in the order listed:</p>
+            <ul class="circle-bullets">
+              <li>clarity</li>
+              <li>conciseness</li>
+              <li>professionalism</li>
+              <li>casual or light tone</li>
+            </ul>
+            <p>We updated the copy for badges, tooltips, instructional text at the top of each step, and the interstitials between each step.</p>
+          </div>
+      </section>
+
+      <section class="screenshot-white">
+        <figure class="ss-mobile">
+          <img class="full-width" src="../images/tr-ai-document-extraction/08 guided experience-mobile.png" alt="Screenshots of examples of the updated copy">
+          <figcaption>Examples of the updated copy and guided experience</figcaption>
+        </figure>
+        <figure class="ss-desk">
+          <img class="full-width" src="../images/tr-ai-document-extraction/08 guided experience-desktop.png" alt="Screenshots of examples of the updated copy">
+          <figcaption>Examples of the updated copy and guided experience</figcaption>
+        </figure>
+      </section>
+
+      <section class="description">
+        <h3>Comparative Analysis</h3>
+          <div>
+            <p>When designing Preceding Feature 1 for our internal users, I looked at different data extraction products. I revisited these references to look for additional inspiration I could apply to our new feature. Most of the other products used a click/select interaction instead of a hover to highlight values in documents. I intentionally designed the hover interaction hoping to speed up our data extraction team previously, but felt confident switching this to a click/select for our customers as other apps tended to use this interaction.</p>
+          </div>
+      </section>
+
+      <section class="description">
+        <h3>Updates to Existing Experience</h3>
+          <div>
+            <p>After working with the build pod to finalize our new feature, I mocked up designs where our component updates would be applied to our existing internally-facing feature that used the same components. Our agreed upon approach from grooming was that we would focus on the desired updates for our new feature, and we would implement whatever updates propagated to our existing feature “for free.” However, I was concerned with some of our component updates fitting poorly into the existing UI that was not optimized for them. </p>
+            <p>In particular, we had built a form field component that could be populated by an AI-extracted value. We would either suggest this value or autofill with this value depending on both the field itself and the AI’s confidence in its prediction. In the original implementation, users could hover over this field to display the document from which it was extracted and highlight the value on the document. We were updating the style of the AI confidence badges to match other implementations in our product, and we were changing the hover interaction to a click interaction based on our usability testing. In addition, with the goal of continuing to train our AI models, we required data extractors to confirm some low confidence predictions and to select a checkbox when AI extracted no value even though a value existed on the document. We did not want to present customers with these additional tasks to train our AI models because they cluttered the UI and increased cognitive load.</p>
+            <p>I mocked up different versions of how we could update the existing feature based on level of effort required, and the build pod came to an agreement on doing some additional CSS work to update the existing UI.</p>
+          </div>
+      </section>
+
+      <!-- Final Design -->
+      <h2 class="title-bar">Final Design</h2>
+
+      <section class="description">
+        <h3>Improvements</h3>  
+        <div>
+            <p>Here are some visuals of the final feature with some comparisons to the preceding feature.</p>
+          </div>
+      </section>
+
+      <section class="description">
+        <h5>With custom fields vs without</h5>
+      </section>
+
+      <section class="screenshot-white">
+        <figure class="ss-mobile">
+          <img class="full-width" style="padding: 0px" src="../images/tr-ai-document-extraction/09 custom fields-mobile.png" alt="Screenshots showing form with and without custom fields">
+          <figcaption>We added an Additional Contract Fields section that includes custom fields</figcaption>
+        </figure>
+        <figure class="ss-desk">
+          <img class="full-width" style="padding: 0px" src="../images/tr-ai-document-extraction/09 custom fields-desktop.png" alt="Screenshots showing form with and without custom fields">
+          <figcaption>We added an Additional Contract Fields section that includes custom fields</figcaption>
+        </figure>
+      </section>
+      
+      <section class="description">
+        <h5>More clarity in instructions</h5>
+      </section>
+
+      <section class="screenshot-white">
+        <figure class="ss-mobile">
+          <img class="full-width" style="padding: 0px" src="../images/tr-ai-document-extraction/10 clearer instructions-mobile.png" alt="Screenshots showing form with and without custom fields">
+          <figcaption>We updated instructions and separated one step into two to simplify the experience</figcaption>
+        </figure>
+        <figure class="ss-desk">
+          <img class="full-width" style="padding: 0px" src="../images/tr-ai-document-extraction/10 clearer instructions-desktop.png" alt="Screenshots showing form with and without custom fields">
+          <figcaption>We updated instructions and separated one step into two</figcaption>
+        </figure>
+      </section>
+
+      <section class="description">
+        <h5>Click vs hover interaction</h5>
+      </section>
+
+      <section class="mobile-video">
+        <h6>Before</h6>
+        <figure>
+          <video class="full-width" width="100%" height="100%" autoplay muted loop>
+            <source src="../images/tr-ai-document-extraction/05 uxr before interaction.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+          <figcaption>Hovering over a field highlighted where the value was extracted from</figcaption>
+        </figure>
+
+        <h6>After</h6>
+        <figure>
+          <video class="full-width" width="100%" height="100%" autoplay muted loop>
+            <source src="../images/tr-ai-document-extraction/11 uxr after interaction 720.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+          <figcaption>Clicking a button by a field highlighted where the value was extracted from. We added a loading state to help users see the changes in the document viewer.</figcaption>
+        </figure>
+      </section>
+
+      <section class="description">
+        <h5>Updated badges and tooltips</h5>
+      </section>
+
+      <section class="screenshot-white">
+        <figure class="ss-mobile">
+          <img class="full-width" style="padding: 0px" src="../images/tr-ai-document-extraction/12 updated badges-mobile.png" alt="Screenshots showing form with and without custom fields">
+          <figcaption>Updated badges to include icons and use green, yellow, and red. Made tooltip copy consistent.</figcaption>
+        </figure>
+        <figure class="ss-desk">
+          <img class="full-width" style="padding: 0px" src="../images/tr-ai-document-extraction/12 updated badges-desktop.png" alt="Screenshots showing form with and without custom fields">
+          <figcaption>Updated badges to include icons and use green, yellow, and red. <br>Made tooltip copy consistent.</figcaption>
+        </figure>
+      </section>
+
+<!-- Impact -->
+      <h2 class="title-bar">Impact</h2>
+
+      <section class="description">
+        <!-- <p style="margin-top: 3rem;" >Although the PM for this feature originally owned success metrics and left shortly after release, we were able to gather both qualitative and quantitative indicators of impact.</p> -->
+
+        <h3>Results</h3>  
+        <div>
+            <ul class="circle-bullets">
+              <li>85% of the time AI successfully extracted document data with no human intervention needed</li>
+              <li>The median wait time for AI to scan was 36 seconds across 3,954 documents</li>
+              <li>> 45K contracts extracted in 2024 (+39.5% from 2023)</li>
+              <li>Average 3.9K contracts extracted a month</li>
+              <li>Unsolicited feedback from a larger customer:</li>
+                <blockquote>“...I ABSOLUTELY LOVED the Contract Record AI update I experienced today!! I could enter the Class [a custom field] directly from the Task and loved that I didn’t have to re-enter the Start/End and Signed dates!”</blockquote>
+              <li>A new customer listed “AI + human contract extraction” as one of the 3 reasons for signing with us</li>  
+            </ul>
+            <p>It is our hope and expectation that the existence of this AI-powered feature will positively impact our product’s brand image and that we will see positive changes in the metrics mentioned above. Our most satisfied customers with the highest renewal rate have a lot of data/contracts in our system, so this feature helps the business in that regard. Lastly, it is worth noting that while we are interested in adoption and success metrics for our users, our primary goal with this feature was to contribute to a suite of AI-powered features to raise an additional round of funding for our startup.</p>
+          </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <ul>
+          <li><a href="https://www.figma.com/proto/ulpfRliAwcMDHTwBr2z819/SL?page-id=0%3A1&node-id=3%3A30632&starting-point-node-id=3%3A30632&scaling=contain" target="_blank">previous project</a></li>
+        </ul>
+        <ul>
+          <li><a href="emails-list.html">next project</a></li>
+        </ul>
+      </footer>
+
+    </section>  
+  </body>
+
+</html>
