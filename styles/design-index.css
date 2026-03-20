@@ -61,7 +61,7 @@ a {
 }
 
 a:hover {
-  color: #B22836
+  color: #B22836;
 }
 
 .project-list {
@@ -94,6 +94,7 @@ a:hover {
   padding-right: 7%;
   color: #fff;
   font-size: 2.4rem;
+  min-width: 444px;
 }
 
 .description {
