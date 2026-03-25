@@ -5,6 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Lucian Chung | Design Portfolio</title>
 
+    <!-- Hide body until authenticated -->
+    <style>
+      body.hidden { display: none !important; }
+      
+      .error-modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .error-modal.show {
+        display: flex;
+      }
+      
+      .error-modal-content {
+        background: white;
+        padding: 2rem;
+        border-radius: 0.5rem;
+        text-align: center;
+        max-width: 400px;
+      }
+      
+      .error-modal-content h2 {
+        margin: 0 0 1rem 0;
+        color: #E53345;
+      }
+      
+      .error-modal-content p {
+        margin: 0 0 1.5rem 0;
+        color: #444;
+      }
+      
+      .error-modal-content button {
+        background-color: #E53345;
+        color: white;
+        border: none;
+        padding: 0.5rem 1.5rem;
+        border-radius: 0.3rem;
+        cursor: pointer;
+        font-size: 1rem;
+      }
+      
+      .error-modal-content button:hover {
+        background-color: #B22836;
+      }
+    </style>
+
     <!-- Favicon save 16x16 .ico image file -->
     <link rel="icon" href="../images/favicon.ico">
 
@@ -23,8 +77,16 @@
     </script>
   </head>
 
-  <body class="">
+  <body class="hidden">
     
+    <!-- Error Modal -->
+    <div class="error-modal" id="errorModal">
+      <div class="error-modal-content">
+        <h2>Incorrect Password</h2>
+        <p>The password you entered is incorrect. Please try again.</p>
+        <button onclick="window.location.href='../index.html'">OK</button>
+      </div>
+    </div>
     <!-- Main -->
       <section class="">
         <h1>Design Projects</h1>
@@ -89,16 +151,34 @@
         </li>
       </ul>
     
-    
-   
-
     <!-- Footer -->
 
     <footer class="footer">
-      <p><a href="../index.html">view homepage</a>
-        <br>
-        If you navigate to the homepage, you must enter the URL in your browser to return here.</p>
+      <p><a href="../index.html">view homepage</a></p>
     </footer>
+
+    <!-- Authentication Check and Prompt -->
+    <script>
+      (function() {
+        const correctPassword = "lc-design-2026";
+        const isAuthenticated = sessionStorage.getItem("authenticated");
+        
+        if (!isAuthenticated) {
+          const password = prompt("Enter password to view this page:");
+          if (password === correctPassword) {
+            sessionStorage.setItem("authenticated", "true");
+            document.body.classList.remove('hidden');
+          } else {
+            // Wrong password or user pressed cancel - show alert and redirect
+            alert("Enter the correct password to view the portfolio");
+            window.location.href = "../index.html";
+          }
+        } else {
+          // Already authenticated, show the page
+          document.body.classList.remove('hidden');
+        }
+      })();
+    </script>
 
   </body>
 
