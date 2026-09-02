@@ -23,14 +23,13 @@
   display: grid;
   grid-template-columns: 1fr 10fr 1fr;
   grid-template-areas:
-  ".    artist      ."
-  ".    artist-text   ."
-  ".    prob-solver      ."
-  ".    prob-solver-text      ."
-  ".    researcher      ."
-  ".    researcher-text      ."
-  ".    designer      ."
-  ".    designer-text      .";
+  ".    section-1      ."
+  ".    section-1-text   ."
+  ".    section-2      ."
+  ".    section-2-text      ."
+  ".    section-3      ."
+  ".    section-3-text      ."
+  ".    section-3-list      .";
 }
 
 .footer {
@@ -48,36 +47,41 @@
   grid-area: header-content;
 }
 
-.artist {
-  grid-area: artist;
+.section-1 {
+  grid-area: section-1;
 }
 
-.artist-text {
-  grid-area: artist-text;
+.section-1-text {
+  grid-area: section-1-text;
 }
 
-.prob-solver {
-  grid-area: prob-solver;
+.section-2 {
+  grid-area: section-2;
 }
 
-.prob-solver-text {
-  grid-area: prob-solver-text;
+.section-2-text {
+  grid-area: section-2-text;
 }
 
-.researcher {
-  grid-area: researcher;
+.section-3 {
+  grid-area: section-3;
 }
 
-.researcher-text {
-  grid-area: researcher-text;
+.section-3-text {
+  grid-area: section-3-text;
 }
 
-.designer {
-  grid-area: designer;
+.section-3-list {
+  grid-area: section-3-list;
+  list-style: disc outside;
+  margin: 0 0 2rem 1.5rem;
+  padding-left: 1.5rem;
+  text-align: left;
+  margin: auto;
 }
 
-.designer-text {
-  grid-area: designer-text;
+.section-3-list li {
+  text-align: left;
 }
 
 .footer-flex {
@@ -159,14 +163,13 @@ h4 {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-areas:
-    ".    artist      ."
-    ".    artist-text   ."
-    ".    prob-solver      ."
-    ".    prob-solver-text      ."
-    ".    researcher      ."
-    ".    researcher-text      ."
-    ".    designer      ."
-    ".    designer-text      .";
+    ".    section-1      ."
+    ".    section-1-text   ."
+    ".    section-2      ."
+    ".    section-2-text      ."
+    ".    section-3      ."
+    ".    section-3-text      ."
+    ".    section-3-list      .";
   }
 
   .footer {
@@ -202,14 +205,13 @@ h4 {
     display: grid;
     grid-template-columns: 1fr 4fr 4fr 1fr;
     grid-template-areas:
-    ".    artist   artist    ."
-    ".    artist-text artist-text   ."
-    ".    prob-solver  prob-solver      ."
-    ".    prob-solver-text   prob-solver-text    ."
-    ".    researcher   researcher    ."
-    ".    researcher-text   researcher-text     ."
-    ".    designer   designer    ."
-    ".    designer-text   designer-text      .";
+    ".    section-1   section-1    ."
+    ".    section-1-text section-1-text   ."
+    ".    section-2  section-2      ."
+    ".    section-2-text   section-2-text    ."
+    ".    section-3   section-3    ."
+    ".    section-3-text   section-3-text     ."
+    ".    section-3-list   section-3-list    .";
   }
 
   .footer {
